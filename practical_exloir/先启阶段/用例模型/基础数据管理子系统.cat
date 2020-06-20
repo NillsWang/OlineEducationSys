@@ -1,0 +1,187 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "基础数据管理子系统"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EEACCE80253"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list)
+    logical_presentations 	(list unit_reference_list
+	(object UseCaseDiagram "Main"
+	    quid       	"5EEACE810356"
+	    title      	"Main"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	1356
+	    origin_y   	2369
+	    items      	(list diagram_item_list
+		(object CategoryView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::基础数据管理子系统" @1
+		    location   	(864, 816)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(621, 732)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	486
+			justify    	0
+			label      	"基础数据管理子系统")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EEACCE80253"
+		    width      	498
+		    height     	180)
+		(object CategoryView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::内容管理" @2
+		    location   	(880, 1264)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(637, 1180)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	486
+			justify    	0
+			label      	"内容管理")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EEACD3C0142"
+		    width      	498
+		    height     	180)
+		(object CategoryView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::公开课管理子系统" @3
+		    location   	(1728, 800)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(1485, 716)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	486
+			justify    	0
+			label      	"公开课管理子系统")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EEACCFB016A"
+		    width      	498
+		    height     	180)
+		(object CategoryView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理" @4
+		    location   	(1744, 1280)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(1501, 1168)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	486
+			justify    	0
+			label      	"频道栏目管理")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EEACD5002FB"
+		    width      	498
+		    height     	236)
+		(object ImportView "" @5
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5EEACF200056"
+		    client     	@2
+		    supplier   	@1
+		    vertices   	(list Points
+			(874, 1119)
+			(867, 906))
+		    line_style 	0)
+		(object ImportView "" @6
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5EEACF2A0267"
+		    client     	@4
+		    supplier   	@2
+		    vertices   	(list Points
+			(1494, 1275)
+			(1129, 1268))
+		    line_style 	0)
+		(object ImportView "" @7
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5EEACF25028E"
+		    client     	@3
+		    supplier   	@4
+		    vertices   	(list Points
+			(1731, 890)
+			(1738, 1107))
+		    line_style 	0)
+		(object CategoryView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::实习实训管理子系统" @8
+		    location   	(2528, 1280)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@8
+			location   	(2285, 1196)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	486
+			justify    	0
+			label      	"实习实训管理子系统")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EEACD090201"
+		    width      	498
+		    height     	180)
+		(object ImportView "" @9
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5EEACF560357"
+		    client     	@8
+		    supplier   	@4
+		    vertices   	(list Points
+			(2278, 1280)
+			(1993, 1280))
+		    line_style 	0)))))
