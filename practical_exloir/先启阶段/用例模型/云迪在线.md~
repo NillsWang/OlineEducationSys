@@ -2113,7 +2113,7 @@
 								fill_color 	13434879
 								quidu      	"5EEDCDF90310")
 							    (object UseCaseView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::知识管理子系统::知识库管理::知识库分类::知识库分类" @77
-								location   	(816, 1360)
+								location   	(736, 1312)
 								font       	(object Font
 								    size       	9
 								    face       	"Arial"
@@ -2125,7 +2125,7 @@
 								    default_color 	TRUE)
 								label      	(object ItemLabel
 								    Parent_View 	@77
-								    location   	(816, 1498)
+								    location   	(736, 1450)
 								    anchor_loc 	1
 								    nlines     	2
 								    max_width  	630
@@ -2188,8 +2188,8 @@
 								client     	@79
 								supplier   	@77
 								vertices   	(list Points
-								    (1105, 1276)
-								    (924, 1327))
+								    (1105, 1260)
+								    (844, 1295))
 								line_style 	0)
 							    (object DependencyView "" @81
 								stereotype 	TRUE
@@ -2198,8 +2198,8 @@
 								client     	@78
 								supplier   	@77
 								vertices   	(list Points
-								    (1105, 1485)
-								    (924, 1405))
+								    (1105, 1482)
+								    (844, 1361))
 								line_style 	0)
 							    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::权威知识管理" @82
 								ShowCompartmentStereotypes 	TRUE
@@ -2230,7 +2230,7 @@
 								annotation 	8
 								autoResize 	TRUE)
 							    (object AssociationViewNew "$UNNAMED$57" @83
-								location   	(509, 1209)
+								location   	(469, 1186)
 								font       	(object Font
 								    size       	9
 								    face       	"Arial"
@@ -2246,26 +2246,26 @@
 								roleview_list 	(list RoleViews
 								    (object RoleView "$UNNAMED$58" @84
 									Parent_View 	@83
-									location   	(125, 489)
+									location   	(85, 466)
 									stereotype 	TRUE
 									line_color 	3342489
 									quidu      	"5EEDCE5D036F"
 									client     	@83
 									supplier   	@77
 									vertices   	(list Points
-									    (509, 1209)
-									    (706, 1305))
+									    (469, 1186)
+									    (625, 1258))
 									line_style 	0)
 								    (object RoleView "$UNNAMED$59" @85
 									Parent_View 	@83
-									location   	(125, 489)
+									location   	(85, 466)
 									stereotype 	TRUE
 									line_color 	3342489
 									quidu      	"5EEDCE5D0371"
 									client     	@83
 									supplier   	@82
 									vertices   	(list Points
-									    (509, 1209)
+									    (469, 1186)
 									    (313, 1114))
 									line_style 	0)))
 							    (object UseCaseView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::知识管理子系统::知识库管理::知识库管理" @86
