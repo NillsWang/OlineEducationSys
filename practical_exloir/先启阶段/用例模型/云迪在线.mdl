@@ -233,7 +233,7 @@
 				    (object Class_Category "频道栏目管理"
 					is_unit    	TRUE
 					is_loaded  	FALSE
-					file_name  	"D:\\rose-workspace\\实训\\频道栏目管理.cat"
+					file_name  	"D:\\rose-workspace\\GitHub\\OlineEducationSys\\practical_exloir\\先启阶段\\用例模型\\频道栏目管理.cat"
 					quid       	"5EEACD5002FB")
 				    (object Class_Category "模板管理"
 					quid       	"5EEB4E7F00FA"
@@ -1245,7 +1245,7 @@
 				    (object Class_Category "资源管理子系统"
 					is_unit    	TRUE
 					is_loaded  	FALSE
-					file_name  	"D:\\rose-workspace\\实训\\资源管理子系统.cat"
+					file_name  	"D:\\rose-workspace\\GitHub\\OlineEducationSys\\practical_exloir\\先启阶段\\用例模型\\资源管理子系统.cat"
 					quid       	"5EEB4F680228")
 				    (object Class_Category "知识管理子系统"
 					is_unit    	TRUE
@@ -2098,7 +2098,30 @@
 					line_color 	3342489
 					fill_color 	13434879
 					quidu      	"5EEECDB800FF")
-				    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::资源库管理员" @83
+				    (object UseCaseView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理::频道编辑权限设置::设置权限" @83
+					location   	(880, 1280)
+					font       	(object Font
+					    size       	9
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@83
+					    location   	(880, 1418)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	630
+					    justify    	0
+					    label      	"设置权限")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"5EEECE35016F")
+				    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::资源库管理员" @84
 					ShowCompartmentStereotypes 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
@@ -2113,7 +2136,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@83
+					    Parent_View 	@84
 					    location   	(288, 944)
 					    anchor_loc 	1
 					    nlines     	2
@@ -2126,7 +2149,7 @@
 					quidu      	"5EEDC610020A"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object AssociationViewNew "$UNNAMED$33" @84
+				    (object AssociationViewNew "$UNNAMED$33" @85
 					location   	(577, 574)
 					font       	(object Font
 					    size       	9
@@ -2141,31 +2164,31 @@
 					line_color 	3342489
 					quidu      	"5EEECECC00AC"
 					roleview_list 	(list RoleViews
-					    (object RoleView "$UNNAMED$34" @85
-						Parent_View 	@84
+					    (object RoleView "$UNNAMED$34" @86
+						Parent_View 	@85
 						location   	(289, -210)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"5EEECECD004A"
-						client     	@84
+						client     	@85
 						supplier   	@81
 						vertices   	(list Points
 						    (577, 574)
-						    (810, 408))
+						    (663, 513))
 						line_style 	0)
-					    (object RoleView "$UNNAMED$35" @86
-						Parent_View 	@84
+					    (object RoleView "$UNNAMED$35" @87
+						Parent_View 	@85
 						location   	(289, -210)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"5EEECECD004C"
-						client     	@84
-						supplier   	@83
+						client     	@85
+						supplier   	@84
 						vertices   	(list Points
 						    (577, 574)
-						    (345, 740))
+						    (345, 738))
 						line_style 	0)))
-				    (object AssociationViewNew "$UNNAMED$36" @87
+				    (object AssociationViewNew "$UNNAMED$36" @88
 					location   	(557, 795)
 					font       	(object Font
 					    size       	9
@@ -2180,53 +2203,30 @@
 					line_color 	3342489
 					quidu      	"5EEECECF02A7"
 					roleview_list 	(list RoleViews
-					    (object RoleView "$UNNAMED$37" @88
-						Parent_View 	@87
+					    (object RoleView "$UNNAMED$37" @89
+						Parent_View 	@88
 						location   	(269, 11)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"5EEECED001D0"
-						client     	@87
+						client     	@88
 						supplier   	@82
 						vertices   	(list Points
 						    (557, 795)
 						    (770, 805))
 						line_style 	0)
-					    (object RoleView "$UNNAMED$38" @89
-						Parent_View 	@87
+					    (object RoleView "$UNNAMED$38" @90
+						Parent_View 	@88
 						location   	(269, 11)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"5EEECED001D2"
-						client     	@87
-						supplier   	@83
+						client     	@88
+						supplier   	@84
 						vertices   	(list Points
 						    (557, 795)
-						    (345, 786))
+						    (345, 784))
 						line_style 	0)))
-				    (object UseCaseView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理::频道编辑权限设置::设置权限" @90
-					location   	(880, 1280)
-					font       	(object Font
-					    size       	9
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					label      	(object ItemLabel
-					    Parent_View 	@90
-					    location   	(880, 1418)
-					    anchor_loc 	1
-					    nlines     	2
-					    max_width  	630
-					    justify    	0
-					    label      	"设置权限")
-					icon_style 	"Icon"
-					line_color 	3342489
-					fill_color 	13434879
-					quidu      	"5EEECE35016F")
 				    (object AssociationViewNew "$UNNAMED$39" @91
 					location   	(606, 1051)
 					font       	(object Font
@@ -2249,10 +2249,10 @@
 						line_color 	3342489
 						quidu      	"5EEECED601E8"
 						client     	@91
-						supplier   	@90
+						supplier   	@83
 						vertices   	(list Points
 						    (606, 1051)
-						    (807, 1221))
+						    (811, 1222))
 						line_style 	0)
 					    (object RoleView "$UNNAMED$41" @93
 						Parent_View 	@91
@@ -2261,10 +2261,10 @@
 						line_color 	3342489
 						quidu      	"5EEECED601EA"
 						client     	@91
-						supplier   	@83
+						supplier   	@84
 						vertices   	(list Points
 						    (606, 1051)
-						    (405, 881))
+						    (345, 833))
 						line_style 	0))))))))
 		logical_presentations 	(list unit_reference_list
 		    (object UseCaseDiagram "Global View of Actors and Use Cases"
