@@ -233,7 +233,7 @@
 				    (object Class_Category "频道栏目管理"
 					is_unit    	TRUE
 					is_loaded  	FALSE
-					file_name  	"D:\\rose-workspace\\GitHub\\OlineEducationSys\\practical_exloir\\先启阶段\\用例模型\\频道栏目管理.cat"
+					file_name  	"F:\\git仓库\\OlineEducationSys\\practical_exloir\\先启阶段\\用例模型\\频道栏目管理.cat"
 					quid       	"5EEACD5002FB")
 				    (object Class_Category "模板管理"
 					quid       	"5EEB4E7F00FA"
@@ -314,7 +314,7 @@
 								    location   	(576, 848)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	325
+								    max_width  	355
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -580,7 +580,7 @@
 								    location   	(640, 1200)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	325
+								    max_width  	355
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -1002,7 +1002,7 @@
 								    location   	(896, 1216)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	325
+								    max_width  	355
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -1245,7 +1245,7 @@
 				    (object Class_Category "资源管理子系统"
 					is_unit    	TRUE
 					is_loaded  	FALSE
-					file_name  	"D:\\rose-workspace\\GitHub\\OlineEducationSys\\practical_exloir\\先启阶段\\用例模型\\资源管理子系统.cat"
+					file_name  	"F:\\git仓库\\OlineEducationSys\\practical_exloir\\先启阶段\\用例模型\\资源管理子系统.cat"
 					quid       	"5EEB4F680228")
 				    (object Class_Category "知识管理子系统"
 					is_unit    	TRUE
@@ -2140,7 +2140,7 @@
 					    location   	(288, 944)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	325
+					    max_width  	355
 					    justify    	0
 					    label      	"资源库管理员")
 					icon       	"Actor"
@@ -2329,7 +2329,7 @@
 				    location   	(528, 1136)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	325
+				    max_width  	355
 				    justify    	0
 				    label      	"IT中心")
 				icon       	"Actor"
@@ -6673,7 +6673,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-			value      	".;D:\\Java\\jdk1.8.0_201\\lib;D:\\Java\\jdk1.8.0_201\\lib\\tools.jar;D:\\Program Files (x86)")
+			value      	".;D:\\Java\\jdk1.8.0_201\\lib\\dt.jar;D:\\Java\\jdk1.8.0_201\\lib\\tools.jar；")
 		    (object Attribute
 			tool       	"Java"
 			name       	"EditorType"

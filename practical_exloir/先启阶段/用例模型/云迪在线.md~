@@ -233,7 +233,7 @@
 				    (object Class_Category "频道栏目管理"
 					is_unit    	TRUE
 					is_loaded  	FALSE
-					file_name  	"D:\\rose-workspace\\实训\\频道栏目管理.cat"
+					file_name  	"D:\\rose-workspace\\GitHub\\OlineEducationSys\\practical_exloir\\先启阶段\\用例模型\\频道栏目管理.cat"
 					quid       	"5EEACD5002FB")
 				    (object Class_Category "模板管理"
 					quid       	"5EEB4E7F00FA"
