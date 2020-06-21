@@ -314,7 +314,7 @@
 								    location   	(576, 848)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	339
+								    max_width  	331
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -348,7 +348,7 @@
 									supplier   	@3
 									vertices   	(list Points
 									    (925, 688)
-									    (1216, 688))
+									    (1217, 688))
 									line_style 	0)
 								    (object RoleView "$UNNAMED$2" @7
 									Parent_View 	@5
@@ -580,7 +580,7 @@
 								    location   	(640, 1200)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	339
+								    max_width  	331
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -614,7 +614,7 @@
 									supplier   	@8
 									vertices   	(list Points
 									    (976, 1305)
-									    (1252, 1525))
+									    (1256, 1526))
 									line_style 	0)
 								    (object RoleView "$UNNAMED$11" @16
 									Parent_View 	@14
@@ -653,7 +653,7 @@
 									supplier   	@9
 									vertices   	(list Points
 									    (956, 1178)
-									    (1216, 1291))
+									    (1216, 1293))
 									line_style 	0)
 								    (object RoleView "$UNNAMED$14" @19
 									Parent_View 	@17
@@ -665,7 +665,7 @@
 									supplier   	@13
 									vertices   	(list Points
 									    (956, 1178)
-									    (697, 1064))
+									    (697, 1063))
 									line_style 	0)))
 							    (object AssociationViewNew "$UNNAMED$15" @20
 								location   	(940, 1081)
@@ -692,7 +692,7 @@
 									supplier   	@10
 									vertices   	(list Points
 									    (940, 1081)
-									    (1186, 1116))
+									    (1184, 1117))
 									line_style 	0)
 								    (object RoleView "$UNNAMED$17" @22
 									Parent_View 	@20
@@ -731,7 +731,7 @@
 									supplier   	@11
 									vertices   	(list Points
 									    (925, 949)
-									    (1264, 848))
+									    (1154, 879))
 									line_style 	0)
 								    (object RoleView "$UNNAMED$5" @25
 									Parent_View 	@23
@@ -770,7 +770,7 @@
 									supplier   	@12
 									vertices   	(list Points
 									    (930, 813)
-									    (1032, 737))
+									    (1164, 635))
 									line_style 	0)
 								    (object RoleView "$UNNAMED$8" @28
 									Parent_View 	@26
@@ -782,7 +782,7 @@
 									supplier   	@13
 									vertices   	(list Points
 									    (930, 813)
-									    (697, 991))
+									    (697, 992))
 									line_style 	0)))))))
 					    (object Class_Category "网页模板"
 						quid       	"5EEB50680149"
@@ -1002,7 +1002,7 @@
 								    location   	(896, 1216)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	339
+								    max_width  	331
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -1036,7 +1036,7 @@
 									supplier   	@29
 									vertices   	(list Points
 									    (1184, 1298)
-									    (1419, 1494))
+									    (1415, 1493))
 									line_style 	0)
 								    (object RoleView "$UNNAMED$26" @37
 									Parent_View 	@35
@@ -1048,7 +1048,7 @@
 									supplier   	@34
 									vertices   	(list Points
 									    (1184, 1298)
-									    (953, 1103))
+									    (953, 1104))
 									line_style 	0)))
 							    (object AssociationViewNew "$UNNAMED$27" @38
 								location   	(1165, 1171)
@@ -1087,7 +1087,7 @@
 									supplier   	@34
 									vertices   	(list Points
 									    (1165, 1171)
-									    (953, 1079))
+									    (953, 1080))
 									line_style 	0)))
 							    (object AssociationViewNew "$UNNAMED$30" @41
 								location   	(1157, 1081)
@@ -1126,7 +1126,7 @@
 									supplier   	@34
 									vertices   	(list Points
 									    (1157, 1081)
-									    (953, 1059))
+									    (953, 1060))
 									line_style 	0)))
 							    (object AssociationViewNew "$UNNAMED$18" @44
 								location   	(1141, 936)
@@ -1153,7 +1153,7 @@
 									supplier   	@32
 									vertices   	(list Points
 									    (1141, 936)
-									    (1440, 800))
+									    (1330, 846))
 									line_style 	0)
 								    (object RoleView "$UNNAMED$20" @46
 									Parent_View 	@44
@@ -1165,7 +1165,7 @@
 									supplier   	@34
 									vertices   	(list Points
 									    (1141, 936)
-									    (953, 1027))
+									    (953, 1026))
 									line_style 	0)))
 							    (object AssociationViewNew "$UNNAMED$21" @47
 								location   	(1122, 806)
@@ -1192,7 +1192,7 @@
 									supplier   	@33
 									vertices   	(list Points
 									    (1122, 806)
-									    (1290, 625))
+									    (1292, 625))
 									line_style 	0)
 								    (object RoleView "$UNNAMED$23" @49
 									Parent_View 	@47
@@ -1204,7 +1204,7 @@
 									supplier   	@34
 									vertices   	(list Points
 									    (1122, 806)
-									    (953, 986))
+									    (953, 988))
 									line_style 	0))))))))
 					logical_presentations 	(list unit_reference_list))
 				    (object Class_Category "就业培训管理子系统"
@@ -1245,7 +1245,7 @@
 				    (object Class_Category "资源管理子系统"
 					is_unit    	TRUE
 					is_loaded  	FALSE
-					file_name  	"E:\\实训\\rose华迪实例\\课设\\资源管理子系统.cat"
+					file_name  	"D:\\rose-workspace\\实训\\资源管理子系统.cat"
 					quid       	"5EEB4F680228")
 				    (object Class_Category "知识管理子系统"
 					is_unit    	TRUE
@@ -1378,6 +1378,15 @@
 						width      	300
 						height     	180)
 					    (object ImportView "" @53
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"5EEACF200056"
@@ -1413,6 +1422,15 @@
 						width      	300
 						height     	180)
 					    (object ImportView "" @55
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"5EEACF2A0267"
@@ -1458,6 +1476,15 @@
 						    (912, 362))
 						line_style 	0)
 					    (object ImportView "" @58
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"5EEACF25028E"
@@ -1793,6 +1820,15 @@
 						    (976, 362))
 						line_style 	0)
 					    (object ImportView "" @75
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"5EEB5009032D"
@@ -2043,7 +2079,7 @@
 				    location   	(528, 1136)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	339
+				    max_width  	331
 				    justify    	0
 				    label      	"IT中心")
 				icon       	"Actor"
@@ -6387,7 +6423,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-			value      	".;D:\\Java\\jdk1.8.0_201\\lib\\dt.jar;D:\\Java\\jdk1.8.0_201\\lib\\tools.jar；")
+			value      	".;D:\\Java\\jdk1.8.0_201\\lib;D:\\Java\\jdk1.8.0_201\\lib\\tools.jar;D:\\Program Files (x86)")
 		    (object Attribute
 			tool       	"Java"
 			name       	"EditorType"
