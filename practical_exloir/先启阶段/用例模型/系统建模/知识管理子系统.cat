@@ -1,0 +1,30 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "知识管理子系统"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EF017E6000D"
+    visible_categories 	(list visibility_relationship_list
+	(object Visibility_Relationship
+	    quid       	"5EEEB7D70046"
+	    supplier   	"Use Case View::Business Use-Case Model::Use Cases::知识管理子系统::管理知识库"
+	    quidu      	"5EEEB29D03D8")
+	(object Visibility_Relationship
+	    quid       	"5EEEB7DA0049"
+	    supplier   	"Use Case View::Business Use-Case Model::Use Cases::知识管理子系统::知识发布管理"
+	    quidu      	"5EEEB2ED0308")
+	(object Visibility_Relationship
+	    quid       	"5EEEB7DC022D"
+	    supplier   	"Use Case View::Business Use-Case Model::Use Cases::知识管理子系统::浏览学习知识"
+	    quidu      	"5EEEB3200370")
+	(object Visibility_Relationship
+	    quid       	"5EEEB7DE0384"
+	    supplier   	"Use Case View::Business Use-Case Model::Use Cases::知识管理子系统::发表学习收获"
+	    quidu      	"5EEEB32E0054"))
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list)
+    logical_presentations 	(list unit_reference_list))

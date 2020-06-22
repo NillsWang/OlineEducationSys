@@ -111,30 +111,16 @@
 				documentation 	"假设现有频道都是必须的（频道实质是从后台读取的）"
 				exportControl 	"Public"
 				logical_models 	(list unit_reference_list
-				    (object Class_Category "培训管理"
-					quid       	"5EF0178C030E"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EF01A0D0087"
-						supplier   	"Use Case View::Use-Case Model::Use Cases::后台::内容管理"
-						quidu      	"5EF017F60009")
-					    (object Visibility_Relationship
-						quid       	"5EF01A330147"
-						supplier   	"Use Case View::Use-Case Model::Use Cases::后台::基础数据管理子系统"
-						quidu      	"5EF017EE01E3"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list)
-					logical_presentations 	(list unit_reference_list))
-				    (object Class_Category "测评考试"
-					quid       	"5EF0179A01BC"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EF01C3B0097"
-						supplier   	"Use Case View::Use-Case Model::Use Cases::后台::内容管理"
-						quidu      	"5EF017F60009"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list)
-					logical_presentations 	(list unit_reference_list))
+				    (object Class_Category "就业培训管理子系统"
+					is_unit    	TRUE
+					is_loaded  	FALSE
+					file_name  	"F:\\实训安排\\项目文档\\先启阶段\\教师用例建模\\就业培训管理子系统.cat"
+					quid       	"5EF0178C030E")
+				    (object Class_Category "测评考试子系统"
+					is_unit    	TRUE
+					is_loaded  	FALSE
+					file_name  	"F:\\实训安排\\项目文档\\先启阶段\\教师用例建模\\测评考试子系统.cat"
+					quid       	"5EF0179A01BC")
 				    (object Class_Category "资源管理子系统"
 					quid       	"5EF017DF00AC"
 					exportControl 	"Public"
@@ -5787,50 +5773,16 @@
 					exportControl 	"Public"
 					logical_models 	(list unit_reference_list)
 					logical_presentations 	(list unit_reference_list))
-				    (object Class_Category "统计分析"
-					quid       	"5EF01805024F"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EF01CB3035F"
-						supplier   	"Use Case View::Use-Case Model::Use Cases::后台::测评考试"
-						quidu      	"5EF0179A01BC")
-					    (object Visibility_Relationship
-						quid       	"5EF01CBC03C7"
-						supplier   	"Use Case View::Use-Case Model::Use Cases::后台::知识管理子系统"
-						quidu      	"5EF017E6000D")
-					    (object Visibility_Relationship
-						quid       	"5EF01CD603E7"
-						supplier   	"Use Case View::Use-Case Model::Use Cases::后台::培训管理"
-						quidu      	"5EF0178C030E")
-					    (object Visibility_Relationship
-						quid       	"5EF01CDD0337"
-						supplier   	"Use Case View::Use-Case Model::Use Cases::后台::资源管理子系统"
-						quidu      	"5EF017DF00AC")
-					    (object Visibility_Relationship
-						quid       	"5EF01CE80139"
-						supplier   	"Use Case View::Use-Case Model::Use Cases::后台::系统管理"
-						quidu      	"5EF017FD01A5")
-					    (object Visibility_Relationship
-						quid       	"5EF01CF202BE"
-						supplier   	"Use Case View::Use-Case Model::Use Cases::后台::教学管理"
-						quidu      	"5EF01B8601BC"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list)
-					logical_presentations 	(list unit_reference_list))
-				    (object Class_Category "教学管理"
-					quid       	"5EF01B8601BC"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EF01B9A0107"
-						supplier   	"Use Case View::Use-Case Model::Use Cases::后台::系统管理"
-						quidu      	"5EF017FD01A5")
-					    (object Visibility_Relationship
-						quid       	"5EF01BBA0147"
-						supplier   	"Use Case View::Use-Case Model::Use Cases::后台::资源管理子系统"
-						quidu      	"5EF017DF00AC"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list)
-					logical_presentations 	(list unit_reference_list)))
+				    (object Class_Category "统计分析子系统"
+					is_unit    	TRUE
+					is_loaded  	FALSE
+					file_name  	"F:\\实训安排\\项目文档\\先启阶段\\教师用例建模\\统计分析子系统.cat"
+					quid       	"5EF01805024F")
+				    (object Class_Category "教学管理子系统"
+					is_unit    	TRUE
+					is_loaded  	FALSE
+					file_name  	"F:\\实训安排\\项目文档\\先启阶段\\教师用例建模\\教学管理子系统.cat"
+					quid       	"5EF01B8601BC"))
 				logical_presentations 	(list unit_reference_list
 				    (object UseCaseDiagram "云迪在线后台"
 					quid       	"5EF01814026B"
@@ -5841,7 +5793,7 @@
 					origin_x   	0
 					origin_y   	0
 					items      	(list diagram_item_list
-					    (object CategoryView "Use Case View::Use-Case Model::Use Cases::后台::培训管理" @269
+					    (object CategoryView "Use Case View::Use-Case Model::Use Cases::后台::就业培训管理子系统" @269
 						location   	(1472, 288)
 						font       	(object Font
 						    size       	9
@@ -5859,14 +5811,14 @@
 						    nlines     	2
 						    max_width  	288
 						    justify    	0
-						    label      	"培训管理")
+						    label      	"就业培训管理子系统")
 						icon_style 	"Label"
 						line_color 	128
 						fill_color 	16645631
 						quidu      	"5EF0178C030E"
 						width      	300
 						height     	180)
-					    (object CategoryView "Use Case View::Use-Case Model::Use Cases::后台::测评考试" @270
+					    (object CategoryView "Use Case View::Use-Case Model::Use Cases::后台::测评考试子系统" @270
 						location   	(1968, 272)
 						font       	(object Font
 						    size       	9
@@ -5884,7 +5836,7 @@
 						    nlines     	2
 						    max_width  	288
 						    justify    	0
-						    label      	"测评考试")
+						    label      	"测评考试子系统")
 						icon_style 	"Label"
 						line_color 	128
 						fill_color 	16645631
@@ -6016,7 +5968,7 @@
 						quidu      	"5EF017FD01A5"
 						width      	300
 						height     	180)
-					    (object CategoryView "Use Case View::Use-Case Model::Use Cases::后台::统计分析" @276
+					    (object CategoryView "Use Case View::Use-Case Model::Use Cases::后台::统计分析子系统" @276
 						location   	(2064, 864)
 						font       	(object Font
 						    size       	9
@@ -6034,7 +5986,7 @@
 						    nlines     	2
 						    max_width  	288
 						    justify    	0
-						    label      	"统计分析")
+						    label      	"统计分析子系统")
 						icon_style 	"Label"
 						line_color 	128
 						fill_color 	16645631
@@ -6091,7 +6043,7 @@
 						    (1416, 378)
 						    (968, 1103))
 						line_style 	0)
-					    (object CategoryView "Use Case View::Use-Case Model::Use Cases::后台::教学管理" @282
+					    (object CategoryView "Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统" @282
 						location   	(432, 912)
 						font       	(object Font
 						    size       	9
@@ -6109,7 +6061,7 @@
 						    nlines     	2
 						    max_width  	288
 						    justify    	0
-						    label      	"教学管理")
+						    label      	"教学管理子系统")
 						icon_style 	"Label"
 						line_color 	128
 						fill_color 	16645631
