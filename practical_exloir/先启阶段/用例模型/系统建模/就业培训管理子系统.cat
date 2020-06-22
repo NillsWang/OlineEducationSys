@@ -1,0 +1,22 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "就业培训管理子系统"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EF0178C030E"
+    visible_categories 	(list visibility_relationship_list
+	(object Visibility_Relationship
+	    quid       	"5EF01A0D0087"
+	    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::内容管理"
+	    quidu      	"5EF017F60009")
+	(object Visibility_Relationship
+	    quid       	"5EF01A330147"
+	    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::基础数据管理子系统"
+	    quidu      	"5EF017EE01E3"))
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list)
+    logical_presentations 	(list unit_reference_list))

@@ -1,0 +1,22 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "教学管理子系统"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EF01B8601BC"
+    visible_categories 	(list visibility_relationship_list
+	(object Visibility_Relationship
+	    quid       	"5EF01B9A0107"
+	    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::系统管理"
+	    quidu      	"5EF017FD01A5")
+	(object Visibility_Relationship
+	    quid       	"5EF01BBA0147"
+	    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::资源管理子系统"
+	    quidu      	"5EF017DF00AC"))
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list)
+    logical_presentations 	(list unit_reference_list))
