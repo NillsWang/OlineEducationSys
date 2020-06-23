@@ -1,0 +1,177 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "教学管理子系统"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EF01B8601BC"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class_Category "签到管理"
+	    quid       	"5EF1923D02E9"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "签到"
+		    quid       	"5EF1937F0077"))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "签到管理"
+		    quid       	"5EF192B403BE"
+		    title      	"签到管理"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list))))
+	(object Class_Category "课程培训师分配"
+	    quid       	"5EF1924B0306"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "课程培训师分配"
+		    quid       	"5EF192C30076"
+		    title      	"课程培训师分配"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list))))
+	(object Class_Category "讲师答疑管理"
+	    quid       	"5EF1926E011E"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "讲师答疑管理"
+		    quid       	"5EF192DA0096"
+		    title      	"讲师答疑管理"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list))))
+	(object Class_Category "成绩管理"
+	    quid       	"5EF19280039B"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "成绩管理"
+		    quid       	"5EF192EE01CD"
+		    title      	"成绩管理"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list))))
+	(object Class_Category "计划培训师管理"
+	    quid       	"5EF194E103B9"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "计划培训师管理"
+		    quid       	"5EF19637010E"
+		    title      	"计划培训师管理"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list))))
+	(object Class_Category "作业管理"
+	    quid       	"5EF1950D0346"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "作业管理"
+		    quid       	"5EF1962C0225"
+		    title      	"作业管理"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list))))
+	(object Class_Category "归档管理"
+	    quid       	"5EF1951D0335"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "查询培训计划数据"
+		    quid       	"5EF1958F01E7")
+		(object UseCase "重置培训计划数据"
+		    quid       	"5EF1959E0210"))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "归档管理"
+		    quid       	"5EF1958703DB"
+		    title      	"归档管理"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object UseCaseView "Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统::归档管理::查询培训计划数据" @1
+			    location   	(688, 576)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@1
+				location   	(688, 714)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"查询培训计划数据")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EF1958F01E7")
+			(object UseCaseView "Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统::归档管理::重置培训计划数据" @2
+			    location   	(688, 976)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@2
+				location   	(688, 1114)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"重置培训计划数据")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EF1959E0210")))))
+	(object Class_Category "直播管理"
+	    quid       	"5EF195F203AF"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "直播管理"
+		    quid       	"5EF1961D016E"
+		    title      	"直播管理"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list)))))
+    logical_presentations 	(list unit_reference_list))
