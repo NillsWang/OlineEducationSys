@@ -26,13 +26,39 @@
 	    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::资源管理子系统"
 	    quidu      	"5EF017DF00AC")
 	(object Visibility_Relationship
-	    quid       	"5EF01CE80139"
-	    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::系统管理"
-	    quidu      	"5EF017FD01A5")
-	(object Visibility_Relationship
 	    quid       	"5EF01CF202BE"
 	    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统"
 	    quidu      	"5EF01B8601BC"))
     exportControl 	"Public"
-    logical_models 	(list unit_reference_list)
+    logical_models 	(list unit_reference_list
+	(object Class_Category "用户信息报表"
+	    quid       	"5EF14CD703B5"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "课程过程报表"
+	    quid       	"5EF14CF303B4"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "课程完成报表"
+	    quid       	"5EF14D0900B3"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "培训计划使用情况报表"
+	    quid       	"5EF14D2901A6"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "登录信息统计"
+	    quid       	"5EF14D460263"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "培训计划过程报表"
+	    quid       	"5EF14D580011"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list)))
     logical_presentations 	(list unit_reference_list))

@@ -1,0 +1,53 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "系统管理"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EF14D8E01EB"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class_Category "人员管理"
+	    quid       	"5EF14E2B01DD"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "机构管理"
+	    quid       	"5EF14E35029B"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "二级管理员授权管理"
+	    quid       	"5EF14E450283"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "角色权限分配"
+	    quid       	"5EF14E5B0334"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "人员权限分配"
+	    quid       	"5EF14F85039A"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "人员组织机构批量修改"
+	    quid       	"5EF14F9803CC"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "cms统计分析"
+	    quid       	"5EF14FAE01C4"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "清理无效课件"
+	    quid       	"5EF14FC00243"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list)))
+    logical_presentations 	(list unit_reference_list))
