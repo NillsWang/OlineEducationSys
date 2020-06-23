@@ -122,10 +122,10 @@
 					file_name  	"F:\\实训安排\\项目文档\\先启阶段\\教师用例建模\\测评考试子系统.cat"
 					quid       	"5EF0179A01BC")
 				    (object Class_Category "资源管理子系统"
-					is_unit    	TRUE
-					is_loaded  	FALSE
-					file_name  	"F:\\git仓库\\OlineEducationSys\\practical_exloir\\先启阶段\\用例模型\\系统建模\\资源管理子系统.cat"
-					quid       	"5EF017DF00AC")
+					quid       	"5EF017DF00AC"
+					exportControl 	"Public"
+					logical_models 	(list unit_reference_list)
+					logical_presentations 	(list unit_reference_list))
 				    (object Class_Category "知识管理子系统"
 					is_unit    	TRUE
 					is_loaded  	FALSE
