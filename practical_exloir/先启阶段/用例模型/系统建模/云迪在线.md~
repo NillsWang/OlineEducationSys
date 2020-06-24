@@ -6323,7 +6323,7 @@
 								supplier   	@280
 								vertices   	(list Points
 								    (357, 496)
-								    (530, 496))
+								    (529, 496))
 								line_style 	0)
 							    (object RoleView "$UNNAMED$137" @284
 								Parent_View 	@282

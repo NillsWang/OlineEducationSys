@@ -1570,7 +1570,7 @@
 	    logical_models 	(list unit_reference_list
 		(object UseCase "保存计划培训师分配操作"
 		    quid       	"5EF1A5B00313")
-		(object UseCase "选择课程"
+		(object UseCase "选择计划"
 		    quid       	"5EF1A5F800E6")
 		(object UseCase "选择计划培训师"
 		    quid       	"5EF1A602008B")
@@ -1582,9 +1582,9 @@
 		    quid       	"5EF1A63B033D")
 		(object UseCase "移除课程"
 		    quid       	"5EF1A64C01E9")
-		(object UseCase "移除单个课程"
+		(object UseCase "移除单个计划"
 		    quid       	"5EF1A654025C")
-		(object UseCase "移除全部课程"
+		(object UseCase "移除全部计划"
 		    quid       	"5EF1A65F0373")
 		(object Association "$UNNAMED$51"
 		    quid       	"5EF1A6AD038D"
@@ -1615,7 +1615,7 @@
 		    roles      	(list role_list
 			(object Role "$UNNAMED$58"
 			    quid       	"5EF1A6B4037F"
-			    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统::计划培训师管理::选择课程"
+			    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统::计划培训师管理::选择计划"
 			    quidu      	"5EF1A5F800E6"
 			    is_navigable 	TRUE)
 			(object Role "$UNNAMED$59"
@@ -1652,7 +1652,7 @@
 		    roles      	(list role_list
 			(object Role "$UNNAMED$67"
 			    quid       	"5EF1A6C2034C"
-			    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统::计划培训师管理::移除单个课程"
+			    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统::计划培训师管理::移除单个计划"
 			    quidu      	"5EF1A654025C"
 			    is_navigable 	TRUE)
 			(object Role "$UNNAMED$68"
@@ -1665,7 +1665,7 @@
 		    roles      	(list role_list
 			(object Role "$UNNAMED$70"
 			    quid       	"5EF1A6DB0282"
-			    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统::计划培训师管理::移除全部课程"
+			    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统::计划培训师管理::移除全部计划"
 			    quidu      	"5EF1A65F0373"
 			    is_navigable 	TRUE)
 			(object Role "$UNNAMED$71"
@@ -1731,7 +1731,7 @@
 			    line_color 	3342489
 			    fill_color 	13434879
 			    quidu      	"5EF1A5B00313")
-			(object UseCaseView "Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统::计划培训师管理::选择课程" @78
+			(object UseCaseView "Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统::计划培训师管理::选择计划" @78
 			    location   	(992, 896)
 			    font       	(object Font
 				size       	9
@@ -1749,7 +1749,7 @@
 				nlines     	2
 				max_width  	630
 				justify    	0
-				label      	"选择课程")
+				label      	"选择计划")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -1777,7 +1777,7 @@
 			    line_color 	3342489
 			    fill_color 	13434879
 			    quidu      	"5EF1A602008B")
-			(object UseCaseView "Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统::计划培训师管理::移除单个课程" @80
+			(object UseCaseView "Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统::计划培训师管理::移除单个计划" @80
 			    location   	(896, 1440)
 			    font       	(object Font
 				size       	9
@@ -1795,12 +1795,12 @@
 				nlines     	2
 				max_width  	630
 				justify    	0
-				label      	"移除单个课程")
+				label      	"移除单个计划")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
 			    quidu      	"5EF1A654025C")
-			(object UseCaseView "Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统::计划培训师管理::移除全部课程" @81
+			(object UseCaseView "Use Case View::Use-Case Model::Use Cases::后台::教学管理子系统::计划培训师管理::移除全部计划" @81
 			    location   	(736, 1664)
 			    font       	(object Font
 				size       	9
@@ -1818,7 +1818,7 @@
 				nlines     	2
 				max_width  	630
 				justify    	0
-				label      	"移除全部课程")
+				label      	"移除全部计划")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
