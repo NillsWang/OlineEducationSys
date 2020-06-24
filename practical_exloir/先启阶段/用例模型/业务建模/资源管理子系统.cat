@@ -467,7 +467,7 @@
 		    origin_y   	0
 		    items      	(list diagram_item_list
 			(object UseCaseView "Use Case View::Business Use-Case Model::Use Cases::资源管理子系统::授课讲师管理::更新师资" @18
-			    location   	(1344, 448)
+			    location   	(1264, 464)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -479,7 +479,7 @@
 				default_color 	TRUE)
 			    label      	(object ItemLabel
 				Parent_View 	@18
-				location   	(1344, 586)
+				location   	(1264, 602)
 				anchor_loc 	1
 				nlines     	2
 				max_width  	630
@@ -541,7 +541,7 @@
 			    annotation 	8
 			    autoResize 	TRUE)
 			(object AssociationViewNew "$UNNAMED$24" @21
-			    location   	(965, 616)
+			    location   	(925, 626)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -557,27 +557,27 @@
 			    roleview_list 	(list RoleViews
 				(object RoleView "$UNNAMED$25" @22
 				    Parent_View 	@21
-				    location   	(325, -152)
+				    location   	(285, -142)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EF2A70D0167"
 				    client     	@21
 				    supplier   	@18
 				    vertices   	(list Points
-					(965, 616)
-					(1023, 588))
+					(925, 626)
+					(1154, 516))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$26" @23
 				    Parent_View 	@21
-				    location   	(325, -152)
+				    location   	(285, -142)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EF2A70D016B"
 				    client     	@21
 				    supplier   	@20
 				    vertices   	(list Points
-					(965, 616)
-					(697, 739))
+					(925, 626)
+					(697, 736))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$27" @24
 			    location   	(949, 773)

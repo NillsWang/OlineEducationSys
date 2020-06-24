@@ -437,18 +437,18 @@
 	    quid       	"5EEEC91601DA"
 	    exportControl 	"Public"
 	    logical_models 	(list unit_reference_list
-		(object UseCase "查询权限"
+		(object UseCase "新增其他平台"
 		    quid       	"5EEED092005D")
-		(object UseCase "清除权限"
+		(object UseCase "删除其他平台"
 		    quid       	"5EEED098029C")
-		(object UseCase "设置权限"
+		(object UseCase "修改其他权限"
 		    quid       	"5EEED0A10242")
 		(object Association "$UNNAMED$0"
 		    quid       	"5EEED0C70274"
 		    roles      	(list role_list
 			(object Role "$UNNAMED$1"
 			    quid       	"5EEED0C8018F"
-			    supplier   	"Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::查询权限"
+			    supplier   	"Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::新增其他平台"
 			    quidu      	"5EEED092005D"
 			    is_navigable 	TRUE)
 			(object Role "$UNNAMED$2"
@@ -460,7 +460,7 @@
 		    roles      	(list role_list
 			(object Role "$UNNAMED$4"
 			    quid       	"5EEED0CB0341"
-			    supplier   	"Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::清除权限"
+			    supplier   	"Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::删除其他平台"
 			    quidu      	"5EEED098029C"
 			    is_navigable 	TRUE)
 			(object Role "$UNNAMED$5"
@@ -472,7 +472,7 @@
 		    roles      	(list role_list
 			(object Role "$UNNAMED$7"
 			    quid       	"5EEED0D100FD"
-			    supplier   	"Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::设置权限"
+			    supplier   	"Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::修改其他权限"
 			    quidu      	"5EEED0A10242"
 			    is_navigable 	TRUE)
 			(object Role "$UNNAMED$8"
@@ -489,8 +489,8 @@
 		    origin_x   	0
 		    origin_y   	0
 		    items      	(list diagram_item_list
-			(object UseCaseView "Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::查询权限" @20
-			    location   	(784, 464)
+			(object UseCaseView "Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::新增其他平台" @20
+			    location   	(672, 512)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -502,19 +502,19 @@
 				default_color 	TRUE)
 			    label      	(object ItemLabel
 				Parent_View 	@20
-				location   	(784, 602)
+				location   	(672, 650)
 				anchor_loc 	1
 				nlines     	2
 				max_width  	630
 				justify    	0
-				label      	"查询权限")
+				label      	"新增其他平台")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
 			    quidu      	"5EEED092005D"
 			    height     	118)
-			(object UseCaseView "Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::清除权限" @21
-			    location   	(816, 784)
+			(object UseCaseView "Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::删除其他平台" @21
+			    location   	(768, 816)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -526,19 +526,19 @@
 				default_color 	TRUE)
 			    label      	(object ItemLabel
 				Parent_View 	@21
-				location   	(816, 922)
+				location   	(768, 954)
 				anchor_loc 	1
 				nlines     	2
 				max_width  	630
 				justify    	0
-				label      	"清除权限")
+				label      	"删除其他平台")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
 			    quidu      	"5EEED098029C"
 			    height     	118)
-			(object UseCaseView "Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::设置权限" @22
-			    location   	(816, 1136)
+			(object UseCaseView "Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::修改其他权限" @22
+			    location   	(720, 1088)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -550,12 +550,12 @@
 				default_color 	TRUE)
 			    label      	(object ItemLabel
 				Parent_View 	@22
-				location   	(816, 1274)
+				location   	(720, 1226)
 				anchor_loc 	1
 				nlines     	2
 				max_width  	630
 				justify    	0
-				label      	"设置权限")
+				label      	"修改其他权限")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -590,7 +590,7 @@
 			    annotation 	8
 			    autoResize 	TRUE)
 			(object AssociationViewNew "$UNNAMED$0" @24
-			    location   	(489, 663)
+			    location   	(417, 700)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -606,30 +606,30 @@
 			    roleview_list 	(list RoleViews
 				(object RoleView "$UNNAMED$1" @25
 				    Parent_View 	@24
-				    location   	(265, -185)
+				    location   	(193, -148)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EEED0C8018F"
 				    client     	@24
 				    supplier   	@20
 				    vertices   	(list Points
-					(489, 663)
-					(698, 520))
+					(417, 700)
+					(554, 598))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$2" @26
 				    Parent_View 	@24
-				    location   	(265, -185)
+				    location   	(193, -148)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EEED0C80191"
 				    client     	@24
 				    supplier   	@23
 				    vertices   	(list Points
-					(489, 663)
-					(281, 806))
+					(417, 700)
+					(281, 802))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$3" @27
-			    location   	(493, 816)
+			    location   	(469, 830)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -645,30 +645,30 @@
 			    roleview_list 	(list RoleViews
 				(object RoleView "$UNNAMED$4" @28
 				    Parent_View 	@27
-				    location   	(269, -32)
+				    location   	(245, -18)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EEED0CB0341"
 				    client     	@27
 				    supplier   	@21
 				    vertices   	(list Points
-					(493, 816)
-					(706, 793))
+					(469, 830)
+					(658, 819))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$5" @29
 				    Parent_View 	@27
-				    location   	(269, -32)
+				    location   	(245, -18)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EEED0CB0343"
 				    client     	@27
 				    supplier   	@23
 				    vertices   	(list Points
-					(493, 816)
-					(281, 840))
+					(469, 830)
+					(281, 841))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$6" @30
-			    location   	(493, 978)
+			    location   	(444, 953)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -684,26 +684,26 @@
 			    roleview_list 	(list RoleViews
 				(object RoleView "$UNNAMED$7" @31
 				    Parent_View 	@30
-				    location   	(269, 130)
+				    location   	(220, 105)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EEED0D100FD"
 				    client     	@30
 				    supplier   	@22
 				    vertices   	(list Points
-					(493, 978)
-					(706, 1081))
+					(444, 953)
+					(608, 1031))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$8" @32
 				    Parent_View 	@30
-				    location   	(269, 130)
+				    location   	(220, 105)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EEED0D100FF"
 				    client     	@30
 				    supplier   	@23
 				    vertices   	(list Points
-					(493, 978)
+					(444, 953)
 					(281, 875))
 				    line_style 	0))))))))
     logical_presentations 	(list unit_reference_list

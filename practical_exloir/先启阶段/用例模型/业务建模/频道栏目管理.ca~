@@ -7,16 +7,16 @@
 (object Class_Category "频道栏目管理"
     is_unit    	TRUE
     is_loaded  	TRUE
-    quid       	"5EEACD5002FB"
+    quid       	"5EF0560B02B2"
     exportControl 	"Public"
     logical_models 	(list unit_reference_list
 	(object Class_Category "频道编辑权限设置"
 	    quid       	"5EEEC902036E"
 	    exportControl 	"Public"
 	    logical_models 	(list unit_reference_list
-		(object UseCase "查询"
+		(object UseCase "查询权限"
 		    quid       	"5EEECDAE0076")
-		(object UseCase "清除"
+		(object UseCase "清除权限"
 		    quid       	"5EEECDB800FF")
 		(object UseCase "设置权限"
 		    quid       	"5EEECE35016F"))
@@ -30,7 +30,7 @@
 		    origin_x   	0
 		    origin_y   	0
 		    items      	(list diagram_item_list
-			(object UseCaseView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理::频道编辑权限设置::查询" @1
+			(object UseCaseView "Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道编辑权限设置::查询权限" @1
 			    location   	(896, 304)
 			    font       	(object Font
 				size       	9
@@ -48,12 +48,13 @@
 				nlines     	2
 				max_width  	630
 				justify    	0
-				label      	"查询")
+				label      	"查询权限")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
-			    quidu      	"5EEECDAE0076")
-			(object UseCaseView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理::频道编辑权限设置::清除" @2
+			    quidu      	"5EEECDAE0076"
+			    height     	118)
+			(object UseCaseView "Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道编辑权限设置::清除权限" @2
 			    location   	(944, 624)
 			    font       	(object Font
 				size       	9
@@ -71,11 +72,12 @@
 				nlines     	2
 				max_width  	630
 				justify    	0
-				label      	"清除")
+				label      	"清除权限")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
-			    quidu      	"5EEECDB800FF")
+			    quidu      	"5EEECDB800FF"
+			    height     	118)
 			(object ClassView "Class" "Use Case View::Use-Case Model::Actors::资源库管理员" @3
 			    ShowCompartmentStereotypes 	TRUE
 			    IncludeAttribute 	TRUE
@@ -106,6 +108,15 @@
 			    autoResize 	TRUE)
 			(object AssociationViewNew "" @4
 			    location   	(517, 456)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5EEECECC00AC"
@@ -198,6 +209,15 @@
 				    line_style 	0)))
 			(object AssociationViewNew "" @9
 			    location   	(541, 604)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5EEECECF02A7"
@@ -288,7 +308,7 @@
 					(541, 604)
 					(832, 615))
 				    line_style 	0)))
-			(object UseCaseView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理::频道编辑权限设置::设置权限" @14
+			(object UseCaseView "Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道编辑权限设置::设置权限" @14
 			    location   	(928, 960)
 			    font       	(object Font
 				size       	9
@@ -310,9 +330,19 @@
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
-			    quidu      	"5EEECE35016F")
+			    quidu      	"5EEECE35016F"
+			    height     	118)
 			(object AssociationViewNew "" @15
 			    location   	(532, 761)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
 			    stereotype 	TRUE
 			    line_color 	3342489
 			    quidu      	"5EEECED403C2"
@@ -407,18 +437,18 @@
 	    quid       	"5EEEC91601DA"
 	    exportControl 	"Public"
 	    logical_models 	(list unit_reference_list
-		(object UseCase "查询"
+		(object UseCase "新增其他平台"
 		    quid       	"5EEED092005D")
-		(object UseCase "清除"
+		(object UseCase "删除其他平台"
 		    quid       	"5EEED098029C")
-		(object UseCase "设置权限"
+		(object UseCase "修改其他权限"
 		    quid       	"5EEED0A10242")
 		(object Association "$UNNAMED$0"
 		    quid       	"5EEED0C70274"
 		    roles      	(list role_list
 			(object Role "$UNNAMED$1"
 			    quid       	"5EEED0C8018F"
-			    supplier   	"Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理::频道范围权限设置::查询"
+			    supplier   	"Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::新增其他平台"
 			    quidu      	"5EEED092005D"
 			    is_navigable 	TRUE)
 			(object Role "$UNNAMED$2"
@@ -430,7 +460,7 @@
 		    roles      	(list role_list
 			(object Role "$UNNAMED$4"
 			    quid       	"5EEED0CB0341"
-			    supplier   	"Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理::频道范围权限设置::清除"
+			    supplier   	"Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::删除其他平台"
 			    quidu      	"5EEED098029C"
 			    is_navigable 	TRUE)
 			(object Role "$UNNAMED$5"
@@ -442,7 +472,7 @@
 		    roles      	(list role_list
 			(object Role "$UNNAMED$7"
 			    quid       	"5EEED0D100FD"
-			    supplier   	"Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理::频道范围权限设置::设置权限"
+			    supplier   	"Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::修改其他权限"
 			    quidu      	"5EEED0A10242"
 			    is_navigable 	TRUE)
 			(object Role "$UNNAMED$8"
@@ -459,8 +489,8 @@
 		    origin_x   	0
 		    origin_y   	0
 		    items      	(list diagram_item_list
-			(object UseCaseView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理::频道范围权限设置::查询" @20
-			    location   	(784, 464)
+			(object UseCaseView "Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::新增其他平台" @20
+			    location   	(656, 368)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -472,18 +502,19 @@
 				default_color 	TRUE)
 			    label      	(object ItemLabel
 				Parent_View 	@20
-				location   	(784, 602)
+				location   	(656, 506)
 				anchor_loc 	1
 				nlines     	2
 				max_width  	630
 				justify    	0
-				label      	"查询")
+				label      	"新增其他平台")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
-			    quidu      	"5EEED092005D")
-			(object UseCaseView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理::频道范围权限设置::清除" @21
-			    location   	(816, 784)
+			    quidu      	"5EEED092005D"
+			    height     	118)
+			(object UseCaseView "Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::删除其他平台" @21
+			    location   	(816, 672)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -495,18 +526,19 @@
 				default_color 	TRUE)
 			    label      	(object ItemLabel
 				Parent_View 	@21
-				location   	(816, 922)
+				location   	(816, 810)
 				anchor_loc 	1
 				nlines     	2
 				max_width  	630
 				justify    	0
-				label      	"清除")
+				label      	"删除其他平台")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
-			    quidu      	"5EEED098029C")
-			(object UseCaseView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理::频道范围权限设置::设置权限" @22
-			    location   	(816, 1136)
+			    quidu      	"5EEED098029C"
+			    height     	118)
+			(object UseCaseView "Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置::修改其他权限" @22
+			    location   	(816, 992)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -518,16 +550,17 @@
 				default_color 	TRUE)
 			    label      	(object ItemLabel
 				Parent_View 	@22
-				location   	(816, 1274)
+				location   	(816, 1130)
 				anchor_loc 	1
 				nlines     	2
 				max_width  	630
 				justify    	0
-				label      	"设置权限")
+				label      	"修改其他权限")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
-			    quidu      	"5EEED0A10242")
+			    quidu      	"5EEED0A10242"
+			    height     	118)
 			(object ClassView "Class" "Use Case View::Use-Case Model::Actors::资源库管理员" @23
 			    ShowCompartmentStereotypes 	TRUE
 			    IncludeAttribute 	TRUE
@@ -557,7 +590,7 @@
 			    annotation 	8
 			    autoResize 	TRUE)
 			(object AssociationViewNew "$UNNAMED$0" @24
-			    location   	(489, 663)
+			    location   	(409, 638)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -573,30 +606,30 @@
 			    roleview_list 	(list RoleViews
 				(object RoleView "$UNNAMED$1" @25
 				    Parent_View 	@24
-				    location   	(265, -185)
+				    location   	(185, -210)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EEED0C8018F"
 				    client     	@24
 				    supplier   	@20
 				    vertices   	(list Points
-					(489, 663)
-					(545, 625))
+					(409, 638)
+					(510, 529))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$2" @26
 				    Parent_View 	@24
-				    location   	(265, -185)
+				    location   	(185, -210)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EEED0C80191"
 				    client     	@24
 				    supplier   	@23
 				    vertices   	(list Points
-					(489, 663)
-					(281, 804))
+					(409, 638)
+					(281, 781))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$3" @27
-			    location   	(493, 816)
+			    location   	(493, 765)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -612,30 +645,30 @@
 			    roleview_list 	(list RoleViews
 				(object RoleView "$UNNAMED$4" @28
 				    Parent_View 	@27
-				    location   	(269, -32)
+				    location   	(269, -83)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EEED0CB0341"
 				    client     	@27
 				    supplier   	@21
 				    vertices   	(list Points
-					(493, 816)
-					(706, 793))
+					(493, 765)
+					(816, 672))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$5" @29
 				    Parent_View 	@27
-				    location   	(269, -32)
+				    location   	(269, -83)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EEED0CB0343"
 				    client     	@27
 				    supplier   	@23
 				    vertices   	(list Points
-					(493, 816)
-					(281, 838))
+					(493, 765)
+					(281, 828))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$6" @30
-			    location   	(493, 978)
+			    location   	(493, 911)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -651,27 +684,27 @@
 			    roleview_list 	(list RoleViews
 				(object RoleView "$UNNAMED$7" @31
 				    Parent_View 	@30
-				    location   	(269, 130)
+				    location   	(269, 63)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EEED0D100FD"
 				    client     	@30
 				    supplier   	@22
 				    vertices   	(list Points
-					(493, 978)
-					(706, 1081))
+					(493, 911)
+					(706, 962))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$8" @32
 				    Parent_View 	@30
-				    location   	(269, 130)
+				    location   	(269, 63)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EEED0D100FF"
 				    client     	@30
 				    supplier   	@23
 				    vertices   	(list Points
-					(493, 978)
-					(281, 875))
+					(493, 911)
+					(281, 860))
 				    line_style 	0))))))))
     logical_presentations 	(list unit_reference_list
 	(object UseCaseDiagram "频道栏目管理"
@@ -683,7 +716,7 @@
 	    origin_x   	0
 	    origin_y   	0
 	    items      	(list diagram_item_list
-		(object CategoryView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理::频道编辑权限设置" @33
+		(object CategoryView "Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道编辑权限设置" @33
 		    location   	(512, 496)
 		    font       	(object Font
 			size       	9
@@ -708,7 +741,7 @@
 		    quidu      	"5EEEC902036E"
 		    width      	300
 		    height     	180)
-		(object CategoryView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理::频道范围权限设置" @34
+		(object CategoryView "Use Case View::Business Use-Case Model::Use Cases::频道栏目管理::频道范围权限设置" @34
 		    location   	(1200, 512)
 		    font       	(object Font
 			size       	9

@@ -378,7 +378,7 @@
 				    supplier   	@1
 				    vertices   	(list Points
 					(411, 575)
-					(486, 401))
+					(484, 401))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$2" @12
 				    Parent_View 	@10
@@ -390,7 +390,7 @@
 				    supplier   	@9
 				    vertices   	(list Points
 					(411, 575)
-					(337, 750))
+					(334, 752))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$3" @13
 			    location   	(538, 592)
@@ -417,7 +417,7 @@
 				    supplier   	@2
 				    vertices   	(list Points
 					(538, 592)
-					(715, 416))
+					(635, 497))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$5" @15
 				    Parent_View 	@13
@@ -456,7 +456,7 @@
 				    supplier   	@3
 				    vertices   	(list Points
 					(613, 674)
-					(866, 548))
+					(976, 496))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$8" @18
 				    Parent_View 	@16
@@ -468,7 +468,7 @@
 				    supplier   	@9
 				    vertices   	(list Points
 					(613, 674)
-					(361, 800))
+					(361, 799))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$9" @19
 			    location   	(661, 783)
@@ -495,7 +495,7 @@
 				    supplier   	@4
 				    vertices   	(list Points
 					(661, 783)
-					(961, 747))
+					(961, 745))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$11" @21
 				    Parent_View 	@19
@@ -507,7 +507,7 @@
 				    supplier   	@9
 				    vertices   	(list Points
 					(661, 783)
-					(361, 820))
+					(361, 822))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$12" @22
 			    location   	(661, 896)
@@ -546,7 +546,7 @@
 				    supplier   	@9
 				    vertices   	(list Points
 					(661, 896)
-					(361, 841))
+					(361, 840))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$15" @25
 			    location   	(597, 970)
@@ -573,7 +573,7 @@
 				    supplier   	@6
 				    vertices   	(list Points
 					(597, 970)
-					(834, 1082))
+					(832, 1080))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$17" @27
 				    Parent_View 	@25
@@ -588,7 +588,7 @@
 					(361, 858))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$18" @28
-			    location   	(554, 1064)
+			    location   	(539, 1050)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -604,30 +604,30 @@
 			    roleview_list 	(list RoleViews
 				(object RoleView "$UNNAMED$19" @29
 				    Parent_View 	@28
-				    location   	(250, 232)
+				    location   	(235, 218)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EF19F160093"
 				    client     	@28
 				    supplier   	@7
 				    vertices   	(list Points
-					(554, 1064)
+					(539, 1050)
 					(688, 1189))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$20" @30
 				    Parent_View 	@28
-				    location   	(250, 232)
+				    location   	(235, 218)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EF19F160095"
 				    client     	@28
 				    supplier   	@9
 				    vertices   	(list Points
-					(554, 1064)
-					(421, 940))
+					(539, 1050)
+					(361, 885))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$21" @31
-			    location   	(461, 1159)
+			    location   	(459, 1157)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -643,27 +643,27 @@
 			    roleview_list 	(list RoleViews
 				(object RoleView "$UNNAMED$22" @32
 				    Parent_View 	@31
-				    location   	(157, 327)
+				    location   	(155, 325)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EF19F1A02A9"
 				    client     	@31
 				    supplier   	@8
 				    vertices   	(list Points
-					(461, 1159)
+					(459, 1157)
 					(529, 1302))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$23" @33
 				    Parent_View 	@31
-				    location   	(157, 327)
+				    location   	(155, 325)
 				    stereotype 	TRUE
 				    line_color 	3342489
 				    quidu      	"5EF19F1A02AB"
 				    client     	@31
 				    supplier   	@9
 				    vertices   	(list Points
-					(461, 1159)
-					(393, 1017))
+					(459, 1157)
+					(390, 1013))
 				    line_style 	0)))))))
 	(object Class_Category "方案管理"
 	    quid       	"5EF19E070208"
@@ -671,7 +671,11 @@
 		(object Visibility_Relationship
 		    quid       	"5EF299F902C7"
 		    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::资源管理子系统"
-		    quidu      	"5EF017DF00AC"))
+		    quidu      	"5EF017DF00AC")
+		(object Visibility_Relationship
+		    quid       	"5EF2D06301CF"
+		    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::资源管理子系统::方案库"
+		    quidu      	"5EF19E1A01F5"))
 	    exportControl 	"Public"
 	    logical_models 	(list unit_reference_list
 		(object UseCase "查询课程"
@@ -885,7 +889,7 @@
 				    supplier   	@34
 				    vertices   	(list Points
 					(490, 629)
-					(667, 504))
+					(752, 448))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$26" @41
 				    Parent_View 	@39
@@ -924,7 +928,7 @@
 				    supplier   	@35
 				    vertices   	(list Points
 					(581, 737)
-					(850, 689))
+					(850, 687))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$29" @44
 				    Parent_View 	@42
@@ -936,7 +940,7 @@
 				    supplier   	@38
 				    vertices   	(list Points
 					(581, 737)
-					(313, 785))
+					(313, 787))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$30" @45
 			    location   	(572, 863)
@@ -963,7 +967,7 @@
 				    supplier   	@36
 				    vertices   	(list Points
 					(572, 863)
-					(832, 918))
+					(832, 917))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$32" @47
 				    Parent_View 	@45
@@ -1002,7 +1006,7 @@
 				    supplier   	@37
 				    vertices   	(list Points
 					(492, 938)
-					(671, 1046))
+					(673, 1046))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$35" @50
 				    Parent_View 	@48
@@ -1014,7 +1018,7 @@
 				    supplier   	@38
 				    vertices   	(list Points
 					(492, 938)
-					(313, 831))
+					(313, 832))
 				    line_style 	0)))))))
 	(object Class_Category "方案库"
 	    quid       	"5EF19E1A01F5"
@@ -1236,7 +1240,7 @@
 				    supplier   	@51
 				    vertices   	(list Points
 					(411, 727)
-					(557, 597))
+					(640, 528))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$38" @58
 				    Parent_View 	@56
@@ -1248,7 +1252,7 @@
 				    supplier   	@55
 				    vertices   	(list Points
 					(411, 727)
-					(265, 858))
+					(265, 855))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$39" @59
 			    location   	(461, 835)
@@ -1275,7 +1279,7 @@
 				    supplier   	@52
 				    vertices   	(list Points
 					(461, 835)
-					(658, 779))
+					(768, 752))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$41" @61
 				    Parent_View 	@59
@@ -1287,7 +1291,7 @@
 				    supplier   	@55
 				    vertices   	(list Points
 					(461, 835)
-					(265, 892))
+					(265, 893))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$42" @62
 			    location   	(469, 960)
@@ -1326,7 +1330,7 @@
 				    supplier   	@55
 				    vertices   	(list Points
 					(469, 960)
-					(265, 921))
+					(265, 920))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$45" @65
 			    location   	(412, 1062)
@@ -1353,7 +1357,7 @@
 				    supplier   	@54
 				    vertices   	(list Points
 					(412, 1062)
-					(559, 1172))
+					(561, 1174))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$47" @67
 				    Parent_View 	@65
@@ -1365,7 +1369,7 @@
 				    supplier   	@55
 				    vertices   	(list Points
 					(412, 1062)
-					(265, 953))
+					(265, 952))
 				    line_style 	0)))))))
 	(object Class_Category "培训师管理"
 	    quid       	"5EF19E2C014F"
@@ -1624,7 +1628,7 @@
 				    supplier   	@68
 				    vertices   	(list Points
 					(504, 637)
-					(616, 501))
+					(584, 545))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$50" @76
 				    Parent_View 	@74
@@ -1636,7 +1640,7 @@
 				    supplier   	@73
 				    vertices   	(list Points
 					(504, 637)
-					(393, 773))
+					(393, 772))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$51" @77
 			    location   	(581, 742)
@@ -1663,7 +1667,7 @@
 				    supplier   	@69
 				    vertices   	(list Points
 					(581, 742)
-					(770, 665))
+					(880, 624))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$53" @79
 				    Parent_View 	@77
@@ -1675,7 +1679,7 @@
 				    supplier   	@73
 				    vertices   	(list Points
 					(581, 742)
-					(393, 820))
+					(393, 821))
 				    line_style 	0)))
 			(object AssociationViewNew "$UNNAMED$54" @80
 			    location   	(636, 838)
@@ -1702,7 +1706,7 @@
 				    supplier   	@70
 				    vertices   	(list Points
 					(636, 838)
-					(880, 832))
+					(882, 831))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$56" @82
 				    Parent_View 	@80
@@ -1741,7 +1745,7 @@
 				    supplier   	@71
 				    vertices   	(list Points
 					(573, 939)
-					(754, 1011))
+					(752, 1009))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$59" @85
 				    Parent_View 	@83
@@ -1780,7 +1784,7 @@
 				    supplier   	@72
 				    vertices   	(list Points
 					(521, 1040)
-					(649, 1174))
+					(648, 1174))
 				    line_style 	0)
 				(object RoleView "$UNNAMED$62" @88
 				    Parent_View 	@86
@@ -1792,7 +1796,7 @@
 				    supplier   	@73
 				    vertices   	(list Points
 					(521, 1040)
-					(393, 907))
+					(422, 938))
 				    line_style 	0))))))))
     logical_presentations 	(list unit_reference_list
 	(object UseCaseDiagram "资源管理"
@@ -1830,7 +1834,7 @@
 		    width      	300
 		    height     	180)
 		(object CategoryView "Use Case View::Use-Case Model::Use Cases::后台::资源管理子系统::测试资源库" @90
-		    location   	(336, 592)
+		    location   	(336, 576)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -1842,7 +1846,7 @@
 			default_color 	TRUE)
 		    label      	(object ItemLabel
 			Parent_View 	@90
-			location   	(192, 508)
+			location   	(192, 492)
 			fill_color 	13434879
 			nlines     	2
 			max_width  	288
@@ -1936,8 +1940,8 @@
 		    client     	@90
 		    supplier   	@89
 		    vertices   	(list Points
-			(486, 538)
-			(1097, 324))
+			(486, 524)
+			(1097, 321))
 		    line_style 	0)
 		(object ImportView "" @95
 		    stereotype 	TRUE
