@@ -309,7 +309,7 @@
 								    location   	(208, 880)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -2575,7 +2575,7 @@
 									    location   	(288, 816)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	327
+									    max_width  	362
 									    justify    	0
 									    label      	"学院考试组卷人员")
 									icon       	"Actor"
@@ -2923,7 +2923,7 @@
 									    location   	(208, 784)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	327
+									    max_width  	362
 									    justify    	0
 									    label      	"学院考试组卷人员")
 									icon       	"Actor"
@@ -3147,7 +3147,7 @@
 								    location   	(192, 752)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"学院考试组卷人员")
 								icon       	"Actor"
@@ -3504,7 +3504,7 @@
 								    location   	(176, 784)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"学院考试组卷人员")
 								icon       	"Actor"
@@ -3892,7 +3892,7 @@
 								    location   	(400, 736)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"学院考试组卷人员")
 								icon       	"Actor"
@@ -4208,7 +4208,7 @@
 								    location   	(160, 704)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"阅卷老师")
 								icon       	"Actor"
@@ -4480,7 +4480,7 @@
 								    location   	(224, 800)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"阅卷老师")
 								icon       	"Actor"
@@ -5129,7 +5129,7 @@
 								    location   	(304, 992)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"资源库管理员")
 								icon       	"Actor"
@@ -5636,7 +5636,7 @@
 								    location   	(256, 960)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"资源库管理员")
 								icon       	"Actor"
@@ -5987,7 +5987,7 @@
 								    location   	(208, 1072)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"资源库管理员")
 								icon       	"Actor"
@@ -6375,7 +6375,7 @@
 								    location   	(336, 1008)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"资源库管理员")
 								icon       	"Actor"
@@ -6940,7 +6940,7 @@
 								    location   	(544, 944)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -7217,7 +7217,7 @@
 								    location   	(528, 944)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -7490,7 +7490,7 @@
 								    location   	(560, 944)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -9689,7 +9689,7 @@
 								    location   	(672, 1024)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -9962,7 +9962,7 @@
 								    location   	(896, 992)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -10781,7 +10781,7 @@
 									    location   	(368, 752)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	327
+									    max_width  	362
 									    justify    	0
 									    label      	"资源库管理员")
 									icon       	"Actor"
@@ -11051,7 +11051,7 @@
 									    location   	(592, 960)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	327
+									    max_width  	362
 									    justify    	0
 									    label      	"资源库管理员")
 									icon       	"Actor"
@@ -11455,7 +11455,7 @@
 								    location   	(320, 848)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"资源库管理员")
 								icon       	"Actor"
@@ -11846,7 +11846,7 @@
 								    location   	(304, 912)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"资源库管理员")
 								icon       	"Actor"
@@ -12346,7 +12346,7 @@
 								    location   	(512, 1024)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -12635,7 +12635,7 @@
 								    location   	(544, 992)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -12792,7 +12792,7 @@
 								    location   	(656, 944)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -13026,7 +13026,7 @@
 								    location   	(544, 992)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -13223,7 +13223,7 @@
 								    location   	(560, 1024)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -13380,7 +13380,7 @@
 								    location   	(592, 1040)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -13604,7 +13604,7 @@
 								    location   	(624, 928)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -13762,7 +13762,7 @@
 								    location   	(800, 1040)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -14251,7 +14251,7 @@
 								    location   	(224, 896)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -14558,7 +14558,7 @@
 								    location   	(272, 1008)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -14867,7 +14867,7 @@
 								    location   	(256, 960)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -15137,7 +15137,7 @@
 								    location   	(256, 880)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -15333,7 +15333,7 @@
 								    location   	(272, 720)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -15525,7 +15525,7 @@
 								    location   	(160, 704)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -15795,7 +15795,7 @@
 								    location   	(160, 880)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -16354,7 +16354,7 @@
 								    location   	(224, 752)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -16852,7 +16852,7 @@
 								    location   	(144, 1120)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -17322,7 +17322,7 @@
 								    location   	(144, 656)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"教师")
 								icon       	"Actor"
@@ -17560,7 +17560,7 @@
 								    location   	(144, 688)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -18009,7 +18009,7 @@
 								    location   	(240, 1008)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -18442,7 +18442,7 @@
 								    location   	(208, 720)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -18641,7 +18641,7 @@
 								    location   	(256, 960)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -18840,7 +18840,7 @@
 								    location   	(176, 736)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	327
+								    max_width  	362
 								    justify    	0
 								    label      	"管理员")
 								icon       	"Actor"
@@ -19901,7 +19901,7 @@
 					    location   	(224, 560)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"IT中心")
 					icon       	"Actor"
@@ -19929,7 +19929,7 @@
 					    location   	(496, 528)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"中心主任")
 					icon       	"Actor"
@@ -19957,7 +19957,7 @@
 					    location   	(336, 992)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"临时角色")
 					icon       	"Actor"
@@ -19985,7 +19985,7 @@
 					    location   	(1440, 1712)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"学院考试组卷人员")
 					icon       	"Actor"
@@ -20013,7 +20013,7 @@
 					    location   	(1408, 944)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"审核人员")
 					icon       	"Actor"
@@ -20041,7 +20041,7 @@
 					    location   	(1312, 576)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"市场经理")
 					icon       	"Actor"
@@ -20069,7 +20069,7 @@
 					    location   	(928, 1360)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"教学培训管理员")
 					icon       	"Actor"
@@ -20097,7 +20097,7 @@
 					    location   	(1584, 1312)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"教师")
 					icon       	"Actor"
@@ -20125,7 +20125,7 @@
 					    location   	(1584, 592)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"普通学员")
 					icon       	"Actor"
@@ -20153,7 +20153,7 @@
 					    location   	(1952, 608)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"权威知识管理")
 					icon       	"Actor"
@@ -20181,7 +20181,7 @@
 					    location   	(928, 928)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"管理员")
 					icon       	"Actor"
@@ -20209,7 +20209,7 @@
 					    location   	(1200, 1312)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"编辑人员")
 					icon       	"Actor"
@@ -20237,7 +20237,7 @@
 					    location   	(800, 528)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"网站运营主管")
 					icon       	"Actor"
@@ -20265,7 +20265,7 @@
 					    location   	(624, 1264)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"资源库管理员")
 					icon       	"Actor"
@@ -20293,7 +20293,7 @@
 					    location   	(1072, 528)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"销售人员")
 					icon       	"Actor"
@@ -20321,7 +20321,7 @@
 					    location   	(1808, 1680)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	327
+					    max_width  	362
 					    justify    	0
 					    label      	"阅卷老师")
 					icon       	"Actor"
@@ -23342,7 +23342,7 @@
 							    location   	(448, 656)
 							    anchor_loc 	1
 							    nlines     	2
-							    max_width  	327
+							    max_width  	362
 							    justify    	0
 							    label      	"资源库管理员")
 							icon       	"Actor"
@@ -23661,7 +23661,7 @@
 							    location   	(640, 928)
 							    anchor_loc 	1
 							    nlines     	2
-							    max_width  	327
+							    max_width  	362
 							    justify    	0
 							    label      	"资源库管理员")
 							icon       	"Actor"
@@ -30212,7 +30212,7 @@
 		    (object Class_Category "基础数据管理子系统"
 			is_unit    	TRUE
 			is_loaded  	FALSE
-			file_name  	"F:\\实训安排\\项目文档\\精化阶段\\rose图\\基础数据管理子系统.cat"
+			file_name  	"F:\\实训安排\\项目文档\\精化阶段\\rose图\\分析\\基础数据管理子系统.cat"
 			quid       	"5EF953600168")
 		    (object Class_Category "教学管理子系统"
 			is_unit    	TRUE
@@ -30369,530 +30369,50 @@
 			exportControl 	"Public"
 			logical_models 	(list unit_reference_list
 			    (object Class_Category "内容管理"
-				quid       	"5EF98EF00115"
-				exportControl 	"Public"
-				logical_models 	(list unit_reference_list)
-				logical_presentations 	(list unit_reference_list
-				    (object ClassDiagram "内容管理"
-					quid       	"5EF98F12032B"
-					title      	"内容管理"
-					zoom       	100
-					max_height 	28350
-					max_width  	21600
-					origin_x   	2107
-					origin_y   	0
-					items      	(list diagram_item_list
-					    (object ClassView "Class" "Logical View::Analysis Model::内容管理::教师信息" @1402
-						ShowCompartmentStereotypes 	TRUE
-						IncludeAttribute 	TRUE
-						IncludeOperation 	TRUE
-						location   	(880, 496)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@1402
-						    location   	(781, 426)
-						    fill_color 	13434879
-						    nlines     	1
-						    max_width  	198
-						    justify    	0
-						    label      	"教师信息")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EF953AA01B6"
-						width      	216
-						height     	162
-						annotation 	8
-						autoResize 	TRUE)
-					    (object ClassView "Class" "Logical View::Analysis Model::内容管理::频道信息" @1403
-						ShowCompartmentStereotypes 	TRUE
-						IncludeAttribute 	TRUE
-						IncludeOperation 	TRUE
-						location   	(1504, 944)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@1403
-						    location   	(1405, 874)
-						    fill_color 	13434879
-						    nlines     	1
-						    max_width  	198
-						    justify    	0
-						    label      	"频道信息")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EF953BB0190"
-						width      	216
-						height     	162
-						annotation 	8
-						autoResize 	TRUE)
-					    (object ClassView "Class" "Logical View::Analysis Model::内容管理::分类信息" @1404
-						ShowCompartmentStereotypes 	TRUE
-						IncludeAttribute 	TRUE
-						IncludeOperation 	TRUE
-						location   	(2128, 528)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@1404
-						    location   	(2128, 684)
-						    anchor_loc 	1
-						    nlines     	2
-						    max_width  	432
-						    justify    	0
-						    label      	"分类信息")
-						icon       	"entity"
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EF953B20020"
-						height     	154
-						annotation 	8
-						autoResize 	TRUE)
-					    (object AssociationViewNew "" @1405
-						location   	(1831, 722)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EF95C48010C"
-						roleview_list 	(list RoleViews
-						    (object RoleView "" @1406
-							Parent_View 	@1405
-							location   	(663, 418)
-							font       	(object Font
-							    size       	9
-							    face       	"Arial"
-							    bold       	FALSE
-							    italics    	FALSE
-							    underline  	FALSE
-							    strike     	FALSE
-							    color      	0
-							    default_color 	TRUE)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5EF95C4900A1"
-							client     	@1405
-							supplier   	@1403
-							vertices   	(list Points
-							    (1831, 722)
-							    (1612, 868))
-							line_style 	0
-							label      	(object SegLabel @1407
-							    Parent_View 	@1406
-							    location   	(1665, 900)
-							    font       	(object Font
-								size       	9
-								face       	"Arial"
-								bold       	FALSE
-								italics    	FALSE
-								underline  	FALSE
-								strike     	FALSE
-								color      	0
-								default_color 	TRUE)
-							    anchor     	2
-							    anchor_loc 	1
-							    nlines     	1
-							    max_width  	15
-							    justify    	0
-							    label      	"1..n"
-							    pctDist    	0.900000
-							    height     	54
-							    orientation 	0))
-						    (object RoleView "" @1408
-							Parent_View 	@1405
-							location   	(663, 418)
-							font       	(object Font
-							    size       	9
-							    face       	"Arial"
-							    bold       	FALSE
-							    italics    	FALSE
-							    underline  	FALSE
-							    strike     	FALSE
-							    color      	0
-							    default_color 	TRUE)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5EF95C4900A6"
-							client     	@1405
-							supplier   	@1404
-							vertices   	(list Points
-							    (1831, 722)
-							    (2052, 575))
-							line_style 	0
-							label      	(object SegLabel @1409
-							    Parent_View 	@1408
-							    location   	(2057, 634)
-							    font       	(object Font
-								size       	9
-								face       	"Arial"
-								bold       	FALSE
-								italics    	FALSE
-								underline  	FALSE
-								strike     	FALSE
-								color      	0
-								default_color 	TRUE)
-							    anchor     	2
-							    anchor_loc 	1
-							    nlines     	1
-							    max_width  	15
-							    justify    	0
-							    label      	"1"
-							    pctDist    	0.900000
-							    height     	54
-							    orientation 	1))))))))
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"F:\\实训安排\\项目文档\\精化阶段\\rose图\\设计\\内容管理.cat"
+				quid       	"5EF98EF00115")
 			    (object Class_Category "测评考试子系统"
-				quid       	"5EF990D0026D"
-				exportControl 	"Public"
-				logical_models 	(list unit_reference_list)
-				logical_presentations 	(list unit_reference_list
-				    (object ClassDiagram "测评考试"
-					quid       	"5EF9A29C036A"
-					title      	"测评考试"
-					zoom       	100
-					max_height 	28350
-					max_width  	21600
-					origin_x   	0
-					origin_y   	0
-					items      	(list diagram_item_list))))
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"F:\\实训安排\\项目文档\\精化阶段\\rose图\\设计\\测评考试子系统.cat"
+				quid       	"5EF990D0026D")
 			    (object Class_Category "基础数据管理子系统"
-				quid       	"5EF990E9003A"
-				exportControl 	"Public"
-				logical_models 	(list unit_reference_list)
-				logical_presentations 	(list unit_reference_list
-				    (object ClassDiagram "基础数据管理"
-					quid       	"5EF9A27400A3"
-					title      	"基础数据管理"
-					zoom       	100
-					max_height 	28350
-					max_width  	21600
-					origin_x   	0
-					origin_y   	0
-					items      	(list diagram_item_list
-					    (object ClassView "Class" "Logical View::Analysis Model::基础数据管理子系统::计划信息" @1410
-						ShowCompartmentStereotypes 	TRUE
-						IncludeAttribute 	TRUE
-						IncludeOperation 	TRUE
-						location   	(512, 368)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@1410
-						    location   	(512, 524)
-						    anchor_loc 	1
-						    nlines     	2
-						    max_width  	427
-						    justify    	0
-						    label      	"计划信息")
-						icon       	"entity"
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EF9B71C0251"
-						height     	154
-						annotation 	8
-						autoResize 	TRUE)
-					    (object ClassView "Class" "Logical View::Analysis Model::基础数据管理子系统::教学方向信息" @1411
-						ShowCompartmentStereotypes 	TRUE
-						IncludeAttribute 	TRUE
-						IncludeOperation 	TRUE
-						location   	(1040, 416)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@1411
-						    location   	(883, 346)
-						    fill_color 	13434879
-						    nlines     	1
-						    max_width  	314
-						    justify    	0
-						    label      	"教学方向信息")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EF9B7C3038C"
-						width      	332
-						height     	162
-						annotation 	8
-						autoResize 	TRUE)
-					    (object ClassView "Class" "Logical View::Analysis Model::基础数据管理子系统::课表时间信息" @1412
-						ShowCompartmentStereotypes 	TRUE
-						IncludeAttribute 	TRUE
-						IncludeOperation 	TRUE
-						location   	(1648, 448)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@1412
-						    location   	(1491, 378)
-						    fill_color 	13434879
-						    nlines     	1
-						    max_width  	314
-						    justify    	0
-						    label      	"课表时间信息")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EF9B7DE0356"
-						width      	332
-						height     	162
-						annotation 	8
-						autoResize 	TRUE)
-					    (object ClassView "Class" "Logical View::Analysis Model::基础数据管理子系统::课程信息" @1413
-						ShowCompartmentStereotypes 	TRUE
-						IncludeAttribute 	TRUE
-						IncludeOperation 	TRUE
-						location   	(2480, 496)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@1413
-						    location   	(2323, 426)
-						    fill_color 	13434879
-						    nlines     	1
-						    max_width  	314
-						    justify    	0
-						    label      	"课程信息")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EF9B756011A"
-						width      	332
-						height     	162
-						annotation 	8
-						autoResize 	TRUE)
-					    (object ClassView "Class" "Logical View::Analysis Model::基础数据管理子系统::问题信息" @1414
-						ShowCompartmentStereotypes 	TRUE
-						IncludeAttribute 	TRUE
-						IncludeOperation 	TRUE
-						location   	(912, 784)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@1414
-						    location   	(755, 714)
-						    fill_color 	13434879
-						    nlines     	1
-						    max_width  	314
-						    justify    	0
-						    label      	"问题信息")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EF9B77200C7"
-						width      	332
-						height     	162
-						annotation 	8
-						autoResize 	TRUE)
-					    (object ClassView "Class" "Logical View::Analysis Model::基础数据管理子系统::知识信息" @1415
-						ShowCompartmentStereotypes 	TRUE
-						IncludeAttribute 	TRUE
-						IncludeOperation 	TRUE
-						location   	(1632, 832)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@1415
-						    location   	(1475, 762)
-						    fill_color 	13434879
-						    nlines     	1
-						    max_width  	314
-						    justify    	0
-						    label      	"知识信息")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EF9B769038A"
-						width      	332
-						height     	162
-						annotation 	8
-						autoResize 	TRUE)
-					    (object ClassView "Class" "Logical View::Analysis Model::基础数据管理子系统::字典表信息" @1416
-						ShowCompartmentStereotypes 	TRUE
-						IncludeAttribute 	TRUE
-						IncludeOperation 	TRUE
-						location   	(2048, 800)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@1416
-						    location   	(1891, 730)
-						    fill_color 	13434879
-						    nlines     	1
-						    max_width  	314
-						    justify    	0
-						    label      	"字典表信息")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EF9B7D70270"
-						width      	332
-						height     	162
-						annotation 	8
-						autoResize 	TRUE)))))
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"F:\\实训安排\\项目文档\\精化阶段\\rose图\\设计\\基础数据管理子系统.cat"
+				quid       	"5EF990E9003A")
 			    (object Class_Category "教学管理子系统"
-				quid       	"5EF9912C0325"
-				exportControl 	"Public"
-				logical_models 	(list unit_reference_list)
-				logical_presentations 	(list unit_reference_list
-				    (object ClassDiagram "教学管理"
-					quid       	"5EF9A2DB0042"
-					title      	"教学管理"
-					zoom       	100
-					max_height 	28350
-					max_width  	21600
-					origin_x   	0
-					origin_y   	0
-					items      	(list diagram_item_list))))
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"F:\\实训安排\\项目文档\\精化阶段\\rose图\\设计\\教学管理子系统.cat"
+				quid       	"5EF9912C0325")
 			    (object Class_Category "就业培训管理子系统"
-				quid       	"5EF99141003C"
-				exportControl 	"Public"
-				logical_models 	(list unit_reference_list)
-				logical_presentations 	(list unit_reference_list
-				    (object ClassDiagram "就业培训管理"
-					quid       	"5EF9A2ED0122"
-					title      	"就业培训管理"
-					zoom       	100
-					max_height 	28350
-					max_width  	21600
-					origin_x   	0
-					origin_y   	0
-					items      	(list diagram_item_list))))
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"F:\\实训安排\\项目文档\\精化阶段\\rose图\\设计\\就业培训管理子系统.cat"
+				quid       	"5EF99141003C")
 			    (object Class_Category "统计分析子系统"
-				quid       	"5EF991500375"
-				exportControl 	"Public"
-				logical_models 	(list unit_reference_list)
-				logical_presentations 	(list unit_reference_list
-				    (object ClassDiagram "统计分析"
-					quid       	"5EF9A30B03C3"
-					title      	"统计分析"
-					zoom       	100
-					max_height 	28350
-					max_width  	21600
-					origin_x   	0
-					origin_y   	0
-					items      	(list diagram_item_list))))
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"F:\\实训安排\\项目文档\\精化阶段\\rose图\\设计\\统计分析子系统.cat"
+				quid       	"5EF991500375")
 			    (object Class_Category "系统管理"
-				quid       	"5EF99163024D"
-				exportControl 	"Public"
-				logical_models 	(list unit_reference_list)
-				logical_presentations 	(list unit_reference_list
-				    (object ClassDiagram "系统管理"
-					quid       	"5EF9A3250190"
-					title      	"系统管理"
-					zoom       	100
-					max_height 	28350
-					max_width  	21600
-					origin_x   	0
-					origin_y   	0
-					items      	(list diagram_item_list))))
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"F:\\实训安排\\项目文档\\精化阶段\\rose图\\设计\\系统管理.cat"
+				quid       	"5EF99163024D")
 			    (object Class_Category "知识管理子系统"
-				quid       	"5EF9917E028B"
-				exportControl 	"Public"
-				logical_models 	(list unit_reference_list)
-				logical_presentations 	(list unit_reference_list
-				    (object ClassDiagram "知识管理"
-					quid       	"5EF9A3310349"
-					title      	"知识管理"
-					zoom       	100
-					max_height 	28350
-					max_width  	21600
-					origin_x   	0
-					origin_y   	0
-					items      	(list diagram_item_list))))
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"F:\\实训安排\\项目文档\\精化阶段\\rose图\\设计\\知识管理子系统.cat"
+				quid       	"5EF9917E028B")
 			    (object Class_Category "资源管理子系统"
-				quid       	"5EF9918C011D"
-				exportControl 	"Public"
-				logical_models 	(list unit_reference_list)
-				logical_presentations 	(list unit_reference_list
-				    (object ClassDiagram "资源管理"
-					quid       	"5EF9A33C03A4"
-					title      	"资源管理"
-					zoom       	100
-					max_height 	28350
-					max_width  	21600
-					origin_x   	0
-					origin_y   	0
-					items      	(list diagram_item_list)))))
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"F:\\实训安排\\项目文档\\精化阶段\\rose图\\设计\\资源管理子系统.cat"
+				quid       	"5EF9918C011D"))
 			logical_presentations 	(list unit_reference_list))
 		    (object Class_Category "控制层"
 			quid       	"5EF9482E00B8"
@@ -30954,7 +30474,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object NoteView @1417
+			    (object NoteView @1402
 				location   	(672, 304)
 				font       	(object Font
 				    size       	9
@@ -30966,7 +30486,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@1417
+				    Parent_View 	@1402
 				    location   	(28, 19)
 				    fill_color 	13434879
 				    nlines     	13
@@ -30990,7 +30510,7 @@
 				fill_color 	13434879
 				width      	1313
 				height     	582)
-			    (object NoteView @1418
+			    (object NoteView @1403
 				location   	(1696, 160)
 				font       	(object Font
 				    size       	9
@@ -31002,7 +30522,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@1418
+				    Parent_View 	@1403
 				    location   	(1358, 29)
 				    fill_color 	13434879
 				    nlines     	5
@@ -31038,7 +30558,7 @@
 			origin_x   	1356
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object CategoryView "Logical View::Design Model::控制层" @1419
+			    (object CategoryView "Logical View::Design Model::控制层" @1404
 				location   	(1568, 672)
 				font       	(object Font
 				    size       	9
@@ -31050,7 +30570,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@1419
+				    Parent_View 	@1404
 				    location   	(1424, 588)
 				    fill_color 	13434879
 				    nlines     	2
@@ -31063,7 +30583,7 @@
 				quidu      	"5EF9482E00B8"
 				width      	300
 				height     	180)
-			    (object CategoryView "Logical View::Design Model::数据层" @1420
+			    (object CategoryView "Logical View::Design Model::数据层" @1405
 				location   	(1600, 1568)
 				font       	(object Font
 				    size       	9
@@ -31075,7 +30595,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@1420
+				    Parent_View 	@1405
 				    location   	(1456, 1484)
 				    fill_color 	13434879
 				    nlines     	2
@@ -31088,7 +30608,7 @@
 				quidu      	"5EF948490050"
 				width      	300
 				height     	180)
-			    (object CategoryView "Logical View::Design Model::边界层 " @1421
+			    (object CategoryView "Logical View::Design Model::边界层 " @1406
 				location   	(1568, 224)
 				font       	(object Font
 				    size       	9
@@ -31100,7 +30620,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@1421
+				    Parent_View 	@1406
 				    location   	(1424, 140)
 				    fill_color 	13434879
 				    nlines     	2
@@ -31113,7 +30633,7 @@
 				quidu      	"34E3686A00F0"
 				width      	300
 				height     	180)
-			    (object CategoryView "Logical View::Design Model::服务层" @1422
+			    (object CategoryView "Logical View::Design Model::服务层" @1407
 				location   	(1584, 1120)
 				font       	(object Font
 				    size       	9
@@ -31125,7 +30645,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@1422
+				    Parent_View 	@1407
 				    location   	(1440, 1036)
 				    fill_color 	13434879
 				    nlines     	2
@@ -31138,32 +30658,32 @@
 				quidu      	"5EF949580338"
 				width      	300
 				height     	180)
-			    (object ImportView "" @1423
+			    (object ImportView "" @1408
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5EF9489B03AB"
-				client     	@1421
-				supplier   	@1419
+				client     	@1406
+				supplier   	@1404
 				vertices   	(list Points
 				    (1568, 314)
 				    (1568, 527))
 				line_style 	0)
-			    (object ImportView "" @1424
+			    (object ImportView "" @1409
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5EF9489F002D"
-				client     	@1419
-				supplier   	@1422
+				client     	@1404
+				supplier   	@1407
 				vertices   	(list Points
 				    (1571, 762)
 				    (1578, 975))
 				line_style 	0)
-			    (object ImportView "" @1425
+			    (object ImportView "" @1410
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5EF94978031B"
-				client     	@1422
-				supplier   	@1420
+				client     	@1407
+				supplier   	@1405
 				vertices   	(list Points
 				    (1587, 1210)
 				    (1594, 1423))
@@ -31189,7 +30709,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object NoteView @1426
+		    (object NoteView @1411
 			location   	(768, 384)
 			font       	(object Font
 			    size       	9
@@ -31201,7 +30721,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@1426
+			    Parent_View 	@1411
 			    location   	(121, 96)
 			    fill_color 	13434879
 			    nlines     	14
@@ -31261,7 +30781,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object NoteView @1427
+			    (object NoteView @1412
 				location   	(624, 160)
 				font       	(object Font
 				    size       	9
@@ -31273,7 +30793,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@1427
+				    Parent_View 	@1412
 				    location   	(21, 26)
 				    fill_color 	13434879
 				    nlines     	5
@@ -31300,7 +30820,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object SubSysView "Component View::Implementation Model" @1428
+		    (object SubSysView "Component View::Implementation Model" @1413
 			location   	(736, 800)
 			font       	(object Font
 			    size       	9
@@ -31312,7 +30832,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@1428
+			    Parent_View 	@1413
 			    location   	(552, 713)
 			    fill_color 	13434879
 			    nlines     	2
@@ -31375,7 +30895,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object ProcessorView "<processor name>" @1429
+		    (object ProcessorView "<processor name>" @1414
 			location   	(512, 1056)
 			font       	(object Font
 			    size       	9
@@ -31387,7 +30907,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@1429
+			    Parent_View 	@1414
 			    location   	(276, 900)
 			    nlines     	2
 			    max_width  	400
@@ -31398,7 +30918,7 @@
 			width      	475
 			height     	381
 			annotation 	3)
-		    (object DeviceView "<device name>" @1430
+		    (object DeviceView "<device name>" @1415
 			location   	(1040, 1056)
 			font       	(object Font
 			    size       	9
@@ -31410,7 +30930,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@1430
+			    Parent_View 	@1415
 			    location   	(867, 950)
 			    nlines     	2
 			    max_width  	275
@@ -31421,16 +30941,16 @@
 			width      	350
 			height     	282
 			annotation 	0)
-		    (object ConnectionView "" @1431
+		    (object ConnectionView "" @1416
 			stereotype 	TRUE
 			quidu      	"34DBBD4B008C"
-			client     	@1429
-			supplier   	@1430
+			client     	@1414
+			supplier   	@1415
 			vertices   	(list Points
 			    (718, 1056)
 			    (865, 1056))
 			line_style 	0)
-		    (object NoteView @1432
+		    (object NoteView @1417
 			location   	(816, 304)
 			font       	(object Font
 			    size       	9
@@ -31442,7 +30962,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@1432
+			    Parent_View 	@1417
 			    location   	(38, 29)
 			    fill_color 	13434879
 			    nlines     	11
