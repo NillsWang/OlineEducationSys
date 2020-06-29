@@ -1,0 +1,25 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "就业培训管理子系统"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EF9538903D8"
+    external_docs 	(list external_doc_list
+	(object external_doc
+	    external_doc_path 	"F:\\git仓库\\OlineEducationSys\\practical_exloir\\先启阶段\\用例模型\\系统建模\\软件实现规约_就业培训管理子系统.doc"))
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list)
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "就业培训管理"
+	    quid       	"5EF95DC70397"
+	    title      	"就业培训管理"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list))))

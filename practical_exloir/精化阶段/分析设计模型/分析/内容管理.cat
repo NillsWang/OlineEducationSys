@@ -1,0 +1,675 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "内容管理"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EF9539C022F"
+    external_docs 	(list external_doc_list
+	(object external_doc
+	    external_doc_path 	"F:\\git仓库\\OlineEducationSys\\practical_exloir\\先启阶段\\用例模型\\系统建模\\软件实现规约_内容管理.doc"))
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "教师信息"
+	    quid       	"5EF953AA01B6")
+	(object Class "分类信息"
+	    quid       	"5EF953B20020"
+	    stereotype 	"entity")
+	(object Class "频道信息"
+	    quid       	"5EF953BB0190")
+	(object Class_Category "类别管理"
+	    quid       	"5EF9A8CA03C9"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class_Category "创建大类"
+		    quid       	"5EF9A8D60349"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list
+			(object Class "新建大类边界类"
+			    quid       	"5EF9ABC60220"
+			    stereotype 	"boundary")
+			(object Class "新建大类控制类"
+			    quid       	"5EF9AC110103"
+			    stereotype 	"control")
+			(object UseCase "新建大类"
+			    quid       	"5EF9A8E5035E"
+			    stereotype 	"use-case realization"
+			    external_docs 	(list external_doc_list
+				(object external_doc
+				    external_doc_path 	"F:\\git仓库\\OlineEducationSys\\practical_exloir\\先启阶段\\用例模型\\系统建模\\软件实现规约_内容管理.doc"))
+			    realized_interfaces 	(list realize_rel_list
+				(object Realize_Relationship
+				    quid       	"5EF9A94400FE"
+				    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::内容管理::类别管理::新建大类"
+				    quidu      	"5EF0225F0352"))
+			    logical_models 	(list unit_reference_list
+				(object Mechanism @1
+				    logical_models 	(list unit_reference_list
+					(object Object "$UNNAMED$0"
+					    quid       	"5EF9AD2A02A1"
+					    collaborators 	(list link_list
+						(object Link
+						    quid       	"5EF9AF160230"
+						    supplier   	"$UNNAMED$0"
+						    quidu      	"5EF9AD2A02A1"
+						    messages   	(list Messages
+							(object Message "检测数据"
+							    quid       	"5EF9AF160231"
+							    frequency  	"Aperiodic"
+							    synchronization 	"Simple"
+							    dir        	"FromClientToSupplier"
+							    sequence   	"1.1"
+							    ordinal    	1
+							    quidu      	"000000000000"
+							    creation   	FALSE)))
+						(object Link
+						    quid       	"5EF9AF620145"
+						    supplier   	"$UNNAMED$1"
+						    quidu      	"5EF9AD3D03CD"
+						    messages   	(list Messages
+							(object Message "接受数据"
+							    quid       	"5EF9AF620146"
+							    frequency  	"Aperiodic"
+							    synchronization 	"Simple"
+							    dir        	"FromClientToSupplier"
+							    sequence   	"1.1.1"
+							    ordinal    	2
+							    quidu      	"000000000000"
+							    creation   	FALSE)
+							(object Message "提示创建成功"
+							    quid       	"5EF9AF9402A5"
+							    frequency  	"Aperiodic"
+							    synchronization 	"Simple"
+							    dir        	"ToClientFromSupplier"
+							    sequence   	"1.1.1.3"
+							    ordinal    	5
+							    quidu      	"000000000000"
+							    creation   	FALSE)
+							(object Message "接受成功"
+							    quid       	"5EF9B1B403A6"
+							    frequency  	"Aperiodic"
+							    synchronization 	"Return"
+							    dir        	"ToClientFromSupplier"
+							    sequence   	"1.1.1.1"
+							    ordinal    	3
+							    quidu      	"000000000000"
+							    creation   	FALSE))))
+					    class      	"Logical View::Analysis Model::内容管理::类别管理::创建大类::新建大类边界类"
+					    quidu      	"5EF9ABC60220"
+					    persistence 	"Transient"
+					    creationObj 	TRUE
+					    multi      	FALSE)
+					(object Object "$UNNAMED$1"
+					    quid       	"5EF9AD3D03CD"
+					    collaborators 	(list link_list
+						(object Link
+						    quid       	"5EF9AF7403BD"
+						    supplier   	"$UNNAMED$2"
+						    quidu      	"5EF9AD470094"
+						    messages   	(list Messages
+							(object Message "存储数据"
+							    quid       	"5EF9AF7403BE"
+							    frequency  	"Aperiodic"
+							    synchronization 	"Simple"
+							    dir        	"FromClientToSupplier"
+							    sequence   	"1.1.1.2"
+							    ordinal    	4
+							    quidu      	"000000000000"
+							    creation   	FALSE))))
+					    class      	"Logical View::Analysis Model::内容管理::类别管理::创建大类::新建大类控制类"
+					    quidu      	"5EF9AC110103"
+					    persistence 	"Transient"
+					    creationObj 	TRUE
+					    multi      	FALSE)
+					(object Object "$UNNAMED$2"
+					    quid       	"5EF9AD470094"
+					    class      	"Logical View::Analysis Model::内容管理::分类信息"
+					    quidu      	"5EF953B20020"
+					    persistence 	"Transient"
+					    creationObj 	TRUE
+					    multi      	FALSE)
+					(object Object "$UNNAMED$3"
+					    quid       	"5EF9AD5B0291"
+					    collaborators 	(list link_list
+						(object Link
+						    quid       	"5EF9AEF50084"
+						    supplier   	"$UNNAMED$0"
+						    quidu      	"5EF9AD2A02A1"
+						    messages   	(list Messages
+							(object Message "输入大类名称"
+							    quid       	"5EF9AEF50085"
+							    frequency  	"Aperiodic"
+							    synchronization 	"Simple"
+							    dir        	"FromClientToSupplier"
+							    sequence   	"1"
+							    ordinal    	0
+							    quidu      	"000000000000"
+							    creation   	FALSE))))
+					    class      	"Use Case View::Business Use-Case Model::Actors::教师"
+					    quidu      	"5EEDB2970182"
+					    persistence 	"Transient"
+					    creationObj 	TRUE
+					    multi      	FALSE))))
+			    logical_presentations 	(list unit_reference_list
+				(object InteractionDiagram "新建大类"
+				    mechanism_ref 	@1
+				    quid       	"5EF9ACE100D3"
+				    title      	"新建大类"
+				    zoom       	100
+				    max_height 	28350
+				    max_width  	21600
+				    origin_x   	1238
+				    origin_y   	0
+				    items      	(list diagram_item_list
+					(object InterObjView "$UNNAMED$3" @2
+					    location   	(208, 368)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	TRUE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						Parent_View 	@2
+						location   	(208, 391)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	360
+						justify    	0
+						label      	"")
+					    icon       	"Actor"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"5EF9AD5B0291"
+					    width      	120
+					    height     	816
+					    icon_height 	162
+					    icon_width 	120
+					    icon_y_offset 	0
+					    annotation 	1
+					    Focus_Of_Control 	(object Focus_Of_Control "" @3
+						location   	(208, 448)
+						line_color 	3342489
+						InterObjView 	@2
+						height     	122
+						y_coord    	32
+						Nested     	FALSE))
+					(object InterObjView "$UNNAMED$0" @4
+					    location   	(704, 352)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	TRUE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						Parent_View 	@4
+						location   	(704, 376)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	687
+						justify    	0
+						label      	"")
+					    icon       	"boundary"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"5EF9AD2A02A1"
+					    width      	229
+					    height     	828
+					    icon_height 	153
+					    icon_width 	229
+					    icon_y_offset 	0
+					    annotation 	1
+					    Focus_Of_Control 	(object Focus_Of_Control "" @5
+						location   	(704, 432)
+						line_color 	3342489
+						InterObjView 	@4
+						height     	108
+						y_coord    	18
+						Nested     	FALSE)
+					    Focus_Of_Control 	(object Focus_Of_Control "" @6
+						location   	(704, 480)
+						line_color 	3342489
+						InterObjView 	@4
+						height     	195
+						y_coord    	105
+						Nested     	TRUE)
+					    Focus_Of_Control 	(object Focus_Of_Control "" @7
+						location   	(704, 608)
+						line_color 	3342489
+						InterObjView 	@4
+						height     	308
+						y_coord    	218
+						Nested     	TRUE)
+					    Focus_Of_Control 	(object Focus_Of_Control "" @8
+						location   	(704, 816)
+						line_color 	3342489
+						InterObjView 	@4
+						height     	1
+						y_coord    	-89
+						Nested     	TRUE)
+					    Focus_Of_Control 	(object Focus_Of_Control "" @9
+						location   	(704, 1024)
+						line_color 	3342489
+						InterObjView 	@4
+						height     	90
+						y_coord    	0
+						Nested     	FALSE))
+					(object InterObjView "$UNNAMED$1" @10
+					    location   	(1200, 352)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	TRUE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						Parent_View 	@10
+						location   	(1200, 375)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	471
+						justify    	0
+						label      	"")
+					    icon       	"control"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"5EF9AD3D03CD"
+					    width      	157
+					    height     	832
+					    icon_height 	164
+					    icon_width 	157
+					    icon_y_offset 	0
+					    annotation 	1
+					    Focus_Of_Control 	(object Focus_Of_Control "" @11
+						location   	(1200, 432)
+						line_color 	3342489
+						InterObjView 	@10
+						height     	90
+						y_coord    	0
+						Nested     	FALSE)
+					    Focus_Of_Control 	(object Focus_Of_Control "" @12
+						location   	(1200, 720)
+						line_color 	3342489
+						InterObjView 	@10
+						height     	400
+						y_coord    	310
+						Nested     	FALSE))
+					(object InterObjView "$UNNAMED$2" @13
+					    location   	(1824, 336)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	TRUE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						Parent_View 	@13
+						location   	(1824, 360)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	462
+						justify    	0
+						label      	"")
+					    icon       	"entity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"5EF9AD470094"
+					    width      	154
+					    height     	848
+					    icon_height 	153
+					    icon_width 	154
+					    icon_y_offset 	0
+					    annotation 	1
+					    Focus_Of_Control 	(object Focus_Of_Control "" @14
+						location   	(1824, 416)
+						line_color 	3342489
+						InterObjView 	@13
+						height     	90
+						y_coord    	0
+						Nested     	FALSE)
+					    Focus_Of_Control 	(object Focus_Of_Control "" @15
+						location   	(1824, 928)
+						line_color 	3342489
+						InterObjView 	@13
+						height     	90
+						y_coord    	0
+						Nested     	FALSE))
+					(object InterMessView "输入大类名称" @16
+					    location   	(16, 480)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @17
+						Parent_View 	@16
+						location   	(455, 436)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						quidu      	"5EF9AEF50085"
+						anchor_loc 	1
+						nlines     	1
+						max_width  	276
+						justify    	0
+						label      	"输入大类名称"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    line_color 	3342489
+					    client     	@2
+					    supplier   	@4
+					    Focus_Src  	@3
+					    Focus_Entry 	@6
+					    origin     	(223, 480)
+					    terminus   	(688, 480)
+					    ordinal    	0)
+					(object SelfMessView "检测数据" @18
+					    location   	(16, 585)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @19
+						Parent_View 	@18
+						location   	(795, 541)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						quidu      	"5EF9AF160231"
+						anchor_loc 	1
+						nlines     	1
+						max_width  	201
+						justify    	0
+						label      	"检测数据"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    line_color 	3342489
+					    client     	@4
+					    supplier   	@4
+					    Focus_Src  	@6
+					    Focus_Entry 	@7
+					    origin     	(720, 585)
+					    terminus   	(870, 585)
+					    ordinal    	1)
+					(object InterMessView "接受数据" @20
+					    location   	(16, 715)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @21
+						Parent_View 	@20
+						location   	(951, 671)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						quidu      	"5EF9AF620146"
+						anchor_loc 	1
+						nlines     	1
+						max_width  	201
+						justify    	0
+						label      	"接受数据"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    line_color 	3342489
+					    client     	@4
+					    supplier   	@10
+					    Focus_Src  	@7
+					    Focus_Entry 	@12
+					    origin     	(719, 715)
+					    terminus   	(1184, 715)
+					    ordinal    	2)
+					(object InterMessView "存储数据" @22
+					    location   	(16, 925)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @23
+						Parent_View 	@22
+						location   	(1511, 881)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						quidu      	"5EF9AF7403BE"
+						anchor_loc 	1
+						nlines     	1
+						max_width  	201
+						justify    	0
+						label      	"存储数据"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    line_color 	3342489
+					    client     	@10
+					    supplier   	@13
+					    Focus_Src  	@12
+					    Focus_Entry 	@15
+					    origin     	(1215, 925)
+					    terminus   	(1808, 925)
+					    ordinal    	4)
+					(object InterMessView "提示创建成功" @24
+					    location   	(16, 1030)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @25
+						Parent_View 	@24
+						location   	(952, 986)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						quidu      	"5EF9AF9402A5"
+						anchor_loc 	1
+						nlines     	1
+						max_width  	276
+						justify    	0
+						label      	"提示创建成功"
+						pctDist    	0.500000
+						height     	45
+						orientation 	1)
+					    line_color 	3342489
+					    client     	@10
+					    supplier   	@4
+					    Focus_Src  	@12
+					    Focus_Entry 	@9
+					    origin     	(1184, 1030)
+					    terminus   	(720, 1030)
+					    ordinal    	5)
+					(object Destruction_Marker @26
+					    Parent_View 	@4
+					    location   	(704, 1180)
+					    line_color 	3342489
+					    fill_color 	13434879)
+					(object Destruction_Marker @27
+					    Parent_View 	@10
+					    location   	(1200, 1184)
+					    line_color 	3342489
+					    fill_color 	13434879)
+					(object InterMessView "接受成功" @28
+					    location   	(16, 820)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @29
+						Parent_View 	@28
+						location   	(952, 776)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						quidu      	"5EF9B1B403A6"
+						anchor_loc 	1
+						nlines     	1
+						max_width  	191
+						justify    	0
+						label      	"接受成功"
+						pctDist    	0.500000
+						height     	45
+						orientation 	1)
+					    line_color 	3342489
+					    client     	@10
+					    supplier   	@4
+					    Focus_Src  	@12
+					    Focus_Entry 	@8
+					    origin     	(1184, 820)
+					    terminus   	(720, 820)
+					    ordinal    	3))))))
+		    logical_presentations 	(list unit_reference_list
+			(object ClassDiagram "新建大类"
+			    quid       	"5EF9A90E00B8"
+			    title      	"新建大类"
+			    zoom       	100
+			    max_height 	28350
+			    max_width  	21600
+			    origin_x   	0
+			    origin_y   	0
+			    items      	(list diagram_item_list
+				(object UseCaseView "Logical View::Analysis Model::内容管理::类别管理::创建大类::新建大类" @30
+				    location   	(272, 656)
+				    font       	(object Font
+					size       	9
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@30
+					location   	(272, 797)
+					anchor_loc 	1
+					nlines     	2
+					max_width  	648
+					justify    	0
+					label      	"新建大类")
+				    icon       	"use-case realization"
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"5EF9A8E5035E")
+				(object UseCaseView "Use Case View::Use-Case Model::Use Cases::后台::内容管理::类别管理::新建大类" @31
+				    location   	(832, 656)
+				    font       	(object Font
+					size       	9
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@31
+					location   	(832, 794)
+					anchor_loc 	1
+					nlines     	2
+					max_width  	630
+					justify    	0
+					label      	"新建大类")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"5EF0225F0352")
+				(object RealizeView "" @32
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5EF9A94400FE"
+				    client     	@30
+				    supplier   	@31
+				    vertices   	(list Points
+					(383, 656)
+					(722, 656))
+				    line_style 	0))))))
+	    logical_presentations 	(list unit_reference_list)))
+    logical_presentations 	(list unit_reference_list))

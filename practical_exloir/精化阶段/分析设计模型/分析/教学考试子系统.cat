@@ -1,0 +1,16 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "测评考试子系统"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EF9534C0321"
+    external_docs 	(list external_doc_list
+	(object external_doc
+	    external_doc_path 	"F:\\git仓库\\OlineEducationSys\\practical_exloir\\先启阶段\\用例模型\\系统建模\\软件实现规约_测评考试.doc"))
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list)
+    logical_presentations 	(list unit_reference_list))

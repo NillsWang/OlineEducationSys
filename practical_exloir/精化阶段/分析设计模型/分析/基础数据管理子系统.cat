@@ -1,0 +1,645 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "基础数据管理子系统"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EF953600168"
+    external_docs 	(list external_doc_list
+	(object external_doc
+	    external_doc_path 	"F:\\git仓库\\OlineEducationSys\\practical_exloir\\先启阶段\\用例模型\\系统建模\\软件实现规约_基础数据管理子系统.doc"))
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "计划信息"
+	    quid       	"5EF9B71C0251"
+	    stereotype 	"entity")
+	(object Class "课程信息"
+	    quid       	"5EF9B756011A")
+	(object Class "知识信息"
+	    quid       	"5EF9B769038A")
+	(object Class "问题信息"
+	    quid       	"5EF9B77200C7")
+	(object Class "教学方向信息"
+	    quid       	"5EF9B7C3038C")
+	(object Class "字典表信息"
+	    quid       	"5EF9B7D70270")
+	(object Class "课表时间信息"
+	    quid       	"5EF9B7DE0356")
+	(object Class_Category "计划分类"
+	    quid       	"5EF9B8070320"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class_Category "显示计划类别"
+		    quid       	"5EF9B87502CA"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list
+			(object Class "显示计划类别控制类"
+			    quid       	"5EF9B9030109"
+			    stereotype 	"control")
+			(object Class "显示计划类别边界类"
+			    quid       	"5EF9B94301D4"
+			    stereotype 	"boundary")
+			(object UseCase "显示计划类别"
+			    quid       	"5EF9B8840399"
+			    stereotype 	"use-case realization"
+			    external_docs 	(list external_doc_list
+				(object external_doc
+				    external_doc_path 	"F:\\git仓库\\OlineEducationSys\\practical_exloir\\先启阶段\\用例模型\\系统建模\\软件实现规约_基础数据管理子系统.doc"))
+			    realized_interfaces 	(list realize_rel_list
+				(object Realize_Relationship
+				    quid       	"5EF9B8C70324"
+				    supplier   	"Use Case View::Use-Case Model::Use Cases::后台::就业培训管理子系统::计划(实训)管理::显示计划类别"
+				    quidu      	"5EED7B160051"))
+			    logical_models 	(list unit_reference_list
+				(object Mechanism @1
+				    logical_models 	(list unit_reference_list
+					(object Object "$UNNAMED$0"
+					    quid       	"5EF9B9850172"
+					    collaborators 	(list link_list
+						(object Link
+						    quid       	"5EF9B9FE0332"
+						    supplier   	"$UNNAMED$1"
+						    quidu      	"5EF9B9A90240"
+						    messages   	(list Messages
+							(object Message "显示申请"
+							    quid       	"5EF9B9FE0333"
+							    frequency  	"Aperiodic"
+							    synchronization 	"Simple"
+							    dir        	"FromClientToSupplier"
+							    sequence   	"1"
+							    ordinal    	0
+							    quidu      	"000000000000"
+							    creation   	FALSE))))
+					    class      	"Use Case View::Business Use-Case Model::Actors::管理员"
+					    quidu      	"5EEDB2D70399"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE)
+					(object Object "$UNNAMED$1"
+					    quid       	"5EF9B9A90240"
+					    collaborators 	(list link_list
+						(object Link
+						    quid       	"5EF9BA4800EB"
+						    supplier   	"$UNNAMED$2"
+						    quidu      	"5EF9B9B00002"
+						    messages   	(list Messages
+							(object Message "计划数据申请"
+							    quid       	"5EF9BA4800EC"
+							    frequency  	"Aperiodic"
+							    synchronization 	"Simple"
+							    dir        	"FromClientToSupplier"
+							    sequence   	"2"
+							    ordinal    	1
+							    quidu      	"000000000000"
+							    creation   	FALSE)
+							(object Message "数据显示"
+							    quid       	"5EF9BA8A0336"
+							    frequency  	"Aperiodic"
+							    synchronization 	"Simple"
+							    dir        	"ToClientFromSupplier"
+							    sequence   	"3.1"
+							    ordinal    	4
+							    quidu      	"000000000000"
+							    creation   	FALSE))))
+					    class      	"Logical View::Analysis Model::基础数据管理子系统::计划分类::显示计划类别::显示计划类别边界类"
+					    quidu      	"5EF9B94301D4"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE)
+					(object Object "$UNNAMED$2"
+					    quid       	"5EF9B9B00002"
+					    collaborators 	(list link_list
+						(object Link
+						    quid       	"5EF9BA6602F5"
+						    supplier   	"$UNNAMED$3"
+						    quidu      	"5EF9B9CC025B"
+						    messages   	(list Messages
+							(object Message "调用数据"
+							    quid       	"5EF9BA6602F6"
+							    frequency  	"Aperiodic"
+							    synchronization 	"Simple"
+							    dir        	"FromClientToSupplier"
+							    sequence   	"2.1"
+							    ordinal    	2
+							    quidu      	"000000000000"
+							    creation   	FALSE)
+							(object Message "返回数据"
+							    quid       	"5EF9BA7A02CC"
+							    frequency  	"Aperiodic"
+							    synchronization 	"Simple"
+							    dir        	"ToClientFromSupplier"
+							    sequence   	"3"
+							    ordinal    	3
+							    quidu      	"000000000000"
+							    creation   	FALSE))))
+					    class      	"Logical View::Analysis Model::基础数据管理子系统::计划分类::显示计划类别::显示计划类别控制类"
+					    quidu      	"5EF9B9030109"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE)
+					(object Object "$UNNAMED$3"
+					    quid       	"5EF9B9CC025B"
+					    class      	"Logical View::Analysis Model::基础数据管理子系统::计划信息"
+					    quidu      	"5EF9B71C0251"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE))))
+			    logical_presentations 	(list unit_reference_list
+				(object InteractionDiagram "显示计划类别"
+				    mechanism_ref 	@1
+				    quid       	"5EF9B9720127"
+				    title      	"显示计划类别"
+				    zoom       	100
+				    max_height 	28350
+				    max_width  	21600
+				    origin_x   	0
+				    origin_y   	0
+				    items      	(list diagram_item_list
+					(object InterObjView "$UNNAMED$0" @2
+					    location   	(256, 224)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	TRUE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						Parent_View 	@2
+						location   	(256, 247)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	360
+						justify    	0
+						label      	"")
+					    icon       	"Actor"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"5EF9B9850172"
+					    width      	120
+					    height     	911
+					    icon_height 	162
+					    icon_width 	120
+					    icon_y_offset 	0
+					    annotation 	1
+					    Focus_Of_Control 	(object Focus_Of_Control "" @3
+						location   	(256, 480)
+						line_color 	3342489
+						InterObjView 	@2
+						height     	90
+						y_coord    	0
+						Nested     	FALSE))
+					(object InterObjView "$UNNAMED$1" @4
+					    location   	(880, 224)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	TRUE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						Parent_View 	@4
+						location   	(880, 248)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	687
+						justify    	0
+						label      	"")
+					    icon       	"boundary"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"5EF9B9A90240"
+					    width      	229
+					    height     	895
+					    icon_height 	153
+					    icon_width 	229
+					    icon_y_offset 	0
+					    annotation 	1
+					    Focus_Of_Control 	(object Focus_Of_Control "" @5
+						location   	(880, 480)
+						line_color 	3342489
+						InterObjView 	@4
+						height     	90
+						y_coord    	0
+						Nested     	FALSE)
+					    Focus_Of_Control 	(object Focus_Of_Control "" @6
+						location   	(880, 592)
+						line_color 	3342489
+						InterObjView 	@4
+						height     	90
+						y_coord    	0
+						Nested     	FALSE)
+					    Focus_Of_Control 	(object Focus_Of_Control "" @7
+						location   	(880, 944)
+						line_color 	3342489
+						InterObjView 	@4
+						height     	90
+						y_coord    	0
+						Nested     	FALSE))
+					(object InterObjView "$UNNAMED$2" @8
+					    location   	(1600, 224)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	TRUE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						Parent_View 	@8
+						location   	(1600, 247)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	471
+						justify    	0
+						label      	"")
+					    icon       	"control"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"5EF9B9B00002"
+					    width      	157
+					    height     	911
+					    icon_height 	164
+					    icon_width 	157
+					    icon_y_offset 	0
+					    annotation 	1
+					    Focus_Of_Control 	(object Focus_Of_Control "" @9
+						location   	(1600, 592)
+						line_color 	3342489
+						InterObjView 	@8
+						height     	195
+						y_coord    	105
+						Nested     	FALSE)
+					    Focus_Of_Control 	(object Focus_Of_Control "" @10
+						location   	(1600, 832)
+						line_color 	3342489
+						InterObjView 	@8
+						height     	195
+						y_coord    	105
+						Nested     	FALSE))
+					(object InterObjView "$UNNAMED$3" @11
+					    location   	(2224, 240)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	TRUE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						Parent_View 	@11
+						location   	(2224, 264)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	462
+						justify    	0
+						label      	"")
+					    icon       	"entity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"5EF9B9CC025B"
+					    width      	154
+					    height     	895
+					    icon_height 	153
+					    icon_width 	154
+					    icon_y_offset 	0
+					    annotation 	1
+					    Focus_Of_Control 	(object Focus_Of_Control "" @12
+						location   	(2224, 704)
+						line_color 	3342489
+						InterObjView 	@11
+						height     	90
+						y_coord    	0
+						Nested     	FALSE)
+					    Focus_Of_Control 	(object Focus_Of_Control "" @13
+						location   	(2224, 832)
+						line_color 	3342489
+						InterObjView 	@11
+						height     	90
+						y_coord    	0
+						Nested     	FALSE))
+					(object InterMessView "显示申请" @14
+					    location   	(16, 480)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @15
+						Parent_View 	@14
+						location   	(567, 436)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						quidu      	"5EF9B9FE0333"
+						anchor_loc 	1
+						nlines     	1
+						max_width  	201
+						justify    	0
+						label      	"显示申请"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    line_color 	3342489
+					    client     	@2
+					    supplier   	@4
+					    Focus_Src  	@3
+					    Focus_Entry 	@5
+					    origin     	(271, 480)
+					    terminus   	(864, 480)
+					    ordinal    	0)
+					(object InterMessView "计划数据申请" @16
+					    location   	(16, 592)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @17
+						Parent_View 	@16
+						location   	(1239, 548)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						quidu      	"5EF9BA4800EC"
+						anchor_loc 	1
+						nlines     	1
+						max_width  	276
+						justify    	0
+						label      	"计划数据申请"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    line_color 	3342489
+					    client     	@4
+					    supplier   	@8
+					    Focus_Src  	@6
+					    Focus_Entry 	@9
+					    origin     	(895, 592)
+					    terminus   	(1584, 592)
+					    ordinal    	1)
+					(object InterMessView "调用数据" @18
+					    location   	(16, 697)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @19
+						Parent_View 	@18
+						location   	(1911, 653)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						quidu      	"5EF9BA6602F6"
+						anchor_loc 	1
+						nlines     	1
+						max_width  	201
+						justify    	0
+						label      	"调用数据"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    line_color 	3342489
+					    client     	@8
+					    supplier   	@11
+					    Focus_Src  	@9
+					    Focus_Entry 	@12
+					    origin     	(1615, 697)
+					    terminus   	(2208, 697)
+					    ordinal    	2)
+					(object InterMessView "返回数据" @20
+					    location   	(16, 832)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @21
+						Parent_View 	@20
+						location   	(1912, 788)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						quidu      	"5EF9BA7A02CC"
+						anchor_loc 	1
+						nlines     	1
+						max_width  	201
+						justify    	0
+						label      	"返回数据"
+						pctDist    	0.500000
+						height     	45
+						orientation 	1)
+					    line_color 	3342489
+					    client     	@11
+					    supplier   	@8
+					    Focus_Src  	@13
+					    Focus_Entry 	@10
+					    origin     	(2208, 832)
+					    terminus   	(1616, 832)
+					    ordinal    	3)
+					(object InterMessView "数据显示" @22
+					    location   	(16, 937)
+					    font       	(object Font
+						size       	9
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @23
+						Parent_View 	@22
+						location   	(1240, 893)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						quidu      	"5EF9BA8A0336"
+						anchor_loc 	1
+						nlines     	1
+						max_width  	201
+						justify    	0
+						label      	"数据显示"
+						pctDist    	0.500000
+						height     	45
+						orientation 	1)
+					    line_color 	3342489
+					    client     	@8
+					    supplier   	@4
+					    Focus_Src  	@10
+					    Focus_Entry 	@7
+					    origin     	(1584, 937)
+					    terminus   	(896, 937)
+					    ordinal    	4)
+					(object Destruction_Marker @24
+					    Parent_View 	@4
+					    location   	(880, 1119)
+					    line_color 	3342489
+					    fill_color 	13434879)
+					(object Destruction_Marker @25
+					    Parent_View 	@8
+					    location   	(1600, 1135)
+					    line_color 	3342489
+					    fill_color 	13434879))))))
+		    logical_presentations 	(list unit_reference_list
+			(object ClassDiagram "显示计划类别"
+			    quid       	"5EF9B8AC02C9"
+			    title      	"显示计划类别"
+			    zoom       	100
+			    max_height 	28350
+			    max_width  	21600
+			    origin_x   	0
+			    origin_y   	0
+			    items      	(list diagram_item_list
+				(object UseCaseView "Logical View::Analysis Model::基础数据管理子系统::计划分类::显示计划类别::显示计划类别" @26
+				    location   	(640, 672)
+				    font       	(object Font
+					size       	9
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@26
+					location   	(640, 813)
+					anchor_loc 	1
+					nlines     	2
+					max_width  	648
+					justify    	0
+					label      	"显示计划类别")
+				    icon       	"use-case realization"
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"5EF9B8840399")
+				(object UseCaseView "Use Case View::Use-Case Model::Use Cases::后台::基础数据管理子系统::计划分类::显示计划类别" @27
+				    location   	(1424, 656)
+				    font       	(object Font
+					size       	9
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@27
+					location   	(1424, 794)
+					anchor_loc 	1
+					nlines     	2
+					max_width  	630
+					justify    	0
+					label      	"显示计划类别")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"5EED7B160051")
+				(object RealizeView "" @28
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5EF9B8C70324"
+				    client     	@26
+				    supplier   	@27
+				    vertices   	(list Points
+					(751, 667)
+					(1314, 656))
+				    line_style 	0))))))
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "课表时间"
+	    quid       	"5EF9B81803E1"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "课程分类"
+	    quid       	"5EF9B8230049"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "问题分类"
+	    quid       	"5EF9B83203AA"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "知识分类"
+	    quid       	"5EF9B83B032F"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "专业方向"
+	    quid       	"5EF9B8480249"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "字典表"
+	    quid       	"5EF9B85302CD"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list)))
+    logical_presentations 	(list unit_reference_list))
