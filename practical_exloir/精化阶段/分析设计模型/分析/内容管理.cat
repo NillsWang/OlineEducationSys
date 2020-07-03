@@ -146,17 +146,9 @@
 		    quid       	"5EFC50AB02B1"
 		    documentation 	"类别的说明或详细信息"
 		    type       	"String")
-		(object ClassAttribute "content_id"
-		    quid       	"5EFC50C00344"
-		    documentation 	"每个类别下的内容id"
-		    type       	"String")
-		(object ClassAttribute "content_name"
-		    quid       	"5EFC58B6017B"
-		    documentation 	"内容的名称"
-		    type       	"String")
-		(object ClassAttribute "content_intro"
-		    quid       	"5EFC58D302FA"
-		    documentation 	"内容的说明或详细信息"
+		(object ClassAttribute "class_class"
+		    quid       	"5EFEE6B200BA"
+		    documentation 	"每个类别的级别，一级，二级等"
 		    type       	"String")))
 	(object Class "频道信息"
 	    quid       	"5EFC38DC0329"
@@ -166,12 +158,13 @@
 		    quid       	"5EFC564301F4"
 		    documentation 	"用户的id，首先需要获取用户的id，再进行权限的设置"
 		    type       	"Integer")
-		(object ClassAttribute "pd_name"
+		(object ClassAttribute "channel_name"
 		    quid       	"5EFC57C10056"
 		    documentation 	"频道以及子频道的名称，通过勾选频道的名称来设置或清除该用户的权限"
 		    type       	"String")
-		(object ClassAttribute "pd_id"
+		(object ClassAttribute "id"
 		    quid       	"5EFC700F0021"
+		    documentation 	"频道id"
 		    type       	"Integer")))
 	(object Association "$UNNAMED$0"
 	    quid       	"5EFC69E50064"
@@ -363,7 +356,7 @@
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @3
-						location   	(272, 336)
+						location   	(272, 333)
 						line_color 	3342489
 						InterObjView 	@2
 						height     	106
@@ -385,7 +378,7 @@
 						location   	(928, 264)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	651
+						max_width  	687
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -393,10 +386,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD23C6024E"
-					    width      	300
+					    width      	229
 					    height     	832
-					    icon_height 	141
-					    icon_width 	217
+					    icon_height 	153
+					    icon_width 	229
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @5
@@ -450,7 +443,7 @@
 						location   	(1536, 279)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	435
+						max_width  	471
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -458,10 +451,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD23CC012D"
-					    width      	300
+					    width      	157
 					    height     	832
-					    icon_height 	152
-					    icon_width 	145
+					    icon_height 	164
+					    icon_width 	157
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @11
@@ -501,7 +494,7 @@
 						location   	(2128, 280)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	426
+						max_width  	462
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -509,10 +502,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD23DB026C"
-					    width      	300
+					    width      	154
 					    height     	832
-					    icon_height 	141
-					    icon_width 	142
+					    icon_height 	153
+					    icon_width 	154
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @15
@@ -1004,13 +997,13 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD27BD015D"
 					    width      	300
-					    height     	1072
+					    height     	1068
 					    icon_height 	0
 					    icon_width 	0
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @35
-						location   	(288, 336)
+						location   	(288, 333)
 						line_color 	3342489
 						InterObjView 	@34
 						height     	138
@@ -1032,7 +1025,7 @@
 						location   	(848, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	290
+						max_width  	687
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -1040,7 +1033,7 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD27C003DE"
-					    width      	302
+					    width      	229
 					    height     	1094
 					    icon_height 	153
 					    icon_width 	229
@@ -1104,7 +1097,7 @@
 						location   	(1424, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	435
+						max_width  	471
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -1112,10 +1105,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD27C4037F"
-					    width      	300
-					    height     	1104
-					    icon_height 	152
-					    icon_width 	145
+					    width      	157
+					    height     	1100
+					    icon_height 	164
+					    icon_width 	157
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @44
@@ -1155,7 +1148,7 @@
 						location   	(2016, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	426
+						max_width  	462
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -1163,10 +1156,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD27CC00CA"
-					    width      	300
-					    height     	1104
-					    icon_height 	141
-					    icon_width 	142
+					    width      	154
+					    height     	1100
+					    icon_height 	153
+					    icon_width 	154
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @48
@@ -1423,7 +1416,7 @@
 					    fill_color 	13434879)
 					(object Destruction_Marker @62
 					    Parent_View 	@43
-					    location   	(1424, 1328)
+					    location   	(1424, 1324)
 					    line_color 	3342489
 					    fill_color 	13434879))))))
 		    logical_presentations 	(list unit_reference_list
@@ -1610,7 +1603,7 @@
 						    supplier   	"$UNNAMED$14"
 						    quidu      	"5EFD28C3013F"
 						    messages   	(list Messages
-							(object Message "删除并更新分类信息"
+							(object Message "删除分类信息"
 							    quid       	"5EFD30E00143"
 							    frequency  	"Aperiodic"
 							    synchronization 	"Simple"
@@ -1673,7 +1666,7 @@
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @68
-						location   	(240, 320)
+						location   	(240, 317)
 						line_color 	3342489
 						InterObjView 	@67
 						height     	122
@@ -1702,7 +1695,7 @@
 						location   	(864, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	651
+						max_width  	687
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -1710,10 +1703,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD28BC007C"
-					    width      	300
+					    width      	229
 					    height     	1126
-					    icon_height 	141
-					    icon_width 	217
+					    icon_height 	153
+					    icon_width 	229
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @71
@@ -1781,7 +1774,7 @@
 						location   	(1424, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	435
+						max_width  	471
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -1789,10 +1782,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD28C0011F"
-					    width      	300
+					    width      	157
 					    height     	1126
-					    icon_height 	152
-					    icon_width 	145
+					    icon_height 	164
+					    icon_width 	157
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @79
@@ -1832,7 +1825,7 @@
 						location   	(2048, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	426
+						max_width  	462
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -1840,10 +1833,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD28C3013F"
-					    width      	300
+					    width      	154
 					    height     	1126
-					    icon_height 	141
-					    icon_width 	142
+					    icon_height 	153
+					    icon_width 	154
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @83
@@ -2023,7 +2016,7 @@
 					    origin     	(1408, 953)
 					    terminus   	(880, 953)
 					    ordinal    	4)
-					(object InterMessView "删除并更新分类信息" @94
+					(object InterMessView "删除分类信息" @94
 					    location   	(16, 1072)
 					    font       	(object Font
 						size       	9
@@ -2049,9 +2042,9 @@
 						quidu      	"5EFD30E00143"
 						anchor_loc 	1
 						nlines     	1
-						max_width  	389
+						max_width  	276
 						justify    	0
-						label      	"删除并更新分类信息"
+						label      	"删除分类信息"
 						pctDist    	0.500000
 						height     	45
 						orientation 	0)
@@ -2351,7 +2344,7 @@
 				    origin_y   	0
 				    items      	(list diagram_item_list
 					(object InterObjView "$UNNAMED$15" @104
-					    location   	(256, 224)
+					    location   	(256, 225)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -2375,7 +2368,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2BFD02C6"
 					    width      	300
-					    height     	944
+					    height     	939
 					    icon_height 	0
 					    icon_width 	0
 					    icon_y_offset 	0
@@ -2403,7 +2396,7 @@
 						location   	(848, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	651
+						max_width  	687
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -2411,10 +2404,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2C010329"
-					    width      	300
-					    height     	944
-					    icon_height 	141
-					    icon_width 	217
+					    width      	229
+					    height     	940
+					    icon_height 	153
+					    icon_width 	229
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @107
@@ -2468,7 +2461,7 @@
 						location   	(1392, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	435
+						max_width  	471
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -2476,10 +2469,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2C040138"
-					    width      	300
-					    height     	944
-					    icon_height 	152
-					    icon_width 	145
+					    width      	157
+					    height     	940
+					    icon_height 	164
+					    icon_width 	157
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @113
@@ -2519,7 +2512,7 @@
 						location   	(1920, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	426
+						max_width  	462
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -2527,10 +2520,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2C090357"
-					    width      	300
-					    height     	944
-					    icon_height 	141
-					    icon_width 	142
+					    width      	154
+					    height     	940
+					    icon_height 	153
+					    icon_width 	154
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @117
@@ -2782,12 +2775,12 @@
 					    ordinal    	5)
 					(object Destruction_Marker @130
 					    Parent_View 	@106
-					    location   	(848, 1168)
+					    location   	(848, 1164)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @131
 					    Parent_View 	@112
-					    location   	(1392, 1168)
+					    location   	(1392, 1164)
 					    line_color 	3342489
 					    fill_color 	13434879))))))
 		    logical_presentations 	(list unit_reference_list
@@ -3068,7 +3061,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFC8B8C021B"
 					    width      	229
-					    height     	998
+					    height     	1000
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -3398,7 +3391,7 @@
 					    ordinal    	5)
 					(object Destruction_Marker @160
 					    Parent_View 	@138
-					    location   	(912, 1254)
+					    location   	(912, 1256)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @161
@@ -3511,7 +3504,7 @@
 				    supplier   	@165
 				    vertices   	(list Points
 					(703, 1002)
-					(1136, 863))
+					(927, 932))
 				    line_style 	0))))))
 	    logical_presentations 	(list unit_reference_list))
 	(object Class_Category "内容编辑"
@@ -3586,7 +3579,7 @@
 						    supplier   	"$UNNAMED$25"
 						    quidu      	"5EFD2CBD026C"
 						    messages   	(list Messages
-							(object Message "接收查询条件"
+							(object Message "接收数据"
 							    quid       	"5EFD2D1A00E2"
 							    frequency  	"Aperiodic"
 							    synchronization 	"Simple"
@@ -3659,7 +3652,7 @@
 				    origin_y   	0
 				    items      	(list diagram_item_list
 					(object InterObjView "$UNNAMED$23" @168
-					    location   	(256, 224)
+					    location   	(256, 225)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3683,7 +3676,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2CB80282"
 					    width      	300
-					    height     	928
+					    height     	923
 					    icon_height 	0
 					    icon_width 	0
 					    icon_y_offset 	0
@@ -3711,7 +3704,7 @@
 						location   	(992, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	651
+						max_width  	687
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -3719,10 +3712,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2CBB0273"
-					    width      	300
-					    height     	928
-					    icon_height 	141
-					    icon_width 	217
+					    width      	229
+					    height     	924
+					    icon_height 	153
+					    icon_width 	229
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @171
@@ -3776,7 +3769,7 @@
 						location   	(1520, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	435
+						max_width  	471
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -3784,10 +3777,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2CBD026C"
-					    width      	300
-					    height     	928
-					    icon_height 	152
-					    icon_width 	145
+					    width      	157
+					    height     	924
+					    icon_height 	164
+					    icon_width 	157
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @177
@@ -3827,7 +3820,7 @@
 						location   	(2096, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	426
+						max_width  	462
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -3835,10 +3828,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2CC10199"
-					    width      	300
-					    height     	928
-					    icon_height 	141
-					    icon_width 	142
+					    width      	154
+					    height     	924
+					    icon_height 	153
+					    icon_width 	154
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @181
@@ -3928,7 +3921,7 @@
 					    origin     	(1008, 457)
 					    terminus   	(1158, 457)
 					    ordinal    	1)
-					(object InterMessView "接收查询条件" @186
+					(object InterMessView "接收数据" @186
 					    location   	(16, 608)
 					    font       	(object Font
 						size       	9
@@ -3954,9 +3947,9 @@
 						quidu      	"5EFD2D1A00E2"
 						anchor_loc 	1
 						nlines     	1
-						max_width  	276
+						max_width  	201
 						justify    	0
-						label      	"接收查询条件"
+						label      	"接收数据"
 						pctDist    	0.500000
 						height     	45
 						orientation 	0)
@@ -4090,12 +4083,12 @@
 					    ordinal    	5)
 					(object Destruction_Marker @194
 					    Parent_View 	@170
-					    location   	(992, 1152)
+					    location   	(992, 1148)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @195
 					    Parent_View 	@176
-					    location   	(1520, 1152)
+					    location   	(1520, 1148)
 					    line_color 	3342489
 					    fill_color 	13434879))))))
 		    logical_presentations 	(list unit_reference_list
@@ -4282,7 +4275,7 @@
 						    supplier   	"$UNNAMED$30"
 						    quidu      	"5EFD2DA900F1"
 						    messages   	(list Messages
-							(object Message "删除并更新内容信息"
+							(object Message "删除内容信息"
 							    quid       	"5EFD2E4802C5"
 							    frequency  	"Aperiodic"
 							    synchronization 	"Simple"
@@ -4315,7 +4308,7 @@
 				    origin_y   	0
 				    items      	(list diagram_item_list
 					(object InterObjView "$UNNAMED$27" @200
-					    location   	(288, 224)
+					    location   	(288, 225)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -4339,7 +4332,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2D82008C"
 					    width      	300
-					    height     	1184
+					    height     	1179
 					    icon_height 	0
 					    icon_width 	0
 					    icon_y_offset 	0
@@ -4374,7 +4367,7 @@
 						location   	(896, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	651
+						max_width  	687
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -4382,10 +4375,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2DA302E5"
-					    width      	300
-					    height     	1174
-					    icon_height 	141
-					    icon_width 	217
+					    width      	229
+					    height     	1175
+					    icon_height 	153
+					    icon_width 	229
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @204
@@ -4453,7 +4446,7 @@
 						location   	(1504, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	435
+						max_width  	471
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -4461,10 +4454,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2DA6004F"
-					    width      	300
-					    height     	1184
-					    icon_height 	152
-					    icon_width 	145
+					    width      	157
+					    height     	1180
+					    icon_height 	164
+					    icon_width 	157
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @212
@@ -4504,7 +4497,7 @@
 						location   	(2064, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	426
+						max_width  	462
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -4512,10 +4505,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2DA900F1"
-					    width      	300
-					    height     	1184
-					    icon_height 	141
-					    icon_width 	142
+					    width      	154
+					    height     	1180
+					    icon_height 	153
+					    icon_width 	154
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @216
@@ -4645,7 +4638,7 @@
 					    origin     	(1488, 934)
 					    terminus   	(912, 934)
 					    ordinal    	4)
-					(object InterMessView "删除并更新内容信息" @223
+					(object InterMessView "删除内容信息" @223
 					    location   	(16, 1039)
 					    font       	(object Font
 						size       	9
@@ -4671,9 +4664,9 @@
 						quidu      	"5EFD2E4802C5"
 						anchor_loc 	1
 						nlines     	1
-						max_width  	389
+						max_width  	276
 						justify    	0
-						label      	"删除并更新内容信息"
+						label      	"删除内容信息"
 						pctDist    	0.500000
 						height     	45
 						orientation 	0)
@@ -4727,12 +4720,12 @@
 					    ordinal    	6)
 					(object Destruction_Marker @227
 					    Parent_View 	@203
-					    location   	(896, 1398)
+					    location   	(896, 1399)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @228
 					    Parent_View 	@211
-					    location   	(1504, 1408)
+					    location   	(1504, 1404)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object InterMessView "点击确认按钮" @229
@@ -5023,7 +5016,7 @@
 				    origin_y   	0
 				    items      	(list diagram_item_list
 					(object InterObjView "$UNNAMED$31" @237
-					    location   	(256, 224)
+					    location   	(256, 225)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -5047,7 +5040,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2F060060"
 					    width      	300
-					    height     	896
+					    height     	891
 					    icon_height 	0
 					    icon_width 	0
 					    icon_y_offset 	0
@@ -5075,7 +5068,7 @@
 						location   	(848, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	651
+						max_width  	687
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -5083,10 +5076,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2F09014D"
-					    width      	300
-					    height     	896
-					    icon_height 	141
-					    icon_width 	217
+					    width      	229
+					    height     	892
+					    icon_height 	153
+					    icon_width 	229
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @240
@@ -5140,7 +5133,7 @@
 						location   	(1504, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	435
+						max_width  	471
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -5148,10 +5141,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2F0C0301"
-					    width      	300
-					    height     	896
-					    icon_height 	152
-					    icon_width 	145
+					    width      	157
+					    height     	892
+					    icon_height 	164
+					    icon_width 	157
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @246
@@ -5191,7 +5184,7 @@
 						location   	(2000, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	426
+						max_width  	462
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -5199,10 +5192,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2F100075"
-					    width      	300
-					    height     	896
-					    icon_height 	141
-					    icon_width 	142
+					    width      	154
+					    height     	892
+					    icon_height 	153
+					    icon_width 	154
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @250
@@ -5265,7 +5258,7 @@
 						default_color 	TRUE)
 					    label      	(object SegLabel @254
 						Parent_View 	@253
-						location   	(921, 415)
+						location   	(922, 415)
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -5454,12 +5447,12 @@
 					    ordinal    	5)
 					(object Destruction_Marker @263
 					    Parent_View 	@239
-					    location   	(848, 1120)
+					    location   	(848, 1116)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @264
 					    Parent_View 	@245
-					    location   	(1504, 1120)
+					    location   	(1504, 1116)
 					    line_color 	3342489
 					    fill_color 	13434879))))))
 		    logical_presentations 	(list unit_reference_list
@@ -5694,13 +5687,13 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2FCE021A"
 					    width      	300
-					    height     	912
+					    height     	908
 					    icon_height 	0
 					    icon_width 	0
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @270
-						location   	(176, 352)
+						location   	(176, 349)
 						line_color 	3342489
 						InterObjView 	@269
 						height     	122
@@ -5722,7 +5715,7 @@
 						location   	(752, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	651
+						max_width  	687
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -5730,10 +5723,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2FD10128"
-					    width      	300
-					    height     	960
-					    icon_height 	141
-					    icon_width 	217
+					    width      	229
+					    height     	956
+					    icon_height 	153
+					    icon_width 	229
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @272
@@ -5787,7 +5780,7 @@
 						location   	(1376, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	435
+						max_width  	471
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -5795,10 +5788,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2FD301DB"
-					    width      	300
-					    height     	944
-					    icon_height 	152
-					    icon_width 	145
+					    width      	157
+					    height     	940
+					    icon_height 	164
+					    icon_width 	157
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @278
@@ -5838,7 +5831,7 @@
 						location   	(1888, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	426
+						max_width  	462
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -5846,10 +5839,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD2FD603C2"
-					    width      	300
-					    height     	960
-					    icon_height 	141
-					    icon_width 	142
+					    width      	154
+					    height     	956
+					    icon_height 	153
+					    icon_width 	154
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @282
@@ -6101,12 +6094,12 @@
 					    ordinal    	5)
 					(object Destruction_Marker @295
 					    Parent_View 	@271
-					    location   	(752, 1184)
+					    location   	(752, 1180)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @296
 					    Parent_View 	@277
-					    location   	(1376, 1168)
+					    location   	(1376, 1164)
 					    line_color 	3342489
 					    fill_color 	13434879))))))
 		    logical_presentations 	(list unit_reference_list
@@ -6239,7 +6232,7 @@
 							    supplier   	"$UNNAMED$41"
 							    quidu      	"5EFD31D3029C"
 							    messages   	(list Messages
-								(object Message "接收查询条件"
+								(object Message "接收数据"
 								    quid       	"5EFD3233006A"
 								    frequency  	"Aperiodic"
 								    synchronization 	"Simple"
@@ -6350,13 +6343,13 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD31CC02BD"
 						    width      	300
-						    height     	896
+						    height     	892
 						    icon_height 	0
 						    icon_width 	0
 						    icon_y_offset 	0
 						    annotation 	1
 						    Focus_Of_Control 	(object Focus_Of_Control "" @302
-							location   	(240, 352)
+							location   	(240, 349)
 							line_color 	3342489
 							InterObjView 	@301
 							height     	138
@@ -6378,7 +6371,7 @@
 							location   	(832, 248)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	651
+							max_width  	687
 							justify    	0
 							label      	"")
 						    icon       	"boundary"
@@ -6386,10 +6379,10 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD31D1025C"
-						    width      	300
-						    height     	944
-						    icon_height 	141
-						    icon_width 	217
+						    width      	229
+						    height     	940
+						    icon_height 	153
+						    icon_width 	229
 						    icon_y_offset 	0
 						    annotation 	1
 						    Focus_Of_Control 	(object Focus_Of_Control "" @304
@@ -6443,7 +6436,7 @@
 							location   	(1392, 247)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	435
+							max_width  	471
 							justify    	0
 							label      	"")
 						    icon       	"control"
@@ -6451,10 +6444,10 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD31D3029C"
-						    width      	300
-						    height     	928
-						    icon_height 	152
-						    icon_width 	145
+						    width      	157
+						    height     	924
+						    icon_height 	164
+						    icon_width 	157
 						    icon_y_offset 	0
 						    annotation 	1
 						    Focus_Of_Control 	(object Focus_Of_Control "" @310
@@ -6494,7 +6487,7 @@
 							location   	(1920, 248)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	178
+							max_width  	462
 							justify    	0
 							label      	"")
 						    icon       	"entity"
@@ -6502,8 +6495,8 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD31D703AD"
-						    width      	190
-						    height     	944
+						    width      	154
+						    height     	940
 						    icon_height 	153
 						    icon_width 	154
 						    icon_y_offset 	0
@@ -6555,7 +6548,7 @@
 						    origin     	(255, 400)
 						    terminus   	(816, 400)
 						    ordinal    	0)
-						(object InterMessView "接收查询条件" @317
+						(object InterMessView "接收数据" @317
 						    location   	(16, 643)
 						    font       	(object Font
 							size       	9
@@ -6581,9 +6574,9 @@
 							quidu      	"5EFD3233006A"
 							anchor_loc 	1
 							nlines     	1
-							max_width  	276
+							max_width  	201
 							justify    	0
-							label      	"接收查询条件"
+							label      	"接收数据"
 							pctDist    	0.500000
 							height     	45
 							orientation 	0)
@@ -6688,7 +6681,7 @@
 							default_color 	TRUE)
 						    label      	(object SegLabel @324
 							Parent_View 	@323
-							location   	(1653, 810)
+							location   	(1654, 810)
 							font       	(object Font
 							    size       	9
 							    face       	"Arial"
@@ -6757,12 +6750,12 @@
 						    ordinal    	5)
 						(object Destruction_Marker @327
 						    Parent_View 	@303
-						    location   	(832, 1168)
+						    location   	(832, 1164)
 						    line_color 	3342489
 						    fill_color 	13434879)
 						(object Destruction_Marker @328
 						    Parent_View 	@309
-						    location   	(1392, 1152)
+						    location   	(1392, 1148)
 						    line_color 	3342489
 						    fill_color 	13434879))))))
 			    logical_presentations 	(list unit_reference_list
@@ -6994,7 +6987,7 @@
 								    ordinal    	4
 								    quidu      	"000000000000"
 								    creation   	FALSE)
-								(object Message "删除并更新频道信息"
+								(object Message "删除频道信息"
 								    quid       	"5EFD33EE005F"
 								    frequency  	"Aperiodic"
 								    synchronization 	"Simple"
@@ -7027,7 +7020,7 @@
 					    origin_y   	0
 					    items      	(list diagram_item_list
 						(object InterObjView "$UNNAMED$43" @333
-						    location   	(288, 224)
+						    location   	(288, 225)
 						    font       	(object Font
 							size       	9
 							face       	"Arial"
@@ -7051,7 +7044,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD3300019B"
 						    width      	300
-						    height     	1760
+						    height     	1755
 						    icon_height 	0
 						    icon_width 	0
 						    icon_y_offset 	0
@@ -7093,7 +7086,7 @@
 							location   	(896, 248)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	651
+							max_width  	687
 							justify    	0
 							label      	"")
 						    icon       	"boundary"
@@ -7101,10 +7094,10 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD330203D8"
-						    width      	300
-						    height     	1760
-						    icon_height 	141
-						    icon_width 	217
+						    width      	229
+						    height     	1756
+						    icon_height 	153
+						    icon_width 	229
 						    icon_y_offset 	0
 						    annotation 	1
 						    Focus_Of_Control 	(object Focus_Of_Control "" @338
@@ -7200,7 +7193,7 @@
 							location   	(1568, 247)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	435
+							max_width  	471
 							justify    	0
 							label      	"")
 						    icon       	"control"
@@ -7208,10 +7201,10 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD3305023F"
-						    width      	300
+						    width      	157
 						    height     	1750
-						    icon_height 	152
-						    icon_width 	145
+						    icon_height 	164
+						    icon_width 	157
 						    icon_y_offset 	0
 						    annotation 	1
 						    Focus_Of_Control 	(object Focus_Of_Control "" @350
@@ -7272,7 +7265,7 @@
 							location   	(2176, 248)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	178
+							max_width  	462
 							justify    	0
 							label      	"")
 						    icon       	"entity"
@@ -7280,8 +7273,8 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD330901FC"
-						    width      	190
-						    height     	1760
+						    width      	154
+						    height     	1756
 						    icon_height 	153
 						    icon_width 	154
 						    icon_y_offset 	0
@@ -7660,7 +7653,7 @@
 						    origin     	(911, 1520)
 						    terminus   	(1552, 1520)
 						    ordinal    	9)
-						(object InterMessView "删除并更新频道信息" @377
+						(object InterMessView "删除频道信息" @377
 						    location   	(16, 1680)
 						    font       	(object Font
 							size       	9
@@ -7686,9 +7679,9 @@
 							quidu      	"5EFD33EE005F"
 							anchor_loc 	1
 							nlines     	1
-							max_width  	409
+							max_width  	297
 							justify    	0
-							label      	"删除并更新频道信息"
+							label      	"删除频道信息"
 							pctDist    	0.500000
 							height     	45
 							orientation 	0)
@@ -7747,7 +7740,7 @@
 						    ordinal    	11)
 						(object Destruction_Marker @382
 						    Parent_View 	@337
-						    location   	(896, 1984)
+						    location   	(896, 1980)
 						    line_color 	3342489
 						    fill_color 	13434879)
 						(object SelfMessView "提示是否确认删除" @383
@@ -8043,7 +8036,7 @@
 					    origin_y   	0
 					    items      	(list diagram_item_list
 						(object InterObjView "$UNNAMED$47" @389
-						    location   	(288, 224)
+						    location   	(288, 225)
 						    font       	(object Font
 							size       	9
 							face       	"Arial"
@@ -8067,7 +8060,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD34EF03C9"
 						    width      	300
-						    height     	1536
+						    height     	1535
 						    icon_height 	0
 						    icon_width 	0
 						    icon_y_offset 	0
@@ -8102,7 +8095,7 @@
 							location   	(912, 264)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	651
+							max_width  	687
 							justify    	0
 							label      	"")
 						    icon       	"boundary"
@@ -8110,10 +8103,10 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD34F4030F"
-						    width      	300
+						    width      	229
 						    height     	1520
-						    icon_height 	141
-						    icon_width 	217
+						    icon_height 	153
+						    icon_width 	229
 						    icon_y_offset 	0
 						    annotation 	1
 						    Focus_Of_Control 	(object Focus_Of_Control "" @393
@@ -8195,7 +8188,7 @@
 							location   	(1440, 247)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	435
+							max_width  	471
 							justify    	0
 							label      	"")
 						    icon       	"control"
@@ -8203,10 +8196,10 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD34FC0363"
-						    width      	300
-						    height     	1536
-						    icon_height 	152
-						    icon_width 	145
+						    width      	157
+						    height     	1532
+						    icon_height 	164
+						    icon_width 	157
 						    icon_y_offset 	0
 						    annotation 	1
 						    Focus_Of_Control 	(object Focus_Of_Control "" @403
@@ -8267,7 +8260,7 @@
 							location   	(1952, 248)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	426
+							max_width  	462
 							justify    	0
 							label      	"")
 						    icon       	"entity"
@@ -8275,10 +8268,10 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD35010013"
-						    width      	300
+						    width      	154
 						    height     	1536
-						    icon_height 	141
-						    icon_width 	142
+						    icon_height 	153
+						    icon_width 	154
 						    icon_y_offset 	0
 						    annotation 	1
 						    Focus_Of_Control 	(object Focus_Of_Control "" @410
@@ -8742,7 +8735,7 @@
 						    fill_color 	13434879)
 						(object Destruction_Marker @435
 						    Parent_View 	@402
-						    location   	(1440, 1760)
+						    location   	(1440, 1756)
 						    line_color 	3342489
 						    fill_color 	13434879))))))
 			    logical_presentations 	(list unit_reference_list
@@ -8958,7 +8951,7 @@
 					    origin_y   	0
 					    items      	(list diagram_item_list
 						(object InterObjView "$UNNAMED$51" @440
-						    location   	(240, 224)
+						    location   	(240, 225)
 						    font       	(object Font
 							size       	9
 							face       	"Arial"
@@ -8982,7 +8975,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD36EC0334"
 						    width      	300
-						    height     	960
+						    height     	955
 						    icon_height 	0
 						    icon_width 	0
 						    icon_y_offset 	0
@@ -9010,7 +9003,7 @@
 							location   	(768, 248)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	651
+							max_width  	687
 							justify    	0
 							label      	"")
 						    icon       	"boundary"
@@ -9018,10 +9011,10 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD36EE03E3"
-						    width      	300
-						    height     	960
-						    icon_height 	141
-						    icon_width 	217
+						    width      	229
+						    height     	956
+						    icon_height 	153
+						    icon_width 	229
 						    icon_y_offset 	0
 						    annotation 	1
 						    Focus_Of_Control 	(object Focus_Of_Control "" @443
@@ -9075,7 +9068,7 @@
 							location   	(1360, 247)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	435
+							max_width  	471
 							justify    	0
 							label      	"")
 						    icon       	"control"
@@ -9083,10 +9076,10 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD36F603D1"
-						    width      	300
-						    height     	944
-						    icon_height 	152
-						    icon_width 	145
+						    width      	157
+						    height     	940
+						    icon_height 	164
+						    icon_width 	157
 						    icon_y_offset 	0
 						    annotation 	1
 						    Focus_Of_Control 	(object Focus_Of_Control "" @449
@@ -9126,7 +9119,7 @@
 							location   	(2000, 248)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	178
+							max_width  	462
 							justify    	0
 							label      	"")
 						    icon       	"entity"
@@ -9134,8 +9127,8 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD36FB00C7"
-						    width      	190
-						    height     	960
+						    width      	154
+						    height     	956
 						    icon_height 	153
 						    icon_width 	154
 						    icon_y_offset 	0
@@ -9389,12 +9382,12 @@
 						    ordinal    	5)
 						(object Destruction_Marker @466
 						    Parent_View 	@442
-						    location   	(768, 1184)
+						    location   	(768, 1180)
 						    line_color 	3342489
 						    fill_color 	13434879)
 						(object Destruction_Marker @467
 						    Parent_View 	@448
-						    location   	(1360, 1168)
+						    location   	(1360, 1164)
 						    line_color 	3342489
 						    fill_color 	13434879))))))
 			    logical_presentations 	(list unit_reference_list
@@ -9626,7 +9619,7 @@
 								    ordinal    	4
 								    quidu      	"000000000000"
 								    creation   	FALSE)
-								(object Message "删除并更新频道信息"
+								(object Message "删除频道信息"
 								    quid       	"5EFD3D4A03E5"
 								    frequency  	"Aperiodic"
 								    synchronization 	"Simple"
@@ -9659,7 +9652,7 @@
 					    origin_y   	0
 					    items      	(list diagram_item_list
 						(object InterObjView "$UNNAMED$55" @472
-						    location   	(176, 224)
+						    location   	(176, 225)
 						    font       	(object Font
 							size       	9
 							face       	"Arial"
@@ -9683,7 +9676,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD3C300107"
 						    width      	300
-						    height     	1712
+						    height     	1707
 						    icon_height 	0
 						    icon_width 	0
 						    icon_y_offset 	0
@@ -9725,7 +9718,7 @@
 							location   	(736, 248)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	403
+							max_width  	687
 							justify    	0
 							label      	"")
 						    icon       	"boundary"
@@ -9733,8 +9726,8 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD3C3203DD"
-						    width      	414
-						    height     	1702
+						    width      	229
+						    height     	1703
 						    icon_height 	153
 						    icon_width 	229
 						    icon_y_offset 	0
@@ -9832,7 +9825,7 @@
 							location   	(1344, 247)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	435
+							max_width  	471
 							justify    	0
 							label      	"")
 						    icon       	"control"
@@ -9840,10 +9833,10 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD3C3500BA"
-						    width      	300
-						    height     	1712
-						    icon_height 	152
-						    icon_width 	145
+						    width      	157
+						    height     	1708
+						    icon_height 	164
+						    icon_width 	157
 						    icon_y_offset 	0
 						    annotation 	1
 						    Focus_Of_Control 	(object Focus_Of_Control "" @489
@@ -9904,7 +9897,7 @@
 							location   	(1920, 248)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	178
+							max_width  	462
 							justify    	0
 							label      	"")
 						    icon       	"entity"
@@ -9912,8 +9905,8 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD3C38001E"
-						    width      	190
-						    height     	1712
+						    width      	154
+						    height     	1708
 						    icon_height 	153
 						    icon_width 	154
 						    icon_y_offset 	0
@@ -10292,7 +10285,7 @@
 						    origin     	(751, 1538)
 						    terminus   	(1328, 1538)
 						    ordinal    	9)
-						(object InterMessView "删除并更新频道信息" @516
+						(object InterMessView "删除频道信息" @516
 						    location   	(16, 1666)
 						    font       	(object Font
 							size       	9
@@ -10318,9 +10311,9 @@
 							quidu      	"5EFD3D4A03E5"
 							anchor_loc 	1
 							nlines     	1
-							max_width  	409
+							max_width  	298
 							justify    	0
-							label      	"删除并更新频道信息"
+							label      	"删除频道信息"
 							pctDist    	0.500000
 							height     	45
 							orientation 	0)
@@ -10374,12 +10367,12 @@
 						    ordinal    	11)
 						(object Destruction_Marker @520
 						    Parent_View 	@476
-						    location   	(736, 1926)
+						    location   	(736, 1927)
 						    line_color 	3342489
 						    fill_color 	13434879)
 						(object Destruction_Marker @521
 						    Parent_View 	@488
-						    location   	(1344, 1936)
+						    location   	(1344, 1932)
 						    line_color 	3342489
 						    fill_color 	13434879)
 						(object SelfMessView "提示是否确认删除" @522
@@ -10705,7 +10698,7 @@
 						    icon_y_offset 	0
 						    annotation 	1
 						    Focus_Of_Control 	(object Focus_Of_Control "" @529
-							location   	(256, 320)
+							location   	(256, 317)
 							line_color 	3342489
 							InterObjView 	@528
 							height     	138
@@ -10734,7 +10727,7 @@
 							location   	(848, 264)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	651
+							max_width  	687
 							justify    	0
 							label      	"")
 						    icon       	"boundary"
@@ -10742,10 +10735,10 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD3E88007D"
-						    width      	300
+						    width      	229
 						    height     	1552
-						    icon_height 	141
-						    icon_width 	217
+						    icon_height 	153
+						    icon_width 	229
 						    icon_y_offset 	0
 						    annotation 	1
 						    Focus_Of_Control 	(object Focus_Of_Control "" @532
@@ -10827,7 +10820,7 @@
 							location   	(1408, 247)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	435
+							max_width  	471
 							justify    	0
 							label      	"")
 						    icon       	"control"
@@ -10835,10 +10828,10 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD3E8B0096"
-						    width      	300
-						    height     	1552
-						    icon_height 	152
-						    icon_width 	145
+						    width      	157
+						    height     	1548
+						    icon_height 	164
+						    icon_width 	157
 						    icon_y_offset 	0
 						    annotation 	1
 						    Focus_Of_Control 	(object Focus_Of_Control "" @542
@@ -10899,7 +10892,7 @@
 							location   	(2064, 248)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	178
+							max_width  	462
 							justify    	0
 							label      	"")
 						    icon       	"entity"
@@ -10907,7 +10900,7 @@
 						    line_color 	3342489
 						    fill_color 	13434879
 						    quidu      	"5EFD3E8E01F2"
-						    width      	190
+						    width      	154
 						    height     	1568
 						    icon_height 	153
 						    icon_width 	154
@@ -11374,7 +11367,7 @@
 						    fill_color 	13434879)
 						(object Destruction_Marker @574
 						    Parent_View 	@541
-						    location   	(1408, 1776)
+						    location   	(1408, 1772)
 						    line_color 	3342489
 						    fill_color 	13434879))))))
 			    logical_presentations 	(list unit_reference_list
@@ -11498,7 +11491,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			icon_style 	"Icon"
-			fill_color 	13434879
+			fill_color 	16777215
 			anchor     	2
 			nlines     	23
 			max_width  	366
@@ -11536,7 +11529,7 @@
 		    quidu      	"5EFC38DC0329"
 		    compartment 	(object Compartment
 			Parent_View 	@579
-			location   	(1070, 1283)
+			location   	(1024, 1283)
 			font       	(object Font
 			    size       	9
 			    face       	"Arial"
@@ -11549,7 +11542,7 @@
 			icon_style 	"Icon"
 			anchor     	2
 			nlines     	4
-			max_width  	334
+			max_width  	425
 			justify    	0)
 		    height     	154
 		    annotation 	8
@@ -11583,7 +11576,7 @@
 		    quidu      	"5EFC388303DA"
 		    compartment 	(object Compartment
 			Parent_View 	@580
-			location   	(1126, 419)
+			location   	(1141, 419)
 			font       	(object Font
 			    size       	9
 			    face       	"Arial"
@@ -11595,8 +11588,8 @@
 			    default_color 	TRUE)
 			icon_style 	"Icon"
 			anchor     	2
-			nlines     	7
-			max_width  	413
+			nlines     	5
+			max_width  	381
 			justify    	0)
 		    height     	154
 		    annotation 	8
@@ -11657,7 +11650,7 @@
 			    supplier   	@579
 			    vertices   	(list Points
 				(1268, 878)
-				(1254, 1010))
+				(1253, 1012))
 			    line_style 	0
 			    label      	(object SegLabel @584
 				Parent_View 	@582
@@ -11699,7 +11692,7 @@
 			    supplier   	@580
 			    vertices   	(list Points
 				(1268, 878)
-				(1282, 747))
+				(1320, 403))
 			    line_style 	0
 			    label      	(object SegLabel @586
 				Parent_View 	@585
