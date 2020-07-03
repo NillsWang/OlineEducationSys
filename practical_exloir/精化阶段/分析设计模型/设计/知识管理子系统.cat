@@ -181,6 +181,20 @@
 		    supplier   	"Use Case View::Business Use-Case Model::Actors::管理员"
 		    quidu      	"5EEDB2D70399"
 		    client_cardinality 	(value cardinality "1"))))
+	(object Association "$UNNAMED$12"
+	    quid       	"5EFE8DFA00B4"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$13"
+		    quid       	"5EFE8DFA037E"
+		    supplier   	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::comment.java"
+		    quidu      	"5EFD441901ED"
+		    client_cardinality 	(value cardinality "0..n")
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$14"
+		    quid       	"5EFE8DFA0383"
+		    supplier   	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::knowledge.java"
+		    quidu      	"5EFD32A7029B"
+		    client_cardinality 	(value cardinality "1"))))
 	(object Class_Category "权威知识管理"
 	    quid       	"5EFA923501B8"
 	    exportControl 	"Public"
@@ -253,7 +267,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD3596003E"
-					    supplier   	"$UNNAMED$12"
+					    supplier   	"$UNNAMED$15"
 					    quidu      	"5EFD3449027D"
 					    messages   	(list Messages
 						(object Message "addknow( )"
@@ -270,12 +284,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$12"
+				(object Object "$UNNAMED$15"
 				    quid       	"5EFD3449027D"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD35A303A6"
-					    supplier   	"$UNNAMED$13"
+					    supplier   	"$UNNAMED$16"
 					    quidu      	"5EFD345B0043"
 					    messages   	(list Messages
 						(object Message "addknow( )"
@@ -289,7 +303,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD35D60366"
-					    supplier   	"$UNNAMED$14"
+					    supplier   	"$UNNAMED$17"
 					    quidu      	"5EFD346802CE"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -303,7 +317,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD35DC0216"
-					    supplier   	"$UNNAMED$15"
+					    supplier   	"$UNNAMED$18"
 					    quidu      	"5EFD346B00F5"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -320,28 +334,28 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$13"
+				(object Object "$UNNAMED$16"
 				    quid       	"5EFD345B0043"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::knowledge.java"
 				    quidu      	"5EFD32A7029B"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$14"
+				(object Object "$UNNAMED$17"
 				    quid       	"5EFD346802CE"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::fail.jsp"
 				    quidu      	"5EFD329F005C"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$15"
+				(object Object "$UNNAMED$18"
 				    quid       	"5EFD346B00F5"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::success.jsp"
 				    quidu      	"5EFD328F021A"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$16"
+				(object Object "$UNNAMED$19"
 				    quid       	"5EFD34BB02A4"
 				    collaborators 	(list link_list
 					(object Link
@@ -350,7 +364,7 @@
 					    quidu      	"5EFD33870102")
 					(object Link
 					    quid       	"5EFD3C27032B"
-					    supplier   	"$UNNAMED$17"
+					    supplier   	"$UNNAMED$20"
 					    quidu      	"5EFD3C230332"
 					    messages   	(list Messages
 						(object Message "button(add)"
@@ -367,7 +381,7 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$17"
+				(object Object "$UNNAMED$20"
 				    quid       	"5EFD3C230332"
 				    collaborators 	(list link_list
 					(object Link
@@ -400,7 +414,7 @@
 			    origin_x   	131
 			    origin_y   	0
 			    items      	(list diagram_item_list
-				(object InterObjView "$UNNAMED$16" @2
+				(object InterObjView "$UNNAMED$19" @2
 				    location   	(224, 416)
 				    font       	(object Font
 					size       	9
@@ -437,7 +451,7 @@
 					height     	106
 					y_coord    	16
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$17" @4
+				(object InterObjView "$UNNAMED$20" @4
 				    location   	(592, 416)
 				    font       	(object Font
 					size       	9
@@ -539,7 +553,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$15" @12
+				(object InterObjView "$UNNAMED$18" @12
 				    location   	(1472, 416)
 				    font       	(object Font
 					size       	9
@@ -583,7 +597,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$14" @15
+				(object InterObjView "$UNNAMED$17" @15
 				    location   	(1856, 416)
 				    font       	(object Font
 					size       	9
@@ -627,7 +641,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$12" @18
+				(object InterObjView "$UNNAMED$15" @18
 				    location   	(2240, 448)
 				    font       	(object Font
 					size       	9
@@ -692,7 +706,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$13" @24
+				(object InterObjView "$UNNAMED$16" @24
 				    location   	(2624, 448)
 				    font       	(object Font
 					size       	9
@@ -1110,12 +1124,12 @@
 				    uid        	0)))
 			(object Mechanism @47
 			    logical_models 	(list unit_reference_list
-				(object Object "$UNNAMED$18"
+				(object Object "$UNNAMED$21"
 				    quid       	"5EFA95CD02E1"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD3DA5037A"
-					    supplier   	"$UNNAMED$19"
+					    supplier   	"$UNNAMED$22"
 					    quidu      	"5EFD3D6002F2"
 					    messages   	(list Messages
 						(object Message "button(sel)"
@@ -1132,19 +1146,19 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$20"
+				(object Object "$UNNAMED$23"
 				    quid       	"5EFD3CFE0002"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::knowledge.java"
 				    quidu      	"5EFD32A7029B"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$21"
+				(object Object "$UNNAMED$24"
 				    quid       	"5EFD3D570061"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD3DB30316"
-					    supplier   	"$UNNAMED$21"
+					    supplier   	"$UNNAMED$24"
 					    quidu      	"5EFD3D570061"
 					    messages   	(list Messages
 						(object Message "checkknow( )"
@@ -1158,7 +1172,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD3DBC02D3"
-					    supplier   	"$UNNAMED$22"
+					    supplier   	"$UNNAMED$25"
 					    quidu      	"5EFD3D720142"
 					    messages   	(list Messages
 						(object Message "selknow( )"
@@ -1175,12 +1189,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$19"
+				(object Object "$UNNAMED$22"
 				    quid       	"5EFD3D6002F2"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD3DA9032B"
-					    supplier   	"$UNNAMED$21"
+					    supplier   	"$UNNAMED$24"
 					    quidu      	"5EFD3D570061"
 					    messages   	(list Messages
 						(object Message "inputbank( )"
@@ -1197,12 +1211,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$22"
+				(object Object "$UNNAMED$25"
 				    quid       	"5EFD3D720142"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD3DC100C3"
-					    supplier   	"$UNNAMED$20"
+					    supplier   	"$UNNAMED$23"
 					    quidu      	"5EFD3CFE0002"
 					    messages   	(list Messages
 						(object Message "selknow( )"
@@ -1225,7 +1239,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD3DD100CA"
-					    supplier   	"$UNNAMED$23"
+					    supplier   	"$UNNAMED$26"
 					    quidu      	"5EFD3D7D0248"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -1239,7 +1253,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD3E390033"
-					    supplier   	"$UNNAMED$24"
+					    supplier   	"$UNNAMED$27"
 					    quidu      	"5EFD3E340021"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -1256,24 +1270,24 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$23"
+				(object Object "$UNNAMED$26"
 				    quid       	"5EFD3D7D0248"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD3E6A012A"
-					    supplier   	"$UNNAMED$19"
+					    supplier   	"$UNNAMED$22"
 					    quidu      	"5EFD3D6002F2"))
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::fail.jsp"
 				    quidu      	"5EFD329F005C"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$24"
+				(object Object "$UNNAMED$27"
 				    quid       	"5EFD3E340021"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD3E400272"
-					    supplier   	"$UNNAMED$19"
+					    supplier   	"$UNNAMED$22"
 					    quidu      	"5EFD3D6002F2"
 					    messages   	(list Messages
 						(object Message "内容回显"
@@ -1301,7 +1315,7 @@
 			    origin_x   	375
 			    origin_y   	0
 			    items      	(list diagram_item_list
-				(object InterObjView "$UNNAMED$18" @48
+				(object InterObjView "$UNNAMED$21" @48
 				    location   	(272, 384)
 				    font       	(object Font
 					size       	9
@@ -1338,7 +1352,7 @@
 					height     	122
 					y_coord    	32
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$19" @50
+				(object InterObjView "$UNNAMED$22" @50
 				    location   	(576, 384)
 				    font       	(object Font
 					size       	9
@@ -1389,7 +1403,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$21" @54
+				(object InterObjView "$UNNAMED$24" @54
 				    location   	(976, 384)
 				    font       	(object Font
 					size       	9
@@ -1447,7 +1461,7 @@
 					height     	94
 					y_coord    	4
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$24" @59
+				(object InterObjView "$UNNAMED$27" @59
 				    location   	(1392, 384)
 				    font       	(object Font
 					size       	9
@@ -1498,7 +1512,7 @@
 					height     	92
 					y_coord    	2
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$23" @63
+				(object InterObjView "$UNNAMED$26" @63
 				    location   	(1760, 384)
 				    font       	(object Font
 					size       	9
@@ -1542,7 +1556,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$22" @66
+				(object InterObjView "$UNNAMED$25" @66
 				    location   	(2160, 384)
 				    font       	(object Font
 					size       	9
@@ -1614,7 +1628,7 @@
 					height     	92
 					y_coord    	2
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$20" @73
+				(object InterObjView "$UNNAMED$23" @73
 				    location   	(2560, 384)
 				    font       	(object Font
 					size       	9
@@ -2105,19 +2119,19 @@
 		    logical_models 	(list unit_reference_list
 			(object Mechanism @101
 			    logical_models 	(list unit_reference_list
-				(object Object "$UNNAMED$25"
+				(object Object "$UNNAMED$28"
 				    quid       	"5EFD382701BC"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::knowledge.java"
 				    quidu      	"5EFD32A7029B"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$26"
+				(object Object "$UNNAMED$29"
 				    quid       	"5EFD38470193"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD38F00024"
-					    supplier   	"$UNNAMED$25"
+					    supplier   	"$UNNAMED$28"
 					    quidu      	"5EFD382701BC"
 					    messages   	(list Messages
 						(object Message "delknow( )"
@@ -2131,7 +2145,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD38F70305"
-					    supplier   	"$UNNAMED$27"
+					    supplier   	"$UNNAMED$30"
 					    quidu      	"5EFD38580363"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -2145,7 +2159,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD38FA0235"
-					    supplier   	"$UNNAMED$28"
+					    supplier   	"$UNNAMED$31"
 					    quidu      	"5EFD385A025E"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -2162,26 +2176,26 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$27"
+				(object Object "$UNNAMED$30"
 				    quid       	"5EFD38580363"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::fail.jsp"
 				    quidu      	"5EFD329F005C"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$28"
+				(object Object "$UNNAMED$31"
 				    quid       	"5EFD385A025E"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::success.jsp"
 				    quidu      	"5EFD328F021A"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$29"
+				(object Object "$UNNAMED$32"
 				    quid       	"5EFD38C90373"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD3BA5019B"
-					    supplier   	"$UNNAMED$30"
+					    supplier   	"$UNNAMED$33"
 					    quidu      	"5EFD3BA10022"
 					    messages   	(list Messages
 						(object Message "inputknow( )"
@@ -2198,12 +2212,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$30"
+				(object Object "$UNNAMED$33"
 				    quid       	"5EFD3BA10022"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD3BAB026C"
-					    supplier   	"$UNNAMED$26"
+					    supplier   	"$UNNAMED$29"
 					    quidu      	"5EFD38470193"
 					    messages   	(list Messages
 						(object Message "addknow( )"
@@ -2231,7 +2245,7 @@
 			    origin_x   	175
 			    origin_y   	69
 			    items      	(list diagram_item_list
-				(object InterObjView "$UNNAMED$29" @102
+				(object InterObjView "$UNNAMED$32" @102
 				    location   	(416, 416)
 				    font       	(object Font
 					size       	9
@@ -2275,7 +2289,7 @@
 					height     	95
 					y_coord    	5
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$30" @105
+				(object InterObjView "$UNNAMED$33" @105
 				    location   	(832, 384)
 				    font       	(object Font
 					size       	9
@@ -2326,7 +2340,7 @@
 					height     	95
 					y_coord    	5
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$28" @109
+				(object InterObjView "$UNNAMED$31" @109
 				    location   	(1216, 368)
 				    font       	(object Font
 					size       	9
@@ -2370,7 +2384,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$27" @112
+				(object InterObjView "$UNNAMED$30" @112
 				    location   	(1600, 368)
 				    font       	(object Font
 					size       	9
@@ -2414,7 +2428,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$26" @115
+				(object InterObjView "$UNNAMED$29" @115
 				    location   	(1984, 352)
 				    font       	(object Font
 					size       	9
@@ -2479,7 +2493,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$25" @121
+				(object InterObjView "$UNNAMED$28" @121
 				    location   	(2400, 368)
 				    font       	(object Font
 					size       	9
@@ -2844,19 +2858,19 @@
 				    uid        	0)))
 			(object Mechanism @140
 			    logical_models 	(list unit_reference_list
-				(object Object "$UNNAMED$31"
+				(object Object "$UNNAMED$34"
 				    quid       	"5EFD412B0330"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::knowledge.java"
 				    quidu      	"5EFD32A7029B"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$32"
+				(object Object "$UNNAMED$35"
 				    quid       	"5EFD41BF01E8"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD43030070"
-					    supplier   	"$UNNAMED$31"
+					    supplier   	"$UNNAMED$34"
 					    quidu      	"5EFD412B0330"
 					    messages   	(list Messages
 						(object Message "selknow( )"
@@ -2879,7 +2893,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD430F0199"
-					    supplier   	"$UNNAMED$33"
+					    supplier   	"$UNNAMED$36"
 					    quidu      	"5EFD41C30047"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -2893,7 +2907,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD431201A1"
-					    supplier   	"$UNNAMED$34"
+					    supplier   	"$UNNAMED$37"
 					    quidu      	"5EFD41C50158"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -2910,19 +2924,19 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$33"
+				(object Object "$UNNAMED$36"
 				    quid       	"5EFD41C30047"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::fail.jsp"
 				    quidu      	"5EFD329F005C"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$34"
+				(object Object "$UNNAMED$37"
 				    quid       	"5EFD41C50158"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD43150249"
-					    supplier   	"$UNNAMED$35"
+					    supplier   	"$UNNAMED$38"
 					    quidu      	"5EFD41F301E0"
 					    messages   	(list Messages
 						(object Message "内容回显"
@@ -2939,12 +2953,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$35"
+				(object Object "$UNNAMED$38"
 				    quid       	"5EFD41F301E0"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD42F80038"
-					    supplier   	"$UNNAMED$36"
+					    supplier   	"$UNNAMED$39"
 					    quidu      	"5EFD424A0250"
 					    messages   	(list Messages
 						(object Message "inputknow( )"
@@ -2961,12 +2975,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$36"
+				(object Object "$UNNAMED$39"
 				    quid       	"5EFD424A0250"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD42FC0182"
-					    supplier   	"$UNNAMED$36"
+					    supplier   	"$UNNAMED$39"
 					    quidu      	"5EFD424A0250"
 					    messages   	(list Messages
 						(object Message "checkknow( )"
@@ -2980,7 +2994,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD42FF0358"
-					    supplier   	"$UNNAMED$32"
+					    supplier   	"$UNNAMED$35"
 					    quidu      	"5EFD41BF01E8"
 					    messages   	(list Messages
 						(object Message "selknow( )"
@@ -2997,12 +3011,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$37"
+				(object Object "$UNNAMED$40"
 				    quid       	"5EFD42BC0128"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD42E300B9"
-					    supplier   	"$UNNAMED$35"
+					    supplier   	"$UNNAMED$38"
 					    quidu      	"5EFD41F301E0"
 					    messages   	(list Messages
 						(object Message "button(sel)"
@@ -3030,7 +3044,7 @@
 			    origin_x   	0
 			    origin_y   	0
 			    items      	(list diagram_item_list
-				(object InterObjView "$UNNAMED$37" @141
+				(object InterObjView "$UNNAMED$40" @141
 				    location   	(176, 352)
 				    font       	(object Font
 					size       	9
@@ -3067,7 +3081,7 @@
 					height     	106
 					y_coord    	16
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$35" @143
+				(object InterObjView "$UNNAMED$38" @143
 				    location   	(544, 336)
 				    font       	(object Font
 					size       	9
@@ -3118,7 +3132,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$36" @147
+				(object InterObjView "$UNNAMED$39" @147
 				    location   	(912, 336)
 				    font       	(object Font
 					size       	9
@@ -3176,7 +3190,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$34" @152
+				(object InterObjView "$UNNAMED$37" @152
 				    location   	(1312, 320)
 				    font       	(object Font
 					size       	9
@@ -3227,7 +3241,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$33" @156
+				(object InterObjView "$UNNAMED$36" @156
 				    location   	(1712, 336)
 				    font       	(object Font
 					size       	9
@@ -3271,7 +3285,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$32" @159
+				(object InterObjView "$UNNAMED$35" @159
 				    location   	(2112, 320)
 				    font       	(object Font
 					size       	9
@@ -3343,7 +3357,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$31" @166
+				(object InterObjView "$UNNAMED$34" @166
 				    location   	(2496, 320)
 				    font       	(object Font
 					size       	9
@@ -3849,19 +3863,19 @@
 				    uid        	0)))
 			(object Mechanism @194
 			    logical_models 	(list unit_reference_list
-				(object Object "$UNNAMED$38"
+				(object Object "$UNNAMED$41"
 				    quid       	"5EFD44460266"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::comment.java"
 				    quidu      	"5EFD441901ED"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$39"
+				(object Object "$UNNAMED$42"
 				    quid       	"5EFD44890287"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD465B013F"
-					    supplier   	"$UNNAMED$38"
+					    supplier   	"$UNNAMED$41"
 					    quidu      	"5EFD44460266"
 					    messages   	(list Messages
 						(object Message "pubcomment( )"
@@ -3875,7 +3889,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD46610040"
-					    supplier   	"$UNNAMED$40"
+					    supplier   	"$UNNAMED$43"
 					    quidu      	"5EFD449101E5"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -3889,7 +3903,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD466500FF"
-					    supplier   	"$UNNAMED$41"
+					    supplier   	"$UNNAMED$44"
 					    quidu      	"5EFD449302C6"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -3906,26 +3920,26 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$40"
+				(object Object "$UNNAMED$43"
 				    quid       	"5EFD449101E5"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::fail.jsp"
 				    quidu      	"5EFD329F005C"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$41"
+				(object Object "$UNNAMED$44"
 				    quid       	"5EFD449302C6"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::success.jsp"
 				    quidu      	"5EFD328F021A"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$42"
+				(object Object "$UNNAMED$45"
 				    quid       	"5EFD45EA0075"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD465200A0"
-					    supplier   	"$UNNAMED$43"
+					    supplier   	"$UNNAMED$46"
 					    quidu      	"5EFD46020186"
 					    messages   	(list Messages
 						(object Message "inputcomment( )"
@@ -3942,12 +3956,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$43"
+				(object Object "$UNNAMED$46"
 				    quid       	"5EFD46020186"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD465402F2"
-					    supplier   	"$UNNAMED$43"
+					    supplier   	"$UNNAMED$46"
 					    quidu      	"5EFD46020186"
 					    messages   	(list Messages
 						(object Message "checkcomment( )"
@@ -3961,7 +3975,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD46580188"
-					    supplier   	"$UNNAMED$39"
+					    supplier   	"$UNNAMED$42"
 					    quidu      	"5EFD44890287"
 					    messages   	(list Messages
 						(object Message "pubcomment( )"
@@ -3978,12 +3992,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$44"
+				(object Object "$UNNAMED$47"
 				    quid       	"5EFD463901FF"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD464D02FF"
-					    supplier   	"$UNNAMED$42"
+					    supplier   	"$UNNAMED$45"
 					    quidu      	"5EFD45EA0075"
 					    messages   	(list Messages
 						(object Message "button(publish)"
@@ -4011,7 +4025,7 @@
 			    origin_x   	331
 			    origin_y   	0
 			    items      	(list diagram_item_list
-				(object InterObjView "$UNNAMED$44" @195
+				(object InterObjView "$UNNAMED$47" @195
 				    location   	(336, 384)
 				    font       	(object Font
 					size       	9
@@ -4048,7 +4062,7 @@
 					height     	122
 					y_coord    	32
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$42" @197
+				(object InterObjView "$UNNAMED$45" @197
 				    location   	(704, 368)
 				    font       	(object Font
 					size       	9
@@ -4092,7 +4106,7 @@
 					height     	195
 					y_coord    	105
 					Nested     	TRUE))
-				(object InterObjView "$UNNAMED$43" @200
+				(object InterObjView "$UNNAMED$46" @200
 				    location   	(1072, 368)
 				    font       	(object Font
 					size       	9
@@ -4150,7 +4164,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$41" @205
+				(object InterObjView "$UNNAMED$44" @205
 				    location   	(1440, 352)
 				    font       	(object Font
 					size       	9
@@ -4194,7 +4208,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$40" @208
+				(object InterObjView "$UNNAMED$43" @208
 				    location   	(1840, 336)
 				    font       	(object Font
 					size       	9
@@ -4238,7 +4252,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$39" @211
+				(object InterObjView "$UNNAMED$42" @211
 				    location   	(2256, 320)
 				    font       	(object Font
 					size       	9
@@ -4296,7 +4310,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$38" @216
+				(object InterObjView "$UNNAMED$41" @216
 				    location   	(2688, 304)
 				    font       	(object Font
 					size       	9
@@ -4700,19 +4714,19 @@
 		    logical_models 	(list unit_reference_list
 			(object Mechanism @239
 			    logical_models 	(list unit_reference_list
-				(object Object "$UNNAMED$45"
+				(object Object "$UNNAMED$48"
 				    quid       	"5EFD481C0215"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::knowledge.java"
 				    quidu      	"5EFD32A7029B"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$46"
+				(object Object "$UNNAMED$49"
 				    quid       	"5EFD48250284"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD488400CE"
-					    supplier   	"$UNNAMED$45"
+					    supplier   	"$UNNAMED$48"
 					    quidu      	"5EFD481C0215"
 					    messages   	(list Messages
 						(object Message "changeknow( )"
@@ -4726,7 +4740,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD488D031E"
-					    supplier   	"$UNNAMED$47"
+					    supplier   	"$UNNAMED$50"
 					    quidu      	"5EFD482B035D"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -4740,7 +4754,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD4891001F"
-					    supplier   	"$UNNAMED$48"
+					    supplier   	"$UNNAMED$51"
 					    quidu      	"5EFD482D0367"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -4757,26 +4771,26 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$47"
+				(object Object "$UNNAMED$50"
 				    quid       	"5EFD482B035D"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::fail.jsp"
 				    quidu      	"5EFD329F005C"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$48"
+				(object Object "$UNNAMED$51"
 				    quid       	"5EFD482D0367"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::success.jsp"
 				    quidu      	"5EFD328F021A"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$49"
+				(object Object "$UNNAMED$52"
 				    quid       	"5EFD483E018C"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD487F03A7"
-					    supplier   	"$UNNAMED$46"
+					    supplier   	"$UNNAMED$49"
 					    quidu      	"5EFD48250284"
 					    messages   	(list Messages
 						(object Message "changeknow( )"
@@ -4793,12 +4807,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$50"
+				(object Object "$UNNAMED$53"
 				    quid       	"5EFD484B0017"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD487801DF"
-					    supplier   	"$UNNAMED$49"
+					    supplier   	"$UNNAMED$52"
 					    quidu      	"5EFD483E018C"
 					    messages   	(list Messages
 						(object Message "button(change)"
@@ -4826,7 +4840,7 @@
 			    origin_x   	0
 			    origin_y   	0
 			    items      	(list diagram_item_list
-				(object InterObjView "$UNNAMED$50" @240
+				(object InterObjView "$UNNAMED$53" @240
 				    location   	(448, 336)
 				    font       	(object Font
 					size       	9
@@ -4863,7 +4877,7 @@
 					height     	138
 					y_coord    	48
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$49" @242
+				(object InterObjView "$UNNAMED$52" @242
 				    location   	(832, 336)
 				    font       	(object Font
 					size       	9
@@ -4914,7 +4928,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$48" @246
+				(object InterObjView "$UNNAMED$51" @246
 				    location   	(1296, 336)
 				    font       	(object Font
 					size       	9
@@ -4958,7 +4972,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$47" @249
+				(object InterObjView "$UNNAMED$50" @249
 				    location   	(1680, 320)
 				    font       	(object Font
 					size       	9
@@ -5002,7 +5016,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$46" @252
+				(object InterObjView "$UNNAMED$49" @252
 				    location   	(2096, 320)
 				    font       	(object Font
 					size       	9
@@ -5067,7 +5081,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$45" @258
+				(object InterObjView "$UNNAMED$48" @258
 				    location   	(2480, 304)
 				    font       	(object Font
 					size       	9
@@ -5419,19 +5433,19 @@
 		    logical_models 	(list unit_reference_list
 			(object Mechanism @277
 			    logical_models 	(list unit_reference_list
-				(object Object "$UNNAMED$51"
+				(object Object "$UNNAMED$54"
 				    quid       	"5EFD4A0B03AC"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::issue.java"
 				    quidu      	"5EFD49A103AA"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$52"
+				(object Object "$UNNAMED$55"
 				    quid       	"5EFD4A5D03E5"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD4B090356"
-					    supplier   	"$UNNAMED$51"
+					    supplier   	"$UNNAMED$54"
 					    quidu      	"5EFD4A0B03AC"
 					    messages   	(list Messages
 						(object Message "delissue( )"
@@ -5445,7 +5459,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD4B0E0005"
-					    supplier   	"$UNNAMED$53"
+					    supplier   	"$UNNAMED$56"
 					    quidu      	"5EFD4A700335"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -5459,7 +5473,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD4B100336"
-					    supplier   	"$UNNAMED$54"
+					    supplier   	"$UNNAMED$57"
 					    quidu      	"5EFD4A740184"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -5476,26 +5490,26 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$53"
+				(object Object "$UNNAMED$56"
 				    quid       	"5EFD4A700335"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::fail.jsp"
 				    quidu      	"5EFD329F005C"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$54"
+				(object Object "$UNNAMED$57"
 				    quid       	"5EFD4A740184"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::success.jsp"
 				    quidu      	"5EFD328F021A"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$55"
+				(object Object "$UNNAMED$58"
 				    quid       	"5EFD4AA6020C"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD4B060176"
-					    supplier   	"$UNNAMED$52"
+					    supplier   	"$UNNAMED$55"
 					    quidu      	"5EFD4A5D03E5"
 					    messages   	(list Messages
 						(object Message "delissue( )"
@@ -5512,12 +5526,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$56"
+				(object Object "$UNNAMED$59"
 				    quid       	"5EFD4AE00034"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD4AF20376"
-					    supplier   	"$UNNAMED$55"
+					    supplier   	"$UNNAMED$58"
 					    quidu      	"5EFD4AA6020C"
 					    messages   	(list Messages
 						(object Message "delise( )"
@@ -5545,7 +5559,7 @@
 			    origin_x   	0
 			    origin_y   	0
 			    items      	(list diagram_item_list
-				(object InterObjView "$UNNAMED$56" @278
+				(object InterObjView "$UNNAMED$59" @278
 				    location   	(352, 320)
 				    font       	(object Font
 					size       	9
@@ -5582,7 +5596,7 @@
 					height     	122
 					y_coord    	32
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$55" @280
+				(object InterObjView "$UNNAMED$58" @280
 				    location   	(752, 304)
 				    font       	(object Font
 					size       	9
@@ -5633,7 +5647,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$54" @284
+				(object InterObjView "$UNNAMED$57" @284
 				    location   	(1184, 320)
 				    font       	(object Font
 					size       	9
@@ -5677,7 +5691,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$53" @287
+				(object InterObjView "$UNNAMED$56" @287
 				    location   	(1616, 304)
 				    font       	(object Font
 					size       	9
@@ -5721,7 +5735,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$52" @290
+				(object InterObjView "$UNNAMED$55" @290
 				    location   	(2032, 304)
 				    font       	(object Font
 					size       	9
@@ -5786,7 +5800,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$51" @296
+				(object InterObjView "$UNNAMED$54" @296
 				    location   	(2448, 224)
 				    font       	(object Font
 					size       	9
@@ -6103,12 +6117,12 @@
 		    logical_models 	(list unit_reference_list
 			(object Mechanism @314
 			    logical_models 	(list unit_reference_list
-				(object Object "$UNNAMED$57"
+				(object Object "$UNNAMED$60"
 				    quid       	"5EFD4DF70244"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD4DF70245"
-					    supplier   	"$UNNAMED$58"
+					    supplier   	"$UNNAMED$61"
 					    quidu      	"5EFD4DF7024A"
 					    messages   	(list Messages
 						(object Message "delise( )"
@@ -6125,12 +6139,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$58"
+				(object Object "$UNNAMED$61"
 				    quid       	"5EFD4DF7024A"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD4DF7024B"
-					    supplier   	"$UNNAMED$59"
+					    supplier   	"$UNNAMED$62"
 					    quidu      	"5EFD4DF70250"
 					    messages   	(list Messages
 						(object Message "delissue( )"
@@ -6147,26 +6161,26 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$60"
+				(object Object "$UNNAMED$63"
 				    quid       	"5EFD4DF70260"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::success.jsp"
 				    quidu      	"5EFD328F021A"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$61"
+				(object Object "$UNNAMED$64"
 				    quid       	"5EFD4DF7025D"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::fail.jsp"
 				    quidu      	"5EFD329F005C"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$59"
+				(object Object "$UNNAMED$62"
 				    quid       	"5EFD4DF70250"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD4DF70251"
-					    supplier   	"$UNNAMED$62"
+					    supplier   	"$UNNAMED$65"
 					    quidu      	"5EFD4DF7025A"
 					    messages   	(list Messages
 						(object Message "delissue( )"
@@ -6180,7 +6194,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD4DF70254"
-					    supplier   	"$UNNAMED$61"
+					    supplier   	"$UNNAMED$64"
 					    quidu      	"5EFD4DF7025D"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -6194,7 +6208,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD4DF70256"
-					    supplier   	"$UNNAMED$60"
+					    supplier   	"$UNNAMED$63"
 					    quidu      	"5EFD4DF70260"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -6211,7 +6225,7 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$62"
+				(object Object "$UNNAMED$65"
 				    quid       	"5EFD4DF7025A"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::issue.java"
 				    quidu      	"5EFD49A103AA"
@@ -6229,7 +6243,7 @@
 			    origin_x   	78
 			    origin_y   	0
 			    items      	(list diagram_item_list
-				(object InterObjView "$UNNAMED$57" @315
+				(object InterObjView "$UNNAMED$60" @315
 				    location   	(352, 320)
 				    font       	(object Font
 					size       	9
@@ -6273,7 +6287,7 @@
 					height     	122
 					y_coord    	32
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$58" @318
+				(object InterObjView "$UNNAMED$61" @318
 				    location   	(752, 304)
 				    font       	(object Font
 					size       	9
@@ -6331,7 +6345,7 @@
 					height     	95
 					y_coord    	5
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$60" @323
+				(object InterObjView "$UNNAMED$63" @323
 				    location   	(1184, 320)
 				    font       	(object Font
 					size       	9
@@ -6382,7 +6396,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$61" @327
+				(object InterObjView "$UNNAMED$64" @327
 				    location   	(1616, 304)
 				    font       	(object Font
 					size       	9
@@ -6433,7 +6447,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$59" @331
+				(object InterObjView "$UNNAMED$62" @331
 				    location   	(2032, 304)
 				    font       	(object Font
 					size       	9
@@ -6505,7 +6519,7 @@
 					height     	95
 					y_coord    	5
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$62" @338
+				(object InterObjView "$UNNAMED$65" @338
 				    location   	(2448, 224)
 				    font       	(object Font
 					size       	9
@@ -6843,19 +6857,19 @@
 				    uid        	0)))
 			(object Mechanism @357
 			    logical_models 	(list unit_reference_list
-				(object Object "$UNNAMED$63"
+				(object Object "$UNNAMED$66"
 				    quid       	"5EFD4E1D02DB"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::issue.java"
 				    quidu      	"5EFD49A103AA"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$64"
+				(object Object "$UNNAMED$67"
 				    quid       	"5EFD4E230122"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD4EDF035D"
-					    supplier   	"$UNNAMED$63"
+					    supplier   	"$UNNAMED$66"
 					    quidu      	"5EFD4E1D02DB"
 					    messages   	(list Messages
 						(object Message "selissue( )"
@@ -6878,7 +6892,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD4EE70205"
-					    supplier   	"$UNNAMED$65"
+					    supplier   	"$UNNAMED$68"
 					    quidu      	"5EFD4E2800BB"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -6892,7 +6906,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD4EEA0105"
-					    supplier   	"$UNNAMED$66"
+					    supplier   	"$UNNAMED$69"
 					    quidu      	"5EFD4E2D02F5"
 					    messages   	(list Messages
 						(object Message "redirect"
@@ -6909,19 +6923,19 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$65"
+				(object Object "$UNNAMED$68"
 				    quid       	"5EFD4E2800BB"
 				    class      	"Logical View::Design Model::Use-Case Realizations::知识管理子系统::fail.jsp"
 				    quidu      	"5EFD329F005C"
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$66"
+				(object Object "$UNNAMED$69"
 				    quid       	"5EFD4E2D02F5"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD4EEF027C"
-					    supplier   	"$UNNAMED$67"
+					    supplier   	"$UNNAMED$70"
 					    quidu      	"5EFD4E3602BA"
 					    messages   	(list Messages
 						(object Message "内容回显"
@@ -6938,12 +6952,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$67"
+				(object Object "$UNNAMED$70"
 				    quid       	"5EFD4E3602BA"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD4ECA030C"
-					    supplier   	"$UNNAMED$68"
+					    supplier   	"$UNNAMED$71"
 					    quidu      	"5EFD4EB302FA"
 					    messages   	(list Messages
 						(object Message "inputissure( )"
@@ -6960,12 +6974,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$68"
+				(object Object "$UNNAMED$71"
 				    quid       	"5EFD4EB302FA"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD4ED601AA"
-					    supplier   	"$UNNAMED$68"
+					    supplier   	"$UNNAMED$71"
 					    quidu      	"5EFD4EB302FA"
 					    messages   	(list Messages
 						(object Message "checkissure( )"
@@ -6979,7 +6993,7 @@
 						    creation   	FALSE)))
 					(object Link
 					    quid       	"5EFD4EDC00BC"
-					    supplier   	"$UNNAMED$64"
+					    supplier   	"$UNNAMED$67"
 					    quidu      	"5EFD4E230122"
 					    messages   	(list Messages
 						(object Message "selissue( )"
@@ -6996,12 +7010,12 @@
 				    persistence 	"Transient"
 				    creationObj 	TRUE
 				    multi      	FALSE)
-				(object Object "$UNNAMED$69"
+				(object Object "$UNNAMED$72"
 				    quid       	"5EFD4EB9020B"
 				    collaborators 	(list link_list
 					(object Link
 					    quid       	"5EFD4EC50314"
-					    supplier   	"$UNNAMED$67"
+					    supplier   	"$UNNAMED$70"
 					    quidu      	"5EFD4E3602BA"
 					    messages   	(list Messages
 						(object Message "button(sel)"
@@ -7029,7 +7043,7 @@
 			    origin_x   	81
 			    origin_y   	0
 			    items      	(list diagram_item_list
-				(object InterObjView "$UNNAMED$69" @358
+				(object InterObjView "$UNNAMED$72" @358
 				    location   	(256, 368)
 				    font       	(object Font
 					size       	9
@@ -7066,7 +7080,7 @@
 					height     	106
 					y_coord    	16
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$67" @360
+				(object InterObjView "$UNNAMED$70" @360
 				    location   	(656, 352)
 				    font       	(object Font
 					size       	9
@@ -7117,7 +7131,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$68" @364
+				(object InterObjView "$UNNAMED$71" @364
 				    location   	(1040, 368)
 				    font       	(object Font
 					size       	9
@@ -7168,7 +7182,7 @@
 					height     	190
 					y_coord    	100
 					Nested     	TRUE))
-				(object InterObjView "$UNNAMED$66" @368
+				(object InterObjView "$UNNAMED$69" @368
 				    location   	(1424, 368)
 				    font       	(object Font
 					size       	9
@@ -7219,7 +7233,7 @@
 					height     	91
 					y_coord    	1
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$65" @372
+				(object InterObjView "$UNNAMED$68" @372
 				    location   	(1792, 384)
 				    font       	(object Font
 					size       	9
@@ -7263,7 +7277,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$64" @375
+				(object InterObjView "$UNNAMED$67" @375
 				    location   	(2208, 384)
 				    font       	(object Font
 					size       	9
@@ -7328,7 +7342,7 @@
 					height     	90
 					y_coord    	0
 					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$63" @381
+				(object InterObjView "$UNNAMED$66" @381
 				    location   	(2592, 384)
 				    font       	(object Font
 					size       	9
@@ -7821,136 +7835,10 @@
 	    zoom       	100
 	    max_height 	28350
 	    max_width  	21600
-	    origin_x   	981
+	    origin_x   	756
 	    origin_y   	0
 	    items      	(list diagram_item_list
-		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::知识管理子系统::comment.java" @409
-		    ShowCompartmentStereotypes 	TRUE
-		    IncludeAttribute 	TRUE
-		    IncludeOperation 	TRUE
-		    location   	(544, 528)
-		    font       	(object Font
-			size       	9
-			face       	"Arial"
-			bold       	FALSE
-			italics    	FALSE
-			underline  	FALSE
-			strike     	FALSE
-			color      	0
-			default_color 	TRUE)
-		    label      	(object ItemLabel
-			Parent_View 	@409
-			location   	(396, 378)
-			fill_color 	13434879
-			nlines     	1
-			max_width  	296
-			justify    	0
-			label      	"comment.java")
-		    stereotype 	(object ItemLabel
-			Parent_View 	@409
-			location   	(396, 331)
-			fill_color 	13434879
-			anchor     	10
-			nlines     	1
-			max_width  	296
-			justify    	0
-			label      	"<<entity>>")
-		    icon       	"entity"
-		    icon_style 	"Label"
-		    line_color 	3342489
-		    fill_color 	13434879
-		    quidu      	"5EFD441901ED"
-		    compartment 	(object Compartment
-			Parent_View 	@409
-			location   	(396, 436)
-			font       	(object Font
-			    size       	9
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			icon_style 	"Icon"
-			fill_color 	16777215
-			anchor     	2
-			nlines     	6
-			max_width  	294
-			justify    	1)
-		    width      	314
-		    height     	416
-		    annotation 	8
-		    autoResize 	TRUE)
-		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::知识管理子系统::knowledge.java" @410
-		    ShowCompartmentStereotypes 	TRUE
-		    IncludeAttribute 	TRUE
-		    IncludeOperation 	TRUE
-		    location   	(1200, 528)
-		    font       	(object Font
-			size       	9
-			face       	"Arial"
-			bold       	FALSE
-			italics    	FALSE
-			underline  	FALSE
-			strike     	FALSE
-			color      	0
-			default_color 	TRUE)
-		    label      	(object ItemLabel
-			Parent_View 	@410
-			location   	(1049, 190)
-			fill_color 	13434879
-			nlines     	1
-			max_width  	302
-			justify    	0
-			label      	"knowledge.java")
-		    stereotype 	(object ItemLabel
-			Parent_View 	@410
-			location   	(1049, 143)
-			fill_color 	13434879
-			anchor     	10
-			nlines     	1
-			max_width  	302
-			justify    	0
-			label      	"<<entity>>")
-		    icon       	"entity"
-		    icon_style 	"Label"
-		    line_color 	3342489
-		    fill_color 	13434879
-		    quidu      	"5EFD32A7029B"
-		    compartment 	(object Compartment
-			Parent_View 	@410
-			location   	(1049, 248)
-			font       	(object Font
-			    size       	9
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			icon_style 	"Icon"
-			fill_color 	16777215
-			anchor     	2
-			nlines     	14
-			max_width  	284
-			justify    	1)
-		    width      	320
-		    height     	792
-		    annotation 	8
-		    autoResize 	TRUE)
-		(object UsesView "" @411
-		    stereotype 	TRUE
-		    line_color 	3342489
-		    quidu      	"5EFDC64B01AF"
-		    client     	@409
-		    supplier   	@410
-		    vertices   	(list Points
-			(701, 528)
-			(1039, 528))
-		    line_style 	0)
-		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::知识管理子系统::issue.java" @412
+		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::知识管理子系统::issue.java" @409
 		    ShowCompartmentStereotypes 	TRUE
 		    IncludeAttribute 	TRUE
 		    IncludeOperation 	TRUE
@@ -7965,7 +7853,7 @@
 			color      	0
 			default_color 	TRUE)
 		    label      	(object ItemLabel
-			Parent_View 	@412
+			Parent_View 	@409
 			location   	(1761, 324)
 			fill_color 	13434879
 			nlines     	1
@@ -7973,7 +7861,7 @@
 			justify    	0
 			label      	"issue.java")
 		    stereotype 	(object ItemLabel
-			Parent_View 	@412
+			Parent_View 	@409
 			location   	(1761, 277)
 			fill_color 	13434879
 			anchor     	10
@@ -7987,7 +7875,7 @@
 		    fill_color 	13434879
 		    quidu      	"5EFD49A103AA"
 		    compartment 	(object Compartment
-			Parent_View 	@412
+			Parent_View 	@409
 			location   	(1761, 382)
 			font       	(object Font
 			    size       	9
@@ -8008,11 +7896,11 @@
 		    height     	556
 		    annotation 	8
 		    autoResize 	TRUE)
-		(object ClassView "Class" "Use Case View::Business Use-Case Model::Actors::管理员" @413
+		(object ClassView "Class" "Use Case View::Business Use-Case Model::Actors::管理员" @410
 		    ShowCompartmentStereotypes 	TRUE
 		    IncludeAttribute 	TRUE
 		    IncludeOperation 	TRUE
-		    location   	(1200, 1424)
+		    location   	(2464, 544)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -8023,16 +7911,16 @@
 			color      	0
 			default_color 	TRUE)
 		    label      	(object ItemLabel
-			Parent_View 	@413
-			location   	(1078, 1158)
+			Parent_View 	@410
+			location   	(2342, 278)
 			fill_color 	13434879
 			nlines     	1
 			max_width  	244
 			justify    	0
 			label      	"管理员")
 		    stereotype 	(object ItemLabel
-			Parent_View 	@413
-			location   	(1078, 1111)
+			Parent_View 	@410
+			location   	(2342, 231)
 			fill_color 	13434879
 			anchor     	10
 			nlines     	1
@@ -8045,8 +7933,8 @@
 		    fill_color 	13434879
 		    quidu      	"5EEDB2D70399"
 		    compartment 	(object Compartment
-			Parent_View 	@413
-			location   	(1078, 1258)
+			Parent_View 	@410
+			location   	(2342, 378)
 			font       	(object Font
 			    size       	9
 			    face       	"Arial"
@@ -8066,8 +7954,124 @@
 		    height     	648
 		    annotation 	8
 		    autoResize 	TRUE)
-		(object AssociationViewNew "$UNNAMED$3" @414
-		    location   	(881, 991)
+		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::知识管理子系统::knowledge.java" @411
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1200, 528)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@411
+			location   	(1049, 190)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	302
+			justify    	0
+			label      	"knowledge.java")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@411
+			location   	(1049, 143)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	302
+			justify    	0
+			label      	"<<entity>>")
+		    icon       	"entity"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EFD32A7029B"
+		    compartment 	(object Compartment
+			Parent_View 	@411
+			location   	(1049, 248)
+			font       	(object Font
+			    size       	9
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	14
+			max_width  	303
+			justify    	1)
+		    width      	320
+		    height     	792
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::知识管理子系统::comment.java" @412
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(544, 528)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@412
+			location   	(396, 378)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	296
+			justify    	0
+			label      	"comment.java")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@412
+			location   	(396, 331)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	296
+			justify    	0
+			label      	"<<entity>>")
+		    icon       	"entity"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EFD441901ED"
+		    compartment 	(object Compartment
+			Parent_View 	@412
+			location   	(396, 436)
+			font       	(object Font
+			    size       	9
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	6
+			max_width  	312
+			justify    	1)
+		    width      	314
+		    height     	416
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$12" @413
+		    location   	(870, 528)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -8079,11 +8083,11 @@
 			default_color 	TRUE)
 		    stereotype 	TRUE
 		    line_color 	3342489
-		    quidu      	"5EFDD0E80063"
+		    quidu      	"5EFE8DFA00B4"
 		    roleview_list 	(list RoleViews
-			(object RoleView "$UNNAMED$4" @415
-			    Parent_View 	@414
-			    location   	(-319, -337)
+			(object RoleView "$UNNAMED$13" @414
+			    Parent_View 	@413
+			    location   	(-330, 0)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -8093,40 +8097,18 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    label      	(object SegLabel @416
-				Parent_View 	@415
-				location   	(766, 763)
-				font       	(object Font
-				    size       	9
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				hidden     	TRUE
-				anchor     	1
-				anchor_loc 	1
-				nlines     	1
-				max_width  	60
-				justify    	0
-				label      	""
-				pctDist    	0.800000
-				height     	42
-				orientation 	1)
 			    stereotype 	TRUE
 			    line_color 	3342489
-			    quidu      	"5EFDD0EA0016"
-			    client     	@414
-			    supplier   	@409
+			    quidu      	"5EFE8DFA037E"
+			    client     	@413
+			    supplier   	@412
 			    vertices   	(list Points
-				(881, 991)
-				(695, 736))
+				(870, 528)
+				(701, 528))
 			    line_style 	0
-			    label      	(object SegLabel @417
-				Parent_View 	@415
-				location   	(671, 794)
+			    label      	(object SegLabel @415
+				Parent_View 	@414
+				location   	(719, 582)
 				font       	(object Font
 				    size       	9
 				    face       	"Arial"
@@ -8145,9 +8127,9 @@
 				pctDist    	0.900000
 				height     	54
 				orientation 	0))
-			(object RoleView "$UNNAMED$5" @418
-			    Parent_View 	@414
-			    location   	(-319, -337)
+			(object RoleView "$UNNAMED$14" @416
+			    Parent_View 	@413
+			    location   	(-330, 0)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -8159,16 +8141,16 @@
 				default_color 	TRUE)
 			    stereotype 	TRUE
 			    line_color 	3342489
-			    quidu      	"5EFDD0EA0018"
-			    client     	@414
-			    supplier   	@413
+			    quidu      	"5EFE8DFA0383"
+			    client     	@413
+			    supplier   	@411
 			    vertices   	(list Points
-				(881, 991)
-				(1068, 1246))
+				(870, 528)
+				(1039, 528))
 			    line_style 	0
-			    label      	(object SegLabel @419
-				Parent_View 	@418
-				location   	(1005, 1251)
+			    label      	(object SegLabel @417
+				Parent_View 	@416
+				location   	(1021, 582)
 				font       	(object Font
 				    size       	9
 				    face       	"Arial"
@@ -8186,202 +8168,4 @@
 				label      	"1"
 				pctDist    	0.900000
 				height     	54
-				orientation 	1))))
-		(object AssociationViewNew "$UNNAMED$6" @420
-		    location   	(1200, 1011)
-		    font       	(object Font
-			size       	9
-			face       	"Arial"
-			bold       	FALSE
-			italics    	FALSE
-			underline  	FALSE
-			strike     	FALSE
-			color      	0
-			default_color 	TRUE)
-		    stereotype 	TRUE
-		    line_color 	3342489
-		    quidu      	"5EFDD0EF0089"
-		    roleview_list 	(list RoleViews
-			(object RoleView "$UNNAMED$7" @421
-			    Parent_View 	@420
-			    location   	(0, -317)
-			    font       	(object Font
-				size       	9
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5EFDD0EF02BC"
-			    client     	@420
-			    supplier   	@410
-			    vertices   	(list Points
-				(1200, 1011)
-				(1200, 924))
-			    line_style 	0
-			    label      	(object SegLabel @422
-				Parent_View 	@421
-				location   	(1254, 933)
-				font       	(object Font
-				    size       	9
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				anchor     	2
-				anchor_loc 	1
-				nlines     	1
-				max_width  	15
-				justify    	0
-				label      	"0..n"
-				pctDist    	0.900000
-				height     	54
-				orientation 	1))
-			(object RoleView "$UNNAMED$8" @423
-			    Parent_View 	@420
-			    location   	(0, -317)
-			    font       	(object Font
-				size       	9
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5EFDD0EF02BE"
-			    client     	@420
-			    supplier   	@413
-			    vertices   	(list Points
-				(1200, 1011)
-				(1200, 1099))
-			    line_style 	0
-			    label      	(object SegLabel @424
-				Parent_View 	@423
-				location   	(1254, 1089)
-				font       	(object Font
-				    size       	9
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				anchor     	2
-				anchor_loc 	1
-				nlines     	1
-				max_width  	15
-				justify    	0
-				label      	"1"
-				pctDist    	0.900000
-				height     	54
-				orientation 	0))))
-		(object AssociationViewNew "$UNNAMED$9" @425
-		    location   	(1541, 976)
-		    font       	(object Font
-			size       	9
-			face       	"Arial"
-			bold       	FALSE
-			italics    	FALSE
-			underline  	FALSE
-			strike     	FALSE
-			color      	0
-			default_color 	TRUE)
-		    stereotype 	TRUE
-		    line_color 	3342489
-		    quidu      	"5EFDD0F102CC"
-		    roleview_list 	(list RoleViews
-			(object RoleView "$UNNAMED$10" @426
-			    Parent_View 	@425
-			    location   	(341, -352)
-			    font       	(object Font
-				size       	9
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5EFDD0F20167"
-			    client     	@425
-			    supplier   	@412
-			    vertices   	(list Points
-				(1541, 976)
-				(1751, 701))
-			    line_style 	0
-			    label      	(object SegLabel @427
-				Parent_View 	@426
-				location   	(1773, 762)
-				font       	(object Font
-				    size       	9
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				anchor     	2
-				anchor_loc 	1
-				nlines     	1
-				max_width  	15
-				justify    	0
-				label      	"0..n"
-				pctDist    	0.900000
-				height     	54
-				orientation 	1))
-			(object RoleView "$UNNAMED$11" @428
-			    Parent_View 	@425
-			    location   	(341, -352)
-			    font       	(object Font
-				size       	9
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    stereotype 	TRUE
-			    line_color 	3342489
-			    quidu      	"5EFDD0F20169"
-			    client     	@425
-			    supplier   	@413
-			    vertices   	(list Points
-				(1541, 976)
-				(1331, 1252))
-			    line_style 	0
-			    label      	(object SegLabel @429
-				Parent_View 	@428
-				location   	(1395, 1257)
-				font       	(object Font
-				    size       	9
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				anchor     	2
-				anchor_loc 	1
-				nlines     	1
-				max_width  	15
-				justify    	0
-				label      	"1"
-				pctDist    	0.900000
-				height     	54
-				orientation 	0))))))))
+				orientation 	1))))))))
