@@ -197,7 +197,7 @@
 					location   	(176, 263)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	360
+					max_width  	324
 					justify    	0
 					label      	"")
 				    icon       	"Actor"
@@ -205,10 +205,10 @@
 				    line_color 	3342489
 				    fill_color 	13434879
 				    quidu      	"5EFDA1280095"
-				    width      	120
+				    width      	300
 				    height     	996
-				    icon_height 	162
-				    icon_width 	120
+				    icon_height 	150
+				    icon_width 	108
 				    icon_y_offset 	0
 				    annotation 	1
 				    Focus_Of_Control 	(object Focus_Of_Control "" @3
@@ -241,7 +241,7 @@
 					location   	(656, 264)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	687
+					max_width  	651
 					justify    	0
 					label      	"")
 				    icon       	"boundary"
@@ -249,10 +249,10 @@
 				    line_color 	3342489
 				    fill_color 	13434879
 				    quidu      	"5EFDA13003B5"
-				    width      	229
+				    width      	300
 				    height     	996
-				    icon_height 	153
-				    icon_width 	229
+				    icon_height 	141
+				    icon_width 	217
 				    icon_y_offset 	0
 				    annotation 	1
 				    Focus_Of_Control 	(object Focus_Of_Control "" @6
@@ -285,7 +285,7 @@
 					location   	(1216, 263)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	471
+					max_width  	435
 					justify    	0
 					label      	"")
 				    icon       	"control"
@@ -293,10 +293,10 @@
 				    line_color 	3342489
 				    fill_color 	13434879
 				    quidu      	"5EFDA1330088"
-				    width      	157
+				    width      	300
 				    height     	996
-				    icon_height 	164
-				    icon_width 	157
+				    icon_height 	152
+				    icon_width 	145
 				    icon_y_offset 	0
 				    annotation 	1
 				    Focus_Of_Control 	(object Focus_Of_Control "" @9
@@ -329,7 +329,7 @@
 					location   	(1824, 280)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	462
+					max_width  	426
 					justify    	0
 					label      	"")
 				    icon       	"entity"
@@ -337,10 +337,10 @@
 				    line_color 	3342489
 				    fill_color 	13434879
 				    quidu      	"5EFDA13C014B"
-				    width      	154
+				    width      	300
 				    height     	980
-				    icon_height 	153
-				    icon_width 	154
+				    icon_height 	141
+				    icon_width 	142
 				    icon_y_offset 	0
 				    annotation 	1
 				    Focus_Of_Control 	(object Focus_Of_Control "" @12
@@ -871,7 +871,7 @@
 						location   	(320, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -879,10 +879,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA69C039C"
-					    width      	120
+					    width      	300
 					    height     	999
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @33
@@ -915,7 +915,7 @@
 						location   	(752, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -923,10 +923,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA6A103B3"
-					    width      	229
+					    width      	300
 					    height     	999
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @36
@@ -959,7 +959,7 @@
 						location   	(1200, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -967,10 +967,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA6A8031D"
-					    width      	157
+					    width      	300
 					    height     	999
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @39
@@ -1003,7 +1003,7 @@
 						location   	(1728, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -1011,10 +1011,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA6B10084"
-					    width      	154
+					    width      	300
 					    height     	999
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @42
@@ -1541,7 +1541,7 @@
 						location   	(208, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -1549,10 +1549,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA74F035C"
-					    width      	120
+					    width      	300
 					    height     	980
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @63
@@ -1585,7 +1585,7 @@
 						location   	(576, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -1593,10 +1593,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA75A0234"
-					    width      	229
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @66
@@ -1629,7 +1629,7 @@
 						location   	(1024, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -1637,10 +1637,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA75D01D8"
-					    width      	157
+					    width      	300
 					    height     	980
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @69
@@ -1673,7 +1673,7 @@
 						location   	(1472, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -1681,10 +1681,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA7900280"
-					    width      	154
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @72
@@ -2211,7 +2211,7 @@
 						location   	(224, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -2219,10 +2219,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA82402D8"
-					    width      	120
+					    width      	300
 					    height     	980
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @93
@@ -2255,7 +2255,7 @@
 						location   	(592, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -2263,10 +2263,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA82C011D"
-					    width      	229
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @96
@@ -2299,7 +2299,7 @@
 						location   	(1008, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -2307,10 +2307,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA82E00FF"
-					    width      	157
+					    width      	300
 					    height     	980
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @99
@@ -2343,7 +2343,7 @@
 						location   	(1440, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -2351,10 +2351,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA8580310"
-					    width      	154
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @102
@@ -2899,7 +2899,7 @@
 						location   	(256, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -2907,10 +2907,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA8E7006F"
-					    width      	120
+					    width      	300
 					    height     	1173
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @123
@@ -2943,7 +2943,7 @@
 						location   	(656, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -2951,10 +2951,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA8EF0063"
-					    width      	229
+					    width      	300
 					    height     	1173
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @126
@@ -2987,7 +2987,7 @@
 						location   	(1120, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -2995,10 +2995,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA8F100BF"
-					    width      	157
+					    width      	300
 					    height     	1173
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @129
@@ -3038,7 +3038,7 @@
 						location   	(1584, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -3046,10 +3046,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDA8F70015"
-					    width      	154
+					    width      	300
 					    height     	1173
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @133
@@ -3668,7 +3668,7 @@
 						location   	(320, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -3676,10 +3676,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAB170390"
-					    width      	120
+					    width      	300
 					    height     	999
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @159
@@ -3712,7 +3712,7 @@
 						location   	(752, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -3720,10 +3720,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAB170398"
-					    width      	229
+					    width      	300
 					    height     	999
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @162
@@ -3756,7 +3756,7 @@
 						location   	(1200, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -3764,10 +3764,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAB17039D"
-					    width      	157
+					    width      	300
 					    height     	999
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @165
@@ -3800,7 +3800,7 @@
 						location   	(1728, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -3808,10 +3808,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAB1703A2"
-					    width      	154
+					    width      	300
 					    height     	999
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @168
@@ -4338,7 +4338,7 @@
 						location   	(208, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -4346,10 +4346,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAB8100E6"
-					    width      	120
+					    width      	300
 					    height     	980
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @189
@@ -4382,7 +4382,7 @@
 						location   	(576, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -4390,10 +4390,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAB8100EE"
-					    width      	229
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @192
@@ -4426,7 +4426,7 @@
 						location   	(1024, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -4434,10 +4434,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAB8100F3"
-					    width      	157
+					    width      	300
 					    height     	980
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @195
@@ -4470,7 +4470,7 @@
 						location   	(1472, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -4478,10 +4478,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAB8100F8"
-					    width      	154
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @198
@@ -5026,7 +5026,7 @@
 						location   	(256, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -5034,10 +5034,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDABF401D8"
-					    width      	120
+					    width      	300
 					    height     	1173
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @219
@@ -5070,7 +5070,7 @@
 						location   	(656, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -5078,10 +5078,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDABF401E0"
-					    width      	229
+					    width      	300
 					    height     	1173
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @222
@@ -5114,7 +5114,7 @@
 						location   	(1120, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -5122,10 +5122,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDABF401E5"
-					    width      	157
+					    width      	300
 					    height     	1173
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @225
@@ -5165,7 +5165,7 @@
 						location   	(1584, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -5173,10 +5173,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDABF401EC"
-					    width      	154
+					    width      	300
 					    height     	1173
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @229
@@ -5795,7 +5795,7 @@
 						location   	(288, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -5803,10 +5803,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAD5300A0"
-					    width      	120
+					    width      	300
 					    height     	980
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @255
@@ -5839,7 +5839,7 @@
 						location   	(656, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -5847,10 +5847,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAD590071"
-					    width      	229
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @258
@@ -5883,7 +5883,7 @@
 						location   	(1104, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -5891,10 +5891,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAD5A0309"
-					    width      	157
+					    width      	300
 					    height     	980
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @261
@@ -5927,7 +5927,7 @@
 						location   	(1504, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -5935,10 +5935,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAD5E02F1"
-					    width      	154
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @264
@@ -6465,7 +6465,7 @@
 						location   	(208, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -6473,10 +6473,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAD130072"
-					    width      	120
+					    width      	300
 					    height     	980
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @285
@@ -6509,7 +6509,7 @@
 						location   	(576, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -6517,10 +6517,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAD13007A"
-					    width      	229
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @288
@@ -6553,7 +6553,7 @@
 						location   	(1024, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -6561,10 +6561,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAD13007F"
-					    width      	157
+					    width      	300
 					    height     	980
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @291
@@ -6597,7 +6597,7 @@
 						location   	(1472, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -6605,10 +6605,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAD130084"
-					    width      	154
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @294
@@ -7153,7 +7153,7 @@
 						location   	(192, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -7161,10 +7161,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAE5200C2"
-					    width      	120
+					    width      	300
 					    height     	1173
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @315
@@ -7197,7 +7197,7 @@
 						location   	(832, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -7205,10 +7205,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAE5B037F"
-					    width      	229
+					    width      	300
 					    height     	1173
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @318
@@ -7241,7 +7241,7 @@
 						location   	(1296, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -7249,10 +7249,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAE5D0291"
-					    width      	157
+					    width      	300
 					    height     	1173
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @321
@@ -7292,7 +7292,7 @@
 						location   	(1840, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -7300,10 +7300,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAE610285"
-					    width      	154
+					    width      	300
 					    height     	1173
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @325
@@ -7922,7 +7922,7 @@
 						location   	(288, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -7930,10 +7930,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAF38029C"
-					    width      	120
+					    width      	300
 					    height     	980
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @351
@@ -7966,7 +7966,7 @@
 						location   	(656, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -7974,10 +7974,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAF3802A4"
-					    width      	229
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @354
@@ -8010,7 +8010,7 @@
 						location   	(1104, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -8018,10 +8018,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAF3802A9"
-					    width      	157
+					    width      	300
 					    height     	980
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @357
@@ -8054,7 +8054,7 @@
 						location   	(1504, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -8062,10 +8062,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAF3802AE"
-					    width      	154
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @360
@@ -8592,7 +8592,7 @@
 						location   	(208, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -8600,10 +8600,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAF8002C9"
-					    width      	120
+					    width      	300
 					    height     	980
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @381
@@ -8636,7 +8636,7 @@
 						location   	(576, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -8644,10 +8644,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAF8002D1"
-					    width      	229
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @384
@@ -8680,7 +8680,7 @@
 						location   	(1024, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -8688,10 +8688,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAF8002D6"
-					    width      	157
+					    width      	300
 					    height     	980
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @387
@@ -8724,7 +8724,7 @@
 						location   	(1472, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -8732,10 +8732,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDAF8002DB"
-					    width      	154
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @390
@@ -9280,7 +9280,7 @@
 						location   	(240, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -9288,10 +9288,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB00002AF"
-					    width      	120
+					    width      	300
 					    height     	1189
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @411
@@ -9324,7 +9324,7 @@
 						location   	(752, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -9332,10 +9332,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB006035E"
-					    width      	229
+					    width      	300
 					    height     	1189
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @414
@@ -9368,7 +9368,7 @@
 						location   	(1200, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -9376,10 +9376,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB0080252"
-					    width      	157
+					    width      	300
 					    height     	1189
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @417
@@ -9419,7 +9419,7 @@
 						location   	(1696, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -9427,10 +9427,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB00B03DF"
-					    width      	154
+					    width      	300
 					    height     	1189
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @421
@@ -10049,7 +10049,7 @@
 						location   	(288, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -10057,10 +10057,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB0F90225"
-					    width      	120
+					    width      	300
 					    height     	980
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @447
@@ -10093,7 +10093,7 @@
 						location   	(656, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -10101,10 +10101,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB0F9022D"
-					    width      	229
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @450
@@ -10137,7 +10137,7 @@
 						location   	(1104, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -10145,10 +10145,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB0F90232"
-					    width      	157
+					    width      	300
 					    height     	980
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @453
@@ -10181,7 +10181,7 @@
 						location   	(1504, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -10189,10 +10189,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB0F90237"
-					    width      	154
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @456
@@ -10719,7 +10719,7 @@
 						location   	(208, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -10727,10 +10727,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB1A00094"
-					    width      	120
+					    width      	300
 					    height     	980
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @477
@@ -10763,7 +10763,7 @@
 						location   	(576, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -10771,10 +10771,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB1A0009C"
-					    width      	229
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @480
@@ -10807,7 +10807,7 @@
 						location   	(1024, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -10815,10 +10815,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB1A000A1"
-					    width      	157
+					    width      	300
 					    height     	980
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @483
@@ -10851,7 +10851,7 @@
 						location   	(1472, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -10859,10 +10859,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB1A000A6"
-					    width      	154
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @486
@@ -11407,7 +11407,7 @@
 						location   	(192, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -11415,10 +11415,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB1EB007C"
-					    width      	120
+					    width      	300
 					    height     	1173
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @507
@@ -11451,7 +11451,7 @@
 						location   	(832, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -11459,10 +11459,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB1EB0084"
-					    width      	229
+					    width      	300
 					    height     	1173
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @510
@@ -11495,7 +11495,7 @@
 						location   	(1296, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -11503,10 +11503,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB1EB0089"
-					    width      	157
+					    width      	300
 					    height     	1173
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @513
@@ -11546,7 +11546,7 @@
 						location   	(1840, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -11554,10 +11554,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB1EB0090"
-					    width      	154
+					    width      	300
 					    height     	1173
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @517
@@ -12176,7 +12176,7 @@
 						location   	(192, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -12184,10 +12184,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB2970378"
-					    width      	120
+					    width      	300
 					    height     	964
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @543
@@ -12220,7 +12220,7 @@
 						location   	(560, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -12228,10 +12228,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB29C0118"
-					    width      	229
+					    width      	300
 					    height     	964
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @546
@@ -12264,7 +12264,7 @@
 						location   	(928, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -12272,10 +12272,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB29D0356"
-					    width      	157
+					    width      	300
 					    height     	964
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @549
@@ -12308,7 +12308,7 @@
 						location   	(1424, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -12316,10 +12316,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB2A30124"
-					    width      	154
+					    width      	300
 					    height     	964
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @552
@@ -12846,7 +12846,7 @@
 						location   	(208, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -12854,10 +12854,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB23D0360"
-					    width      	120
+					    width      	300
 					    height     	980
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @573
@@ -12890,7 +12890,7 @@
 						location   	(576, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -12898,10 +12898,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB23D0368"
-					    width      	229
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @576
@@ -12934,7 +12934,7 @@
 						location   	(1024, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -12942,10 +12942,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB23D036D"
-					    width      	157
+					    width      	300
 					    height     	980
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @579
@@ -12978,7 +12978,7 @@
 						location   	(1472, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -12986,10 +12986,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB23D0372"
-					    width      	154
+					    width      	300
 					    height     	980
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @582
@@ -13534,7 +13534,7 @@
 						location   	(176, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	360
+						max_width  	324
 						justify    	0
 						label      	"")
 					    icon       	"Actor"
@@ -13542,10 +13542,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB3480359"
-					    width      	120
+					    width      	300
 					    height     	1189
-					    icon_height 	162
-					    icon_width 	120
+					    icon_height 	150
+					    icon_width 	108
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @603
@@ -13578,7 +13578,7 @@
 						location   	(544, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	687
+						max_width  	651
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -13586,10 +13586,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB34E03B2"
-					    width      	229
+					    width      	300
 					    height     	1189
-					    icon_height 	153
-					    icon_width 	229
+					    icon_height 	141
+					    icon_width 	217
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @606
@@ -13622,7 +13622,7 @@
 						location   	(960, 247)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	471
+						max_width  	435
 						justify    	0
 						label      	"")
 					    icon       	"control"
@@ -13630,10 +13630,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB35002A5"
-					    width      	157
+					    width      	300
 					    height     	1189
-					    icon_height 	164
-					    icon_width 	157
+					    icon_height 	152
+					    icon_width 	145
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @609
@@ -13673,7 +13673,7 @@
 						location   	(1472, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	462
+						max_width  	426
 						justify    	0
 						label      	"")
 					    icon       	"entity"
@@ -13681,10 +13681,10 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDB35401C8"
-					    width      	154
+					    width      	300
 					    height     	1189
-					    icon_height 	153
-					    icon_width 	154
+					    icon_height 	141
+					    icon_width 	142
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @613
