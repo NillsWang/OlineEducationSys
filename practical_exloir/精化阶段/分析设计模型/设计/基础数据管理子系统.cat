@@ -1484,7 +1484,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFBDF020234"
 				    width      	229
-				    height     	1464
+				    height     	1457
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -2103,7 +2103,7 @@
 				    ordinal    	8)
 				(object Destruction_Marker @81
 				    Parent_View 	@44
-				    location   	(1008, 1688)
+				    location   	(1008, 1681)
 				    line_color 	3342489
 				    fill_color 	13434879)))))
 		(object Class_Category "显示计划类别"
@@ -3230,7 +3230,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFBEDBB0305"
 				    width      	229
-				    height     	1384
+				    height     	1377
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -3851,7 +3851,7 @@
 				    line_style 	0)
 				(object Destruction_Marker @164
 				    Parent_View 	@127
-				    location   	(960, 1608)
+				    location   	(960, 1601)
 				    line_color 	3342489
 				    fill_color 	13434879))))))
 	    logical_presentations 	(list unit_reference_list))
@@ -4140,7 +4140,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFC578702BB"
 				    width      	120
-				    height     	1417
+				    height     	1412
 				    icon_height 	162
 				    icon_width 	120
 				    icon_y_offset 	0
@@ -4177,7 +4177,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFC57A80064"
 				    width      	229
-				    height     	1417
+				    height     	1412
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -4228,7 +4228,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFC57BE01FB"
 				    width      	229
-				    height     	1417
+				    height     	1410
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -4279,7 +4279,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFC57C5033A"
 				    width      	229
-				    height     	1417
+				    height     	1412
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -4316,7 +4316,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFC57C900CB"
 				    width      	229
-				    height     	1417
+				    height     	1412
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -4353,7 +4353,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFC582D00AB"
 				    width      	157
-				    height     	1417
+				    height     	1412
 				    icon_height 	164
 				    icon_width 	157
 				    icon_y_offset 	0
@@ -4411,7 +4411,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFC57D80099"
 				    width      	154
-				    height     	1417
+				    height     	1412
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -4856,7 +4856,7 @@
 				    ordinal    	8)
 				(object Destruction_Marker @210
 				    Parent_View 	@172
-				    location   	(1136, 1641)
+				    location   	(1136, 1634)
 				    line_color 	3342489
 				    fill_color 	13434879)))))
 		(object Class_Category "删除课表时间"
@@ -5955,7 +5955,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFC5D07029A"
 				    width      	229
-				    height     	1449
+				    height     	1442
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -6519,7 +6519,7 @@
 				    ordinal    	8)
 				(object Destruction_Marker @291
 				    Parent_View 	@257
-				    location   	(1184, 1673)
+				    location   	(1184, 1666)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object NoteView @292
@@ -8533,7 +8533,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD233302E3"
 				    width      	229
-				    height     	1355
+				    height     	1348
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -9168,7 +9168,7 @@
 				    line_style 	0)
 				(object Destruction_Marker @418
 				    Parent_View 	@379
-				    location   	(1296, 1579)
+				    location   	(1296, 1572)
 				    line_color 	3342489
 				    fill_color 	13434879)))))
 		(object Class_Category "显示课程类别"
@@ -10295,7 +10295,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD26200104"
 				    width      	229
-				    height     	1403
+				    height     	1396
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -10859,7 +10859,7 @@
 				    ordinal    	8)
 				(object Destruction_Marker @498
 				    Parent_View 	@464
-				    location   	(1072, 1627)
+				    location   	(1072, 1620)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object NoteView @499
@@ -12067,7 +12067,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD2A7C0235"
 				    width      	229
-				    height     	1435
+				    height     	1428
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -12631,7 +12631,7 @@
 				    ordinal    	8)
 				(object Destruction_Marker @582
 				    Parent_View 	@548
-				    location   	(1344, 1659)
+				    location   	(1344, 1652)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object NoteView @583
@@ -13825,7 +13825,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD2BEE0372"
 				    width      	229
-				    height     	1355
+				    height     	1348
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -14446,7 +14446,7 @@
 				    line_style 	0)
 				(object Destruction_Marker @670
 				    Parent_View 	@633
-				    location   	(1184, 1579)
+				    location   	(1184, 1572)
 				    line_color 	3342489
 				    fill_color 	13434879))))))
 	    logical_presentations 	(list unit_reference_list))
@@ -19917,7 +19917,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD3988000B"
 				    width      	229
-				    height     	1372
+				    height     	1365
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -20538,7 +20538,7 @@
 				    line_style 	0)
 				(object Destruction_Marker @955
 				    Parent_View 	@918
-				    location   	(1136, 1596)
+				    location   	(1136, 1589)
 				    line_color 	3342489
 				    fill_color 	13434879))))))
 	    logical_presentations 	(list unit_reference_list))
@@ -22263,7 +22263,7 @@
 	    zoom       	100
 	    max_height 	28350
 	    max_width  	21600
-	    origin_x   	134
+	    origin_x   	228
 	    origin_y   	0
 	    items      	(list diagram_item_list
 		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::基础数据管理子系统::Schedule" @1039
