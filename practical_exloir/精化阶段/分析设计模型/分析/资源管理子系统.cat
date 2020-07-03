@@ -6675,7 +6675,7 @@
 						y_coord    	0
 						Nested     	FALSE))
 					(object InterObjView "$UNNAMED$44" @328
-					    location   	(976, 224)
+					    location   	(896, 240)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -6687,7 +6687,7 @@
 						default_color 	TRUE)
 					    label      	(object ItemLabel
 						Parent_View 	@328
-						location   	(976, 248)
+						location   	(896, 264)
 						anchor_loc 	1
 						nlines     	2
 						max_width  	687
@@ -6705,21 +6705,21 @@
 					    icon_y_offset 	0
 					    annotation 	1
 					    Focus_Of_Control 	(object Focus_Of_Control "" @329
-						location   	(976, 368)
+						location   	(896, 368)
 						line_color 	3342489
 						InterObjView 	@328
 						height     	90
 						y_coord    	0
 						Nested     	FALSE)
 					    Focus_Of_Control 	(object Focus_Of_Control "" @330
-						location   	(976, 528)
+						location   	(896, 528)
 						line_color 	3342489
 						InterObjView 	@328
 						height     	90
 						y_coord    	0
 						Nested     	FALSE)
 					    Focus_Of_Control 	(object Focus_Of_Control "" @331
-						location   	(976, 992)
+						location   	(896, 992)
 						line_color 	3342489
 						InterObjView 	@328
 						height     	90
@@ -6840,7 +6840,7 @@
 						default_color 	TRUE)
 					    label      	(object SegLabel @341
 						Parent_View 	@340
-						location   	(623, 324)
+						location   	(583, 324)
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -6865,7 +6865,7 @@
 					    Focus_Src  	@327
 					    Focus_Entry 	@329
 					    origin     	(287, 368)
-					    terminus   	(960, 368)
+					    terminus   	(880, 368)
 					    ordinal    	0)
 					(object InterMessView "编辑课程信息请求" @342
 					    location   	(16, 528)
@@ -6880,7 +6880,7 @@
 						default_color 	TRUE)
 					    label      	(object SegLabel @343
 						Parent_View 	@342
-						location   	(1263, 484)
+						location   	(1223, 484)
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -6904,7 +6904,7 @@
 					    supplier   	@332
 					    Focus_Src  	@330
 					    Focus_Entry 	@333
-					    origin     	(991, 528)
+					    origin     	(911, 528)
 					    terminus   	(1536, 528)
 					    ordinal    	1)
 					(object InterMessView "相关数据的编辑" @344
@@ -7000,7 +7000,7 @@
 						default_color 	TRUE)
 					    label      	(object SegLabel @349
 						Parent_View 	@348
-						location   	(1264, 948)
+						location   	(1224, 948)
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -7025,11 +7025,11 @@
 					    Focus_Src  	@336
 					    Focus_Entry 	@331
 					    origin     	(1536, 992)
-					    terminus   	(992, 992)
+					    terminus   	(912, 992)
 					    ordinal    	4)
 					(object Destruction_Marker @350
 					    Parent_View 	@328
-					    location   	(976, 1147)
+					    location   	(896, 1163)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @351
