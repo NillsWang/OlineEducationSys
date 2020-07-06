@@ -7,7 +7,7 @@
 (object Class_Category "内容管理"
     is_unit    	TRUE
     is_loaded  	TRUE
-    quid       	"5EFE7BE10209"
+    quid       	"5EF98EF00115"
     exportControl 	"Public"
     logical_models 	(list unit_reference_list
 	(object Class "classServlet.java"
@@ -30,7 +30,7 @@
 		    concurrency 	"Sequential"
 		    opExportControl 	"Public"
 		    uid        	0)))
-	(object Class "class.java"
+	(object Class "class_info.java"
 	    quid       	"5EFDDA9A039C"
 	    documentation 	
 |分类信息
@@ -60,28 +60,20 @@
 		    uid        	0))
 	    class_attributes 	(list class_attribute_list
 		(object ClassAttribute "class_id"
-		    quid       	"5EFDDAD00062"
+		    quid       	"5EFEE7050349"
 		    documentation 	"每个类别设置一个id号"
 		    type       	"Integer")
 		(object ClassAttribute "class_name"
-		    quid       	"5EFDDAD0006D"
+		    quid       	"5EFEE705034B"
 		    documentation 	"类别的名称"
 		    type       	"String")
 		(object ClassAttribute "class_intro"
-		    quid       	"5EFDDAD0006E"
+		    quid       	"5EFEE705034C"
 		    documentation 	"类别的说明或详细信息"
 		    type       	"String")
-		(object ClassAttribute "content_id"
-		    quid       	"5EFDDAD0006F"
-		    documentation 	"每个类别下的内容id"
-		    type       	"String")
-		(object ClassAttribute "content_name"
-		    quid       	"5EFDDAD00070"
-		    documentation 	"内容的名称"
-		    type       	"String")
-		(object ClassAttribute "content_intro"
-		    quid       	"5EFDDAD00071"
-		    documentation 	"内容的说明或详细信息"
+		(object ClassAttribute "class_class"
+		    quid       	"5EFEE705034F"
+		    documentation 	"每个类别的级别，一级，二级等"
 		    type       	"String")))
 	(object Class "success.jsp"
 	    quid       	"5EFDDAF002EE"
@@ -89,7 +81,7 @@
 	(object Class "fail.jsp"
 	    quid       	"5EFDDB1103CA"
 	    stereotype 	"boundary")
-	(object Class "channel.java"
+	(object Class "channel_info.java"
 	    quid       	"5EFDE3180317"
 	    documentation 	"频道信息"
 	    stereotype 	"entity"
@@ -115,16 +107,17 @@
 		    opExportControl 	"Public"
 		    uid        	0))
 	    class_attributes 	(list class_attribute_list
-		(object ClassAttribute "pd_id"
-		    quid       	"5EFDE37E03DA"
+		(object ClassAttribute "user_id"
+		    quid       	"5EFEEB640170"
+		    documentation 	"用户的id，首先需要获取用户的id，再进行权限的设置"
 		    type       	"Integer")
-		(object ClassAttribute "pd_name"
-		    quid       	"5EFDE37E03DC"
+		(object ClassAttribute "channel_name"
+		    quid       	"5EFEEB640172"
 		    documentation 	"频道以及子频道的名称，通过勾选频道的名称来设置或清除该用户的权限"
 		    type       	"String")
-		(object ClassAttribute "user_id"
-		    quid       	"5EFDE37E03DE"
-		    documentation 	"用户的id，首先需要获取用户的id，再进行权限的设置"
+		(object ClassAttribute "id"
+		    quid       	"5EFEEB640174"
+		    documentation 	"频道id"
 		    type       	"Integer")))
 	(object Class_Category "类别管理"
 	    quid       	"5EFDC01D0074"
@@ -311,7 +304,7 @@
 				    multi      	FALSE)
 				(object Object "$UNNAMED$5"
 				    quid       	"5EFDE06701D9"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class_info.java"
 				    quidu      	"5EFDDA9A039C"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -352,7 +345,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE06701BF"
 				    width      	120
-				    height     	1184
+				    height     	1182
 				    icon_height 	162
 				    icon_width 	120
 				    icon_y_offset 	0
@@ -389,7 +382,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE06701C7"
 				    width      	229
-				    height     	1136
+				    height     	1134
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -447,7 +440,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE06701DF"
 				    width      	229
-				    height     	1184
+				    height     	1182
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -484,7 +477,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE06701DC"
 				    width      	229
-				    height     	1168
+				    height     	1166
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -512,7 +505,7 @@
 					location   	(1904, 247)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	303
+					max_width  	471
 					justify    	0
 					label      	"")
 				    icon       	"control"
@@ -520,8 +513,8 @@
 				    line_color 	3342489
 				    fill_color 	13434879
 				    quidu      	"5EFDE06701CF"
-				    width      	314
-				    height     	1152
+				    width      	157
+				    height     	1150
 				    icon_height 	164
 				    icon_width 	157
 				    icon_y_offset 	0
@@ -572,7 +565,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE06701D9"
 				    width      	154
-				    height     	1184
+				    height     	1182
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -866,22 +859,22 @@
 				    ordinal    	6)
 				(object Destruction_Marker @33
 				    Parent_View 	@4
-				    location   	(800, 1360)
+				    location   	(800, 1358)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @34
 				    Parent_View 	@9
-				    location   	(1168, 1408)
+				    location   	(1168, 1406)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @35
 				    Parent_View 	@11
-				    location   	(1536, 1392)
+				    location   	(1536, 1390)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @36
 				    Parent_View 	@13
-				    location   	(1904, 1376)
+				    location   	(1904, 1374)
 				    line_color 	3342489
 				    fill_color 	13434879)))))
 		(object Class_Category "更改名称"
@@ -1044,7 +1037,7 @@
 				    multi      	FALSE)
 				(object Object "$UNNAMED$11"
 				    quid       	"5EFDDFDD016D"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class_info.java"
 				    quidu      	"5EFDDA9A039C"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -1085,7 +1078,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDFDD0153"
 				    width      	120
-				    height     	1168
+				    height     	1166
 				    icon_height 	162
 				    icon_width 	120
 				    icon_y_offset 	0
@@ -1122,7 +1115,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDFDD015B"
 				    width      	229
-				    height     	1168
+				    height     	1166
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -1180,7 +1173,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDFDD0173"
 				    width      	229
-				    height     	1168
+				    height     	1166
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -1217,7 +1210,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDFDD0170"
 				    width      	229
-				    height     	1136
+				    height     	1134
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -1254,7 +1247,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDFDD0163"
 				    width      	157
-				    height     	1168
+				    height     	1166
 				    icon_height 	164
 				    icon_width 	157
 				    icon_y_offset 	0
@@ -1305,7 +1298,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDFDD016D"
 				    width      	154
-				    height     	1168
+				    height     	1166
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -1599,22 +1592,22 @@
 				    ordinal    	6)
 				(object Destruction_Marker @69
 				    Parent_View 	@40
-				    location   	(800, 1392)
+				    location   	(800, 1390)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @70
 				    Parent_View 	@45
-				    location   	(1168, 1392)
+				    location   	(1168, 1390)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @71
 				    Parent_View 	@47
-				    location   	(1536, 1360)
+				    location   	(1536, 1358)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @72
 				    Parent_View 	@49
-				    location   	(1904, 1392)
+				    location   	(1904, 1390)
 				    line_color 	3342489
 				    fill_color 	13434879)))))
 		(object Class_Category "删除类别"
@@ -1744,7 +1737,7 @@
 				    multi      	FALSE)
 				(object Object "$UNNAMED$17"
 				    quid       	"5EFDDF6E02A9"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class_info.java"
 				    quidu      	"5EFDDA9A039C"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -1785,7 +1778,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDF6E028F"
 				    width      	120
-				    height     	1008
+				    height     	1006
 				    icon_height 	162
 				    icon_width 	120
 				    icon_y_offset 	0
@@ -1813,7 +1806,7 @@
 					location   	(800, 248)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	178
+					max_width  	687
 					justify    	0
 					label      	"")
 				    icon       	"boundary"
@@ -1822,7 +1815,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDF6E0297"
 				    width      	229
-				    height     	1008
+				    height     	1006
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -1866,7 +1859,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDF6E02AF"
 				    width      	229
-				    height     	1008
+				    height     	1006
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -1903,7 +1896,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDF6E02AC"
 				    width      	229
-				    height     	1008
+				    height     	1006
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -1940,7 +1933,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDF6E029F"
 				    width      	157
-				    height     	992
+				    height     	990
 				    icon_height 	164
 				    icon_width 	157
 				    icon_y_offset 	0
@@ -1984,7 +1977,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDF6E02A9"
 				    width      	154
-				    height     	1008
+				    height     	1006
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -2198,22 +2191,22 @@
 				    ordinal    	4)
 				(object Destruction_Marker @98
 				    Parent_View 	@76
-				    location   	(800, 1232)
+				    location   	(800, 1230)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @99
 				    Parent_View 	@79
-				    location   	(1168, 1232)
+				    location   	(1168, 1230)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @100
 				    Parent_View 	@81
-				    location   	(1536, 1232)
+				    location   	(1536, 1230)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @101
 				    Parent_View 	@83
-				    location   	(1904, 1216)
+				    location   	(1904, 1214)
 				    line_color 	3342489
 				    fill_color 	13434879)))))
 		(object Class_Category "新建大类"
@@ -2350,7 +2343,7 @@
 				    multi      	FALSE)
 				(object Object "$UNNAMED$21"
 				    quid       	"5EFDD92300A1"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class_info.java"
 				    quidu      	"5EFDDA9A039C"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -2405,7 +2398,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDD78D0036"
 				    width      	120
-				    height     	992
+				    height     	990
 				    icon_height 	162
 				    icon_width 	120
 				    icon_y_offset 	0
@@ -2442,7 +2435,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDD8C00208"
 				    width      	229
-				    height     	944
+				    height     	942
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -2493,7 +2486,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDB65022E"
 				    width      	229
-				    height     	992
+				    height     	990
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -2530,7 +2523,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDB68005B"
 				    width      	229
-				    height     	976
+				    height     	974
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -2567,7 +2560,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDD8C50329"
 				    width      	157
-				    height     	976
+				    height     	974
 				    icon_height 	164
 				    icon_width 	157
 				    icon_y_offset 	0
@@ -2611,7 +2604,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDD92300A1"
 				    width      	154
-				    height     	992
+				    height     	990
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -2865,22 +2858,22 @@
 				    ordinal    	5)
 				(object Destruction_Marker @130
 				    Parent_View 	@105
-				    location   	(800, 1168)
+				    location   	(800, 1166)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @131
 				    Parent_View 	@109
-				    location   	(1168, 1216)
+				    location   	(1168, 1214)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @132
 				    Parent_View 	@111
-				    location   	(1536, 1200)
+				    location   	(1536, 1198)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @133
 				    Parent_View 	@113
-				    location   	(1904, 1200)
+				    location   	(1904, 1198)
 				    line_color 	3342489
 				    fill_color 	13434879)))))
 		(object Class_Category "新建小类"
@@ -3030,7 +3023,7 @@
 				    multi      	FALSE)
 				(object Object "$UNNAMED$29"
 				    quid       	"5EFDDF0C0276"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class_info.java"
 				    quidu      	"5EFDDA9A039C"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -3071,7 +3064,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDF0C025C"
 				    width      	120
-				    height     	1072
+				    height     	1070
 				    icon_height 	162
 				    icon_width 	120
 				    icon_y_offset 	0
@@ -3108,7 +3101,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDF0C0264"
 				    width      	229
-				    height     	976
+				    height     	974
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -3159,7 +3152,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDF0C027C"
 				    width      	229
-				    height     	1008
+				    height     	1006
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -3196,7 +3189,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDF0C0279"
 				    width      	229
-				    height     	1040
+				    height     	1038
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -3224,7 +3217,7 @@
 					location   	(1904, 247)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	303
+					max_width  	471
 					justify    	0
 					label      	"")
 				    icon       	"control"
@@ -3232,8 +3225,8 @@
 				    line_color 	3342489
 				    fill_color 	13434879
 				    quidu      	"5EFDDF0C026C"
-				    width      	314
-				    height     	1072
+				    width      	157
+				    height     	1070
 				    icon_height 	164
 				    icon_width 	157
 				    icon_y_offset 	0
@@ -3277,7 +3270,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDDF0C0276"
 				    width      	154
-				    height     	1072
+				    height     	1070
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -3531,22 +3524,22 @@
 				    ordinal    	5)
 				(object Destruction_Marker @162
 				    Parent_View 	@137
-				    location   	(800, 1200)
+				    location   	(800, 1198)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @163
 				    Parent_View 	@141
-				    location   	(1168, 1232)
+				    location   	(1168, 1230)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @164
 				    Parent_View 	@143
-				    location   	(1536, 1264)
+				    location   	(1536, 1262)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @165
 				    Parent_View 	@145
-				    location   	(1904, 1296)
+				    location   	(1904, 1294)
 				    line_color 	3342489
 				    fill_color 	13434879))))))
 	    logical_presentations 	(list unit_reference_list))
@@ -3755,7 +3748,7 @@
 				    multi      	FALSE)
 				(object Object "$UNNAMED$35"
 				    quid       	"5EFDE4BE028A"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class_info.java"
 				    quidu      	"5EFDDA9A039C"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -3796,7 +3789,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE40703B7"
 				    width      	120
-				    height     	1184
+				    height     	1182
 				    icon_height 	162
 				    icon_width 	120
 				    icon_y_offset 	0
@@ -3833,7 +3826,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE40703BF"
 				    width      	229
-				    height     	1136
+				    height     	1134
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -3891,7 +3884,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE40703D3"
 				    width      	229
-				    height     	1120
+				    height     	1118
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -3935,7 +3928,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE40703D0"
 				    width      	229
-				    height     	1168
+				    height     	1166
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -3970,7 +3963,7 @@
 					location   	(1904, 247)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	303
+					max_width  	471
 					justify    	0
 					label      	"")
 				    icon       	"control"
@@ -3978,8 +3971,8 @@
 				    line_color 	3342489
 				    fill_color 	13434879
 				    quidu      	"5EFDE40703C6"
-				    width      	314
-				    height     	1184
+				    width      	157
+				    height     	1182
 				    icon_height 	164
 				    icon_width 	157
 				    icon_y_offset 	0
@@ -4037,7 +4030,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE4BE028A"
 				    width      	154
-				    height     	1184
+				    height     	1182
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -4331,22 +4324,22 @@
 				    ordinal    	7)
 				(object Destruction_Marker @201
 				    Parent_View 	@169
-				    location   	(800, 1360)
+				    location   	(800, 1358)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @202
 				    Parent_View 	@174
-				    location   	(1168, 1344)
+				    location   	(1168, 1342)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @203
 				    Parent_View 	@177
-				    location   	(1536, 1392)
+				    location   	(1536, 1390)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @204
 				    Parent_View 	@180
-				    location   	(1904, 1408)
+				    location   	(1904, 1406)
 				    line_color 	3342489
 				    fill_color 	13434879)))))
 		(object Class_Category "删除内容"
@@ -4482,7 +4475,7 @@
 				    multi      	FALSE)
 				(object Object "$UNNAMED$41"
 				    quid       	"5EFDE5210322"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class_info.java"
 				    quidu      	"5EFDDA9A039C"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -4523,7 +4516,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE5210308"
 				    width      	120
-				    height     	1040
+				    height     	1038
 				    icon_height 	162
 				    icon_width 	120
 				    icon_y_offset 	0
@@ -4551,7 +4544,7 @@
 					location   	(800, 248)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	206
+					max_width  	687
 					justify    	0
 					label      	"")
 				    icon       	"boundary"
@@ -4560,7 +4553,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE5210310"
 				    width      	229
-				    height     	960
+				    height     	958
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -4604,7 +4597,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE5210328"
 				    width      	229
-				    height     	1008
+				    height     	1006
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -4641,7 +4634,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE5210325"
 				    width      	229
-				    height     	1024
+				    height     	1022
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -4678,7 +4671,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE5210318"
 				    width      	157
-				    height     	1040
+				    height     	1038
 				    icon_height 	164
 				    icon_width 	157
 				    icon_y_offset 	0
@@ -4736,7 +4729,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE5210322"
 				    width      	154
-				    height     	1040
+				    height     	1038
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -4950,22 +4943,22 @@
 				    ordinal    	4)
 				(object Destruction_Marker @232
 				    Parent_View 	@208
-				    location   	(800, 1184)
+				    location   	(800, 1182)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @233
 				    Parent_View 	@211
-				    location   	(1168, 1232)
+				    location   	(1168, 1230)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @234
 				    Parent_View 	@213
-				    location   	(1536, 1248)
+				    location   	(1536, 1246)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @235
 				    Parent_View 	@215
-				    location   	(1904, 1264)
+				    location   	(1904, 1262)
 				    line_color 	3342489
 				    fill_color 	13434879)))))
 		(object Class_Category "修改内容"
@@ -4974,7 +4967,7 @@
 		    logical_models 	(list unit_reference_list
 			(object Class "updateContent.jsp"
 			    quid       	"5EFDE3AA0092"
-			    stereotype 	"entity"
+			    stereotype 	"boundary"
 			    operations 	(list Operations
 				(object Operation "input"
 				    quid       	"5EFDE5A9016E"
@@ -5123,7 +5116,7 @@
 				    multi      	FALSE)
 				(object Object "$UNNAMED$47"
 				    quid       	"5EFDE5A20140"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class_info.java"
 				    quidu      	"5EFDDA9A039C"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -5164,7 +5157,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE5A20126"
 				    width      	120
-				    height     	1040
+				    height     	1038
 				    icon_height 	162
 				    icon_width 	120
 				    icon_y_offset 	0
@@ -5192,18 +5185,18 @@
 					location   	(800, 248)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	462
+					max_width  	651
 					justify    	0
 					label      	"")
-				    icon       	"entity"
+				    icon       	"boundary"
 				    icon_style 	"Icon"
 				    line_color 	3342489
 				    fill_color 	13434879
 				    quidu      	"5EFDE5A2012E"
-				    width      	154
-				    height     	1008
+				    width      	229
+				    height     	1006
 				    icon_height 	153
-				    icon_width 	154
+				    icon_width 	229
 				    icon_y_offset 	0
 				    annotation 	1
 				    Focus_Of_Control 	(object Focus_Of_Control "" @240
@@ -5252,7 +5245,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE5A20146"
 				    width      	229
-				    height     	1024
+				    height     	1022
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -5289,7 +5282,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE5A20143"
 				    width      	229
-				    height     	992
+				    height     	990
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -5326,7 +5319,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE5A20136"
 				    width      	157
-				    height     	1040
+				    height     	1038
 				    icon_height 	164
 				    icon_width 	157
 				    icon_y_offset 	0
@@ -5377,7 +5370,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE5A20140"
 				    width      	154
-				    height     	1040
+				    height     	1038
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -5631,22 +5624,22 @@
 				    ordinal    	5)
 				(object Destruction_Marker @265
 				    Parent_View 	@239
-				    location   	(800, 1232)
+				    location   	(800, 1230)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @266
 				    Parent_View 	@243
-				    location   	(1184, 1248)
+				    location   	(1184, 1246)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @267
 				    Parent_View 	@245
-				    location   	(1552, 1216)
+				    location   	(1552, 1214)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @268
 				    Parent_View 	@247
-				    location   	(1920, 1264)
+				    location   	(1920, 1262)
 				    line_color 	3342489
 				    fill_color 	13434879)))))
 		(object Class_Category "增加内容"
@@ -5655,7 +5648,7 @@
 		    logical_models 	(list unit_reference_list
 			(object Class "addContent.jsp"
 			    quid       	"5EFDE3CD0243"
-			    stereotype 	"entity"
+			    stereotype 	"boundary"
 			    operations 	(list Operations
 				(object Operation "input"
 				    quid       	"5EFDE6420122"
@@ -5805,7 +5798,7 @@
 				    multi      	FALSE)
 				(object Object "$UNNAMED$53"
 				    quid       	"5EFDE63C00F1"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class_info.java"
 				    quidu      	"5EFDDA9A039C"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -5846,7 +5839,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE63C00D7"
 				    width      	120
-				    height     	1008
+				    height     	1006
 				    icon_height 	162
 				    icon_width 	120
 				    icon_y_offset 	0
@@ -5874,18 +5867,18 @@
 					location   	(800, 248)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	462
+					max_width  	651
 					justify    	0
 					label      	"")
-				    icon       	"entity"
+				    icon       	"boundary"
 				    icon_style 	"Icon"
 				    line_color 	3342489
 				    fill_color 	13434879
 				    quidu      	"5EFDE63C00DF"
-				    width      	154
-				    height     	992
+				    width      	229
+				    height     	990
 				    icon_height 	153
-				    icon_width 	154
+				    icon_width 	229
 				    icon_y_offset 	0
 				    annotation 	1
 				    Focus_Of_Control 	(object Focus_Of_Control "" @273
@@ -5934,7 +5927,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE63C00F7"
 				    width      	229
-				    height     	992
+				    height     	990
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -5971,7 +5964,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE63C00F4"
 				    width      	229
-				    height     	1008
+				    height     	1006
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -6008,7 +6001,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE63C00E7"
 				    width      	157
-				    height     	976
+				    height     	982
 				    icon_height 	164
 				    icon_width 	157
 				    icon_y_offset 	0
@@ -6059,7 +6052,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFDE63C00F1"
 				    width      	154
-				    height     	1008
+				    height     	1006
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -6313,22 +6306,22 @@
 				    ordinal    	5)
 				(object Destruction_Marker @298
 				    Parent_View 	@272
-				    location   	(800, 1216)
+				    location   	(800, 1214)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @299
 				    Parent_View 	@276
-				    location   	(1168, 1216)
+				    location   	(1168, 1214)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @300
 				    Parent_View 	@278
-				    location   	(1536, 1232)
+				    location   	(1536, 1230)
 				    line_color 	3342489
 				    fill_color 	13434879)
 				(object Destruction_Marker @301
 				    Parent_View 	@280
-				    location   	(1904, 1200)
+				    location   	(1904, 1206)
 				    line_color 	3342489
 				    fill_color 	13434879))))))
 	    logical_presentations 	(list unit_reference_list))
@@ -6517,7 +6510,7 @@
 					    multi      	FALSE)
 					(object Object "$UNNAMED$59"
 					    quid       	"5EFDE75C030D"
-					    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class.java"
+					    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class_info.java"
 					    quidu      	"5EFDDA9A039C"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
@@ -6558,7 +6551,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDE75C02F3"
 					    width      	120
-					    height     	1024
+					    height     	1022
 					    icon_height 	162
 					    icon_width 	120
 					    icon_y_offset 	0
@@ -6595,7 +6588,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDE75C02FB"
 					    width      	229
-					    height     	992
+					    height     	990
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -6646,7 +6639,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDE75C0313"
 					    width      	229
-					    height     	1008
+					    height     	1006
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -6683,7 +6676,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDE75C0310"
 					    width      	229
-					    height     	1008
+					    height     	1006
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -6720,7 +6713,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDE75C0303"
 					    width      	157
-					    height     	1024
+					    height     	1022
 					    icon_height 	164
 					    icon_width 	157
 					    icon_y_offset 	0
@@ -6771,7 +6764,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDE75C030D"
 					    width      	154
-					    height     	1024
+					    height     	1022
 					    icon_height 	153
 					    icon_width 	154
 					    icon_y_offset 	0
@@ -7025,22 +7018,22 @@
 					    ordinal    	5)
 					(object Destruction_Marker @331
 					    Parent_View 	@305
-					    location   	(800, 1216)
+					    location   	(800, 1214)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @332
 					    Parent_View 	@309
-					    location   	(1168, 1232)
+					    location   	(1168, 1230)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @333
 					    Parent_View 	@311
-					    location   	(1536, 1232)
+					    location   	(1536, 1230)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @334
 					    Parent_View 	@313
-					    location   	(1904, 1248)
+					    location   	(1904, 1246)
 					    line_color 	3342489
 					    fill_color 	13434879)))))
 			(object Class_Category "清除频道权限"
@@ -7234,7 +7227,7 @@
 					    multi      	FALSE)
 					(object Object "$UNNAMED$65"
 					    quid       	"5EFDE85503B6"
-					    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::channel.java"
+					    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::channel_info.java"
 					    quidu      	"5EFDE3180317"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
@@ -7275,7 +7268,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDE855039D"
 					    width      	120
-					    height     	1680
+					    height     	1678
 					    icon_height 	162
 					    icon_width 	120
 					    icon_y_offset 	0
@@ -7310,7 +7303,7 @@
 						location   	(800, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	300
+						max_width  	687
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -7318,8 +7311,8 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDE85503A5"
-					    width      	312
-					    height     	1648
+					    width      	229
+					    height     	1646
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -7391,7 +7384,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDE85503BC"
 					    width      	229
-					    height     	1664
+					    height     	1662
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -7428,7 +7421,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDE85503B9"
 					    width      	229
-					    height     	1648
+					    height     	1646
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -7465,7 +7458,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDE85503AC"
 					    width      	157
-					    height     	1680
+					    height     	1678
 					    icon_height 	164
 					    icon_width 	157
 					    icon_y_offset 	0
@@ -7537,7 +7530,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDE85503B6"
 					    width      	154
-					    height     	1680
+					    height     	1678
 					    icon_height 	153
 					    icon_width 	154
 					    icon_y_offset 	0
@@ -7958,22 +7951,22 @@
 					    ordinal    	4)
 					(object Destruction_Marker @380
 					    Parent_View 	@339
-					    location   	(800, 1872)
+					    location   	(800, 1870)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @381
 					    Parent_View 	@346
-					    location   	(1168, 1888)
+					    location   	(1168, 1886)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @382
 					    Parent_View 	@348
-					    location   	(1536, 1872)
+					    location   	(1536, 1870)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @383
 					    Parent_View 	@350
-					    location   	(1904, 1904)
+					    location   	(1904, 1902)
 					    line_color 	3342489
 					    fill_color 	13434879)))))
 			(object Class_Category "设置权限"
@@ -8179,7 +8172,7 @@
 					    multi      	FALSE)
 					(object Object "$UNNAMED$71"
 					    quid       	"5EFDEDD70366"
-					    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::channel.java"
+					    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::channel_info.java"
 					    quidu      	"5EFDE3180317"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
@@ -8220,7 +8213,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEDD70346"
 					    width      	120
-					    height     	1696
+					    height     	1694
 					    icon_height 	162
 					    icon_width 	120
 					    icon_y_offset 	0
@@ -8264,7 +8257,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEDD7034E"
 					    width      	229
-					    height     	1696
+					    height     	1694
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -8336,7 +8329,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEDD7036E"
 					    width      	229
-					    height     	1696
+					    height     	1694
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -8373,7 +8366,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEDD7036B"
 					    width      	229
-					    height     	1696
+					    height     	1694
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -8410,7 +8403,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEDD7035D"
 					    width      	157
-					    height     	1680
+					    height     	1678
 					    icon_height 	164
 					    icon_width 	157
 					    icon_y_offset 	0
@@ -8482,7 +8475,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEDD70366"
 					    width      	154
-					    height     	1696
+					    height     	1694
 					    icon_height 	153
 					    icon_width 	154
 					    icon_y_offset 	0
@@ -8903,22 +8896,22 @@
 					    ordinal    	4)
 					(object Destruction_Marker @429
 					    Parent_View 	@388
-					    location   	(800, 1920)
+					    location   	(800, 1918)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @430
 					    Parent_View 	@395
-					    location   	(1168, 1920)
+					    location   	(1168, 1918)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @431
 					    Parent_View 	@397
-					    location   	(1536, 1920)
+					    location   	(1536, 1918)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @432
 					    Parent_View 	@399
-					    location   	(1904, 1904)
+					    location   	(1904, 1902)
 					    line_color 	3342489
 					    fill_color 	13434879))))))
 		    logical_presentations 	(list unit_reference_list))
@@ -9083,7 +9076,7 @@
 					    multi      	FALSE)
 					(object Object "$UNNAMED$77"
 					    quid       	"5EFDEEBB00E0"
-					    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class.java"
+					    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::class_info.java"
 					    quidu      	"5EFDDA9A039C"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
@@ -9124,7 +9117,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEEBB00C7"
 					    width      	120
-					    height     	1072
+					    height     	1070
 					    icon_height 	162
 					    icon_width 	120
 					    icon_y_offset 	0
@@ -9161,7 +9154,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEEBB00CF"
 					    width      	229
-					    height     	1024
+					    height     	1022
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -9212,7 +9205,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEEBB00E6"
 					    width      	229
-					    height     	1024
+					    height     	1022
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -9249,7 +9242,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEEBB00E3"
 					    width      	229
-					    height     	1056
+					    height     	1054
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -9286,7 +9279,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEEBB00D6"
 					    width      	157
-					    height     	1072
+					    height     	1070
 					    icon_height 	164
 					    icon_width 	157
 					    icon_y_offset 	0
@@ -9337,7 +9330,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEEBB00E0"
 					    width      	154
-					    height     	1072
+					    height     	1070
 					    icon_height 	153
 					    icon_width 	154
 					    icon_y_offset 	0
@@ -9591,22 +9584,22 @@
 					    ordinal    	5)
 					(object Destruction_Marker @462
 					    Parent_View 	@436
-					    location   	(800, 1248)
+					    location   	(800, 1246)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @463
 					    Parent_View 	@440
-					    location   	(1168, 1248)
+					    location   	(1168, 1246)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @464
 					    Parent_View 	@442
-					    location   	(1536, 1280)
+					    location   	(1536, 1278)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @465
 					    Parent_View 	@444
-					    location   	(1904, 1296)
+					    location   	(1904, 1294)
 					    line_color 	3342489
 					    fill_color 	13434879)))))
 			(object Class_Category "清除子频道权限"
@@ -9793,7 +9786,7 @@
 					    multi      	FALSE)
 					(object Object "$UNNAMED$83"
 					    quid       	"5EFDEC6D00D8"
-					    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::channel.java"
+					    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::channel_info.java"
 					    quidu      	"5EFDE3180317"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
@@ -9869,7 +9862,7 @@
 						location   	(800, 248)
 						anchor_loc 	1
 						nlines     	2
-						max_width  	300
+						max_width  	687
 						justify    	0
 						label      	"")
 					    icon       	"boundary"
@@ -9877,7 +9870,7 @@
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFDEC6D00C2"
-					    width      	312
+					    width      	229
 					    height     	1675
 					    icon_height 	153
 					    icon_width 	229
@@ -10718,7 +10711,7 @@
 					    multi      	FALSE)
 					(object Object "$UNNAMED$89"
 					    quid       	"5EFDEE5F030F"
-					    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::channel.java"
+					    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::channel_info.java"
 					    quidu      	"5EFDE3180317"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
@@ -10759,7 +10752,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEE5F02F0"
 					    width      	120
-					    height     	1680
+					    height     	1678
 					    icon_height 	162
 					    icon_width 	120
 					    icon_y_offset 	0
@@ -10803,7 +10796,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEE5F02F8"
 					    width      	229
-					    height     	1680
+					    height     	1678
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -10875,7 +10868,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEE5F0317"
 					    width      	229
-					    height     	1680
+					    height     	1678
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -10912,7 +10905,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEE5F0314"
 					    width      	229
-					    height     	1680
+					    height     	1678
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -10949,7 +10942,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEE5F0306"
 					    width      	157
-					    height     	1680
+					    height     	1678
 					    icon_height 	164
 					    icon_width 	157
 					    icon_y_offset 	0
@@ -11021,7 +11014,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFDEE5F030F"
 					    width      	154
-					    height     	1680
+					    height     	1678
 					    icon_height 	153
 					    icon_width 	154
 					    icon_y_offset 	0
@@ -11442,22 +11435,22 @@
 					    ordinal    	4)
 					(object Destruction_Marker @556
 					    Parent_View 	@515
-					    location   	(800, 1904)
+					    location   	(800, 1902)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @557
 					    Parent_View 	@522
-					    location   	(1168, 1904)
+					    location   	(1168, 1902)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @558
 					    Parent_View 	@524
-					    location   	(1536, 1904)
+					    location   	(1536, 1902)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @559
 					    Parent_View 	@526
-					    location   	(1904, 1904)
+					    location   	(1904, 1902)
 					    line_color 	3342489
 					    fill_color 	13434879))))))
 		    logical_presentations 	(list unit_reference_list)))
@@ -11498,24 +11491,6 @@
 		    line_color 	3342489
 		    fill_color 	13434879
 		    quidu      	"5EFC38690202"
-		    compartment 	(object Compartment
-			Parent_View 	@560
-			location   	(296, 116)
-			font       	(object Font
-			    size       	9
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			icon_style 	"Icon"
-			fill_color 	13434879
-			anchor     	2
-			nlines     	23
-			max_width  	384
-			justify    	1)
 		    width      	386
 		    height     	1206
 		    annotation 	8
@@ -11547,23 +11522,6 @@
 		    line_color 	3342489
 		    fill_color 	13434879
 		    quidu      	"5EFC38DC0329"
-		    compartment 	(object Compartment
-			Parent_View 	@561
-			location   	(1070, 1325)
-			font       	(object Font
-			    size       	9
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			icon_style 	"Icon"
-			anchor     	2
-			nlines     	4
-			max_width  	334
-			justify    	0)
 		    height     	154
 		    annotation 	8
 		    autoResize 	TRUE)
@@ -11594,23 +11552,6 @@
 		    line_color 	3342489
 		    fill_color 	13434879
 		    quidu      	"5EFC388303DA"
-		    compartment 	(object Compartment
-			Parent_View 	@562
-			location   	(1126, 461)
-			font       	(object Font
-			    size       	9
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			icon_style 	"Icon"
-			anchor     	2
-			nlines     	7
-			max_width  	413
-			justify    	0)
 		    height     	154
 		    annotation 	8
 		    autoResize 	TRUE)
