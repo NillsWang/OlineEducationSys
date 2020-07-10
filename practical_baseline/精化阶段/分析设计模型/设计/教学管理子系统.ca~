@@ -1,0 +1,22 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "教学管理子系统"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EF9912C0325"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list)
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "教学管理"
+	    quid       	"5EF9A2DB0042"
+	    title      	"教学管理"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list))))
