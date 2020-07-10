@@ -11,7 +11,7 @@
  Target Server Version : 80018
  File Encoding         : 65001
 
- Date: 08/07/2020 15:46:15
+ Date: 10/07/2020 16:45:03
 */
 
 SET NAMES utf8mb4;
@@ -26,7 +26,7 @@ CREATE TABLE `answers_info`  (
   `answers_course` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `answers_isAnswer` tinyint(1) NOT NULL,
   PRIMARY KEY (`answers_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for assignment_info
@@ -39,7 +39,7 @@ CREATE TABLE `assignment_info`  (
   `assignment_stuname` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `assignment_course` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`assignment_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for case1
@@ -49,7 +49,7 @@ CREATE TABLE `case1`  (
   `caseId` int(11) NOT NULL AUTO_INCREMENT,
   `case1` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`caseId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for case1andplan
@@ -60,7 +60,7 @@ CREATE TABLE `case1andplan`  (
   `case1_id` int(15) NULL DEFAULT NULL,
   `plan_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for channel_info
@@ -71,7 +71,7 @@ CREATE TABLE `channel_info`  (
   `channel_name` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `user_id` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for channelandclass
@@ -82,7 +82,7 @@ CREATE TABLE `channelandclass`  (
   `channel_id` int(15) NULL DEFAULT NULL,
   `class_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for class_info
@@ -94,7 +94,7 @@ CREATE TABLE `class_info`  (
   `class_class` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `class_intro` char(40) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for classes
@@ -106,7 +106,7 @@ CREATE TABLE `classes`  (
   `startDate` date NULL DEFAULT NULL,
   `endDate` date NULL DEFAULT NULL,
   PRIMARY KEY (`classId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for classesandplan
@@ -117,7 +117,7 @@ CREATE TABLE `classesandplan`  (
   `classes_id` int(15) NULL DEFAULT NULL,
   `plan_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for classinfo
@@ -128,7 +128,7 @@ CREATE TABLE `classinfo`  (
   `satrtDate` date NULL DEFAULT NULL,
   `endDate` date NULL DEFAULT NULL,
   PRIMARY KEY (`classInfoId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for classinfoandclasses
@@ -139,7 +139,29 @@ CREATE TABLE `classinfoandclasses`  (
   `classinfo_id` int(15) NULL DEFAULT NULL,
   `classes_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for content_info
+-- ----------------------------
+DROP TABLE IF EXISTS `content_info`;
+CREATE TABLE `content_info`  (
+  `id` int(15) NOT NULL AUTO_INCREMENT,
+  `status` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `description` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for contentandchannel
+-- ----------------------------
+DROP TABLE IF EXISTS `contentandchannel`;
+CREATE TABLE `contentandchannel`  (
+  `id` int(15) NOT NULL AUTO_INCREMENT,
+  `content_id` int(15) NULL DEFAULT NULL,
+  `channel_id` int(15) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for coomment
@@ -150,7 +172,7 @@ CREATE TABLE `coomment`  (
   `com_name` char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `com_content` varchar(300) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`com_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for course_info
@@ -163,7 +185,7 @@ CREATE TABLE `course_info`  (
   `description` char(200) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `is_valid` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for courseandfolder
@@ -174,7 +196,7 @@ CREATE TABLE `courseandfolder`  (
   `course_id` int(15) NULL DEFAULT NULL,
   `folder_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for courseandprofession
@@ -185,7 +207,7 @@ CREATE TABLE `courseandprofession`  (
   `course_id` int(15) NULL DEFAULT NULL,
   `profession_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for courseinfo
@@ -198,7 +220,7 @@ CREATE TABLE `courseinfo`  (
   `course_classify` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `course_isAllot` tinyint(1) NOT NULL,
   PRIMARY KEY (`course_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for dictionary_info
@@ -214,7 +236,7 @@ CREATE TABLE `dictionary_info`  (
   `value_sort` int(11) NOT NULL,
   `note` char(200) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for exam_info
@@ -239,54 +261,6 @@ CREATE TABLE `exam_info`  (
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
--- Table structure for examperson
--- ----------------------------
-DROP TABLE IF EXISTS `examperson`;
-CREATE TABLE `examperson`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `account` char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `userRole` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `phoneNum` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `password` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `status` tinyint(1) NULL DEFAULT NULL,
-  `createTime` date NULL DEFAULT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Table structure for examperson2
--- ----------------------------
-DROP TABLE IF EXISTS `examperson2`;
-CREATE TABLE `examperson2`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `account` char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `userRole` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `phoneNum` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `password` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `status` tinyint(1) NULL DEFAULT NULL,
-  `createTime` date NULL DEFAULT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Table structure for examperson3
--- ----------------------------
-DROP TABLE IF EXISTS `examperson3`;
-CREATE TABLE `examperson3`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `account` char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `userRole` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `phoneNum` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `password` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `status` tinyint(1) NULL DEFAULT NULL,
-  `createTime` date NULL DEFAULT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
 -- Table structure for file_info
 -- ----------------------------
 DROP TABLE IF EXISTS `file_info`;
@@ -298,7 +272,7 @@ CREATE TABLE `file_info`  (
   `file_fatherClass` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `file_isCollect` tinyint(1) NOT NULL,
   PRIMARY KEY (`file_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for fileandjurisdiction
@@ -309,7 +283,7 @@ CREATE TABLE `fileandjurisdiction`  (
   `file_id` int(15) NULL DEFAULT NULL,
   `jurisdiction_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for folder_info
@@ -323,7 +297,7 @@ CREATE TABLE `folder_info`  (
   `folder_isCollect` tinyint(1) NOT NULL,
   `jurisdiction_id` int(11) NOT NULL,
   PRIMARY KEY (`folder_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for folderandfile
@@ -334,7 +308,7 @@ CREATE TABLE `folderandfile`  (
   `folder_id` int(15) NULL DEFAULT NULL,
   `file_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for folderandjurisdiction
@@ -345,7 +319,7 @@ CREATE TABLE `folderandjurisdiction`  (
   `folder_id` int(15) NULL DEFAULT NULL,
   `jurisdiction_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for issue
@@ -357,7 +331,7 @@ CREATE TABLE `issue`  (
   `com_name` char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `state_time` time(0) NULL DEFAULT NULL,
   PRIMARY KEY (`com_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for jurisdiction_info
@@ -368,7 +342,7 @@ CREATE TABLE `jurisdiction_info`  (
   `jurisdiction_isDownload` tinyint(1) NULL DEFAULT NULL,
   `jurisdiction_isPreview` tinyint(1) NULL DEFAULT NULL,
   PRIMARY KEY (`jurisdiction_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for know_info
@@ -381,7 +355,7 @@ CREATE TABLE `know_info`  (
   `description` char(200) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `is_valid` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for knowandquestion
@@ -392,7 +366,7 @@ CREATE TABLE `knowandquestion`  (
   `know_id` int(15) NOT NULL,
   `question_id` int(15) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for knowledge
@@ -407,7 +381,7 @@ CREATE TABLE `knowledge`  (
   `headline` char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `applystate` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`kno_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for knowledgeandcoomment
@@ -418,7 +392,7 @@ CREATE TABLE `knowledgeandcoomment`  (
   `knowledge_id` int(15) NULL DEFAULT NULL,
   `coomment_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for live_info
@@ -432,7 +406,7 @@ CREATE TABLE `live_info`  (
   `live_organization` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `live_course` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`live_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for logininfo
@@ -444,7 +418,7 @@ CREATE TABLE `logininfo`  (
   `logoutDate` date NULL DEFAULT NULL,
   `location` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`loginId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for lost_info
@@ -455,23 +429,7 @@ CREATE TABLE `lost_info`  (
   `lastDate` date NULL DEFAULT NULL,
   `reason` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`lostId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Table structure for manager_info
--- ----------------------------
-DROP TABLE IF EXISTS `manager_info`;
-CREATE TABLE `manager_info`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` char(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `account` char(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `user_Role` char(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `Phone_number` char(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `password` char(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `status` tinyint(1) NOT NULL,
-  `creat_time` date NOT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for organization
@@ -485,7 +443,7 @@ CREATE TABLE `organization`  (
   `code` int(11) NULL DEFAULT NULL,
   `description` char(200) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`org_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for paln_category
@@ -495,7 +453,7 @@ CREATE TABLE `paln_category`  (
   `catNum` int(11) NOT NULL AUTO_INCREMENT,
   `catName` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`catNum`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for palncategoryandplan
@@ -506,7 +464,7 @@ CREATE TABLE `palncategoryandplan`  (
   `palncategory_id` int(15) NULL DEFAULT NULL,
   `plan_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for person
@@ -527,7 +485,7 @@ CREATE TABLE `person`  (
   `birthday` date NULL DEFAULT NULL,
   `nickname` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`per_`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for personandorganization
@@ -538,7 +496,7 @@ CREATE TABLE `personandorganization`  (
   `person_id` int(15) NULL DEFAULT NULL,
   `organization_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for pigeonhole_info
@@ -555,7 +513,7 @@ CREATE TABLE `pigeonhole_info`  (
   `live_id` int(11) NULL DEFAULT NULL,
   `assignment_id` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`pigeonhole_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for plan
@@ -567,7 +525,7 @@ CREATE TABLE `plan`  (
   `satrtDate` date NULL DEFAULT NULL,
   `endDate` date NULL DEFAULT NULL,
   PRIMARY KEY (`planId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for plan_cateinfo
@@ -580,7 +538,7 @@ CREATE TABLE `plan_cateinfo`  (
   `plan_type` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `plan_isAllot` tinyint(1) NOT NULL,
   PRIMARY KEY (`plan_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for plan_info
@@ -593,7 +551,7 @@ CREATE TABLE `plan_info`  (
   `description` char(200) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `is_valid` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for plancateinfoandtrainer
@@ -604,7 +562,7 @@ CREATE TABLE `plancateinfoandtrainer`  (
   `plancateinfo_id` int(15) NULL DEFAULT NULL,
   `trainer_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for planinfo
@@ -615,7 +573,7 @@ CREATE TABLE `planinfo`  (
   `startDate` date NULL DEFAULT NULL,
   `endDate` date NULL DEFAULT NULL,
   PRIMARY KEY (`palnInfoId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for planinfoandplan
@@ -626,7 +584,7 @@ CREATE TABLE `planinfoandplan`  (
   `planinfo_id` int(15) NULL DEFAULT NULL,
   `plan_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for profession_info
@@ -637,7 +595,7 @@ CREATE TABLE `profession_info`  (
   `name` char(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `description` char(200) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for projects_info
@@ -658,7 +616,7 @@ CREATE TABLE `projects_info`  (
   `section_id` int(11) NOT NULL,
   `projects_description` char(200) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`projects_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for projectsandcourse
@@ -669,7 +627,7 @@ CREATE TABLE `projectsandcourse`  (
   `projects_id` int(15) NULL DEFAULT NULL,
   `course_id` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for question_info
@@ -682,7 +640,7 @@ CREATE TABLE `question_info`  (
   `description` char(200) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `is_valid` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for role
@@ -693,7 +651,32 @@ CREATE TABLE `role`  (
   `role_name` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `jurisdiction` char(25) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`role_id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for role_info
+-- ----------------------------
+DROP TABLE IF EXISTS `role_info`;
+CREATE TABLE `role_info`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `account` char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `userRole` char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `phoneNum` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `password` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `status` tinyint(1) NULL DEFAULT NULL,
+  `createTime` date NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of role_info
+-- ----------------------------
+INSERT INTO `role_info` VALUES (1, '刘杰', '2442613603', 'manager', '15383466428', '123456', 1, '2020-07-10');
+INSERT INTO `role_info` VALUES (2, '洛少雄', '2287464558', 'manager_resource', '11111111111', '123456', 1, '2020-07-10');
+INSERT INTO `role_info` VALUES (3, '李慧琴', '1726602829', 'teacher_exmine', '11111111111', '123456', 1, '2020-07-10');
+INSERT INTO `role_info` VALUES (4, '王敏泽', '1404963301', 'paper_make', '11111111111', '123456', 1, '2020-07-10');
+INSERT INTO `role_info` VALUES (5, '成肇娣', '971531564', 'user', '11111111111', '123456', 1, '2020-07-10');
 
 -- ----------------------------
 -- Table structure for roleandperson
@@ -704,7 +687,7 @@ CREATE TABLE `roleandperson`  (
   `role_id` int(15) NULL DEFAULT NULL,
   `person_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for schedul_info
@@ -716,7 +699,7 @@ CREATE TABLE `schedul_info`  (
   `time_down` time(0) NOT NULL,
   `time` char(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for schedulandcourse
@@ -727,7 +710,7 @@ CREATE TABLE `schedulandcourse`  (
   `schedul_id` int(15) NULL DEFAULT NULL,
   `course_id` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for score_info
@@ -742,7 +725,7 @@ CREATE TABLE `score_info`  (
   `paperDetails` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `markStatus` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`user_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for scoreandexam
@@ -753,7 +736,7 @@ CREATE TABLE `scoreandexam`  (
   `score_id` int(15) NULL DEFAULT NULL,
   `exam_name` char(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for scoreinfo
@@ -764,7 +747,7 @@ CREATE TABLE `scoreinfo`  (
   `score_score` int(11) NOT NULL,
   `score_name` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`score_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for signs_info
@@ -777,7 +760,7 @@ CREATE TABLE `signs_info`  (
   `signs_time` date NOT NULL,
   `signs_condition` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`signs_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for template
@@ -787,7 +770,7 @@ CREATE TABLE `template`  (
   `tem_id` int(11) NOT NULL AUTO_INCREMENT,
   `tem_name` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`tem_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for test_info
@@ -811,7 +794,7 @@ CREATE TABLE `test_info`  (
   `referencePoint` bigint(20) NULL DEFAULT NULL,
   `optionPoint` bigint(20) NULL DEFAULT NULL,
   PRIMARY KEY (`testClassId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for testandexam
@@ -822,7 +805,7 @@ CREATE TABLE `testandexam`  (
   `test_id` int(15) NULL DEFAULT NULL,
   `exam_name` char(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for trainer_info
@@ -843,7 +826,7 @@ CREATE TABLE `trainer_info`  (
   `trainer_nationality` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `trainer_birthday` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`trainer_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for trainerandcourseinfo
@@ -854,7 +837,7 @@ CREATE TABLE `trainerandcourseinfo`  (
   `trainer_id` int(15) NULL DEFAULT NULL,
   `courseinfo_id` int(15) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for two_manager
@@ -867,23 +850,7 @@ CREATE TABLE `two_manager`  (
   `role` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `account` char(25) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`two_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Table structure for user
--- ----------------------------
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `account` char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `userRole` char(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `phoneNum` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `password` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `status` tinyint(1) NULL DEFAULT NULL,
-  `createTime` date NULL DEFAULT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for userandexam
@@ -894,6 +861,6 @@ CREATE TABLE `userandexam`  (
   `user_id` int(15) NULL DEFAULT NULL,
   `exam_name` char(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 SET FOREIGN_KEY_CHECKS = 1;
