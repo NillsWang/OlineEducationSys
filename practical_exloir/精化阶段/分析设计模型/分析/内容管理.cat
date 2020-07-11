@@ -130,26 +130,6 @@
 		    quid       	"5EFC3DD902EA"
 		    documentation 	"创建用户的时间"
 		    type       	"Date")))
-	(object Class "分类信息"
-	    quid       	"5EFC388303DA"
-	    stereotype 	"entity"
-	    class_attributes 	(list class_attribute_list
-		(object ClassAttribute "class_id"
-		    quid       	"5EFC4FFC03CB"
-		    documentation 	"每个类别设置一个id号"
-		    type       	"Integer")
-		(object ClassAttribute "class_name"
-		    quid       	"5EFC5039036F"
-		    documentation 	"类别的名称"
-		    type       	"String")
-		(object ClassAttribute "class_intro"
-		    quid       	"5EFC50AB02B1"
-		    documentation 	"类别的说明或详细信息"
-		    type       	"String")
-		(object ClassAttribute "class_class"
-		    quid       	"5EFEE6B200BA"
-		    documentation 	"每个类别的级别，一级，二级等"
-		    type       	"String")))
 	(object Class "频道信息"
 	    quid       	"5EFC38DC0329"
 	    stereotype 	"entity"
@@ -166,19 +146,73 @@
 		    quid       	"5EFC700F0021"
 		    documentation 	"频道id"
 		    type       	"Integer")))
+	(object Class "分类信息"
+	    quid       	"5F06F36701BD"
+	    stereotype 	"entity"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "class_id"
+		    quid       	"5F06F37C01CB"
+		    documentation 	"每个类别设置一个id号"
+		    type       	"Integer")
+		(object ClassAttribute "class_name"
+		    quid       	"5F06F37C01D5"
+		    documentation 	"类别的名称"
+		    type       	"String")
+		(object ClassAttribute "class_intro"
+		    quid       	"5F06F37C01D6"
+		    documentation 	"类别的说明或详细信息"
+		    type       	"String")
+		(object ClassAttribute "class_class"
+		    quid       	"5F06F37C01D7"
+		    documentation 	"每个类别的级别，一级，二级等"
+		    type       	"String")))
+	(object Class "内容信息"
+	    quid       	"5F06F47300EB"
+	    stereotype 	"entity"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "id"
+		    quid       	"5F06F4830332"
+		    documentation 	"内容序号"
+		    type       	"Integer")
+		(object ClassAttribute "note"
+		    quid       	"5F06F608035A"
+		    documentation 	
+|内容说明
+|
+		    
+		    type       	"String")
+		(object ClassAttribute "status"
+		    quid       	"5F06F61F0173"
+		    documentation 	"内容状态"
+		    type       	"String")))
 	(object Association "$UNNAMED$0"
-	    quid       	"5EFC69E50064"
+	    quid       	"5F06F5550281"
 	    roles      	(list role_list
 		(object Role "$UNNAMED$1"
-		    quid       	"5EFC69E502F5"
+		    quid       	"5F06F5560130"
 		    supplier   	"Logical View::Analysis Model::内容管理::频道信息"
 		    quidu      	"5EFC38DC0329"
 		    client_cardinality 	(value cardinality "1..n")
 		    is_navigable 	TRUE)
 		(object Role "$UNNAMED$2"
-		    quid       	"5EFC69E502F7"
+		    quid       	"5F06F5560135"
 		    supplier   	"Logical View::Analysis Model::内容管理::分类信息"
-		    quidu      	"5EFC388303DA"
+		    quidu      	"5F06F36701BD"
+		    client_cardinality 	(value cardinality "1")
+		    is_aggregate 	TRUE)))
+	(object Association "$UNNAMED$3"
+	    quid       	"5F06F55801FA"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"5F06F5590079"
+		    supplier   	"Logical View::Analysis Model::内容管理::内容信息"
+		    quidu      	"5F06F47300EB"
+		    client_cardinality 	(value cardinality "1..n")
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$5"
+		    quid       	"5F06F559007D"
+		    supplier   	"Logical View::Analysis Model::内容管理::频道信息"
+		    quidu      	"5EFC38DC0329"
 		    client_cardinality 	(value cardinality "1")
 		    is_aggregate 	TRUE)))
 	(object Class_Category "类别管理"
@@ -209,12 +243,12 @@
 			    logical_models 	(list unit_reference_list
 				(object Mechanism @1
 				    logical_models 	(list unit_reference_list
-					(object Object "$UNNAMED$3"
+					(object Object "$UNNAMED$6"
 					    quid       	"5EFD23C20198"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD23F50175"
-						    supplier   	"$UNNAMED$4"
+						    supplier   	"$UNNAMED$7"
 						    quidu      	"5EFD23C6024E"
 						    messages   	(list Messages
 							(object Message "输入类别名称"
@@ -231,12 +265,12 @@
 					    persistence 	"Transient"
 					    creationObj 	TRUE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$4"
+					(object Object "$UNNAMED$7"
 					    quid       	"5EFD23C6024E"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD24F200C4"
-						    supplier   	"$UNNAMED$4"
+						    supplier   	"$UNNAMED$7"
 						    quidu      	"5EFD23C6024E"
 						    messages   	(list Messages
 							(object Message "检测数据"
@@ -250,7 +284,7 @@
 							    creation   	FALSE)))
 						(object Link
 						    quid       	"5EFD261502AA"
-						    supplier   	"$UNNAMED$5"
+						    supplier   	"$UNNAMED$8"
 						    quidu      	"5EFD23CC012D"
 						    messages   	(list Messages
 							(object Message "接收查询条件"
@@ -285,12 +319,12 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$5"
+					(object Object "$UNNAMED$8"
 					    quid       	"5EFD23CC012D"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD262C0110"
-						    supplier   	"$UNNAMED$6"
+						    supplier   	"$UNNAMED$9"
 						    quidu      	"5EFD23DB026C"
 						    messages   	(list Messages
 							(object Message "查询信息"
@@ -307,10 +341,10 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$6"
+					(object Object "$UNNAMED$9"
 					    quid       	"5EFD23DB026C"
 					    class      	"Logical View::Analysis Model::内容管理::分类信息"
-					    quidu      	"5EFC388303DA"
+					    quidu      	"5F06F36701BD"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE))))
@@ -325,7 +359,7 @@
 				    origin_x   	0
 				    origin_y   	0
 				    items      	(list diagram_item_list
-					(object InterObjView "$UNNAMED$3" @2
+					(object InterObjView "$UNNAMED$6" @2
 					    location   	(272, 256)
 					    font       	(object Font
 						size       	9
@@ -362,7 +396,7 @@
 						height     	106
 						y_coord    	16
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$4" @4
+					(object InterObjView "$UNNAMED$7" @4
 					    location   	(928, 240)
 					    font       	(object Font
 						size       	9
@@ -427,7 +461,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$5" @10
+					(object InterObjView "$UNNAMED$8" @10
 					    location   	(1536, 256)
 					    font       	(object Font
 						size       	9
@@ -478,8 +512,8 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$6" @14
-					    location   	(2128, 256)
+					(object InterObjView "$UNNAMED$9" @14
+					    location   	(2128, 224)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -491,7 +525,7 @@
 						default_color 	TRUE)
 					    label      	(object ItemLabel
 						Parent_View 	@14
-						location   	(2128, 280)
+						location   	(2128, 248)
 						anchor_loc 	1
 						nlines     	2
 						max_width  	462
@@ -503,7 +537,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD23DB026C"
 					    width      	154
-					    height     	832
+					    height     	864
 					    icon_height 	153
 					    icon_width 	154
 					    icon_y_offset 	0
@@ -856,12 +890,12 @@
 			    logical_models 	(list unit_reference_list
 				(object Mechanism @33
 				    logical_models 	(list unit_reference_list
-					(object Object "$UNNAMED$7"
+					(object Object "$UNNAMED$10"
 					    quid       	"5EFD27BD015D"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD27D30320"
-						    supplier   	"$UNNAMED$8"
+						    supplier   	"$UNNAMED$11"
 						    quidu      	"5EFD27C003DE"
 						    messages   	(list Messages
 							(object Message "输入更改后的名称"
@@ -878,12 +912,12 @@
 					    persistence 	"Transient"
 					    creationObj 	TRUE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$8"
+					(object Object "$UNNAMED$11"
 					    quid       	"5EFD27C003DE"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD28510166"
-						    supplier   	"$UNNAMED$8"
+						    supplier   	"$UNNAMED$11"
 						    quidu      	"5EFD27C003DE"
 						    messages   	(list Messages
 							(object Message "检测数据"
@@ -897,7 +931,7 @@
 							    creation   	FALSE)))
 						(object Link
 						    quid       	"5EFD28730312"
-						    supplier   	"$UNNAMED$9"
+						    supplier   	"$UNNAMED$12"
 						    quidu      	"5EFD27C4037F"
 						    messages   	(list Messages
 							(object Message "接收修改数据"
@@ -932,12 +966,12 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$9"
+					(object Object "$UNNAMED$12"
 					    quid       	"5EFD27C4037F"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD288A0103"
-						    supplier   	"$UNNAMED$10"
+						    supplier   	"$UNNAMED$13"
 						    quidu      	"5EFD27CC00CA"
 						    messages   	(list Messages
 							(object Message "更新存储数据"
@@ -954,10 +988,10 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$10"
+					(object Object "$UNNAMED$13"
 					    quid       	"5EFD27CC00CA"
 					    class      	"Logical View::Analysis Model::内容管理::分类信息"
-					    quidu      	"5EFC388303DA"
+					    quidu      	"5F06F36701BD"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE))))
@@ -972,7 +1006,7 @@
 				    origin_x   	0
 				    origin_y   	0
 				    items      	(list diagram_item_list
-					(object InterObjView "$UNNAMED$7" @34
+					(object InterObjView "$UNNAMED$10" @34
 					    location   	(288, 256)
 					    font       	(object Font
 						size       	9
@@ -997,7 +1031,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD27BD015D"
 					    width      	300
-					    height     	1068
+					    height     	1065
 					    icon_height 	0
 					    icon_width 	0
 					    icon_y_offset 	0
@@ -1009,7 +1043,7 @@
 						height     	138
 						y_coord    	48
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$8" @36
+					(object InterObjView "$UNNAMED$11" @36
 					    location   	(848, 224)
 					    font       	(object Font
 						size       	9
@@ -1081,7 +1115,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$9" @43
+					(object InterObjView "$UNNAMED$12" @43
 					    location   	(1424, 224)
 					    font       	(object Font
 						size       	9
@@ -1106,7 +1140,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD27C4037F"
 					    width      	157
-					    height     	1100
+					    height     	1097
 					    icon_height 	164
 					    icon_width 	157
 					    icon_y_offset 	0
@@ -1132,7 +1166,7 @@
 						height     	92
 						y_coord    	2
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$10" @47
+					(object InterObjView "$UNNAMED$13" @47
 					    location   	(2016, 224)
 					    font       	(object Font
 						size       	9
@@ -1157,7 +1191,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD27CC00CA"
 					    width      	154
-					    height     	1100
+					    height     	1097
 					    icon_height 	153
 					    icon_width 	154
 					    icon_y_offset 	0
@@ -1416,7 +1450,7 @@
 					    fill_color 	13434879)
 					(object Destruction_Marker @62
 					    Parent_View 	@43
-					    location   	(1424, 1324)
+					    location   	(1424, 1321)
 					    line_color 	3342489
 					    fill_color 	13434879))))))
 		    logical_presentations 	(list unit_reference_list
@@ -1510,12 +1544,12 @@
 			    logical_models 	(list unit_reference_list
 				(object Mechanism @66
 				    logical_models 	(list unit_reference_list
-					(object Object "$UNNAMED$11"
+					(object Object "$UNNAMED$14"
 					    quid       	"5EFD28B60398"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2B74006C"
-						    supplier   	"$UNNAMED$12"
+						    supplier   	"$UNNAMED$15"
 						    quidu      	"5EFD28BC007C"
 						    messages   	(list Messages
 							(object Message "选择要删除的类别，点击删除"
@@ -1541,12 +1575,12 @@
 					    persistence 	"Transient"
 					    creationObj 	TRUE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$12"
+					(object Object "$UNNAMED$15"
 					    quid       	"5EFD28BC007C"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2B9201C9"
-						    supplier   	"$UNNAMED$13"
+						    supplier   	"$UNNAMED$16"
 						    quidu      	"5EFD28C0011F"
 						    messages   	(list Messages
 							(object Message "接收删除条件"
@@ -1578,7 +1612,7 @@
 							    creation   	FALSE)))
 						(object Link
 						    quid       	"5EFDA3E703AE"
-						    supplier   	"$UNNAMED$12"
+						    supplier   	"$UNNAMED$15"
 						    quidu      	"5EFD28BC007C"
 						    messages   	(list Messages
 							(object Message "提示是否确认删除"
@@ -1595,12 +1629,12 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$13"
+					(object Object "$UNNAMED$16"
 					    quid       	"5EFD28C0011F"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2BC10034"
-						    supplier   	"$UNNAMED$14"
+						    supplier   	"$UNNAMED$17"
 						    quidu      	"5EFD28C3013F"
 						    messages   	(list Messages
 							(object Message "删除分类信息"
@@ -1617,10 +1651,10 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$14"
+					(object Object "$UNNAMED$17"
 					    quid       	"5EFD28C3013F"
 					    class      	"Logical View::Analysis Model::内容管理::分类信息"
-					    quidu      	"5EFC388303DA"
+					    quidu      	"5F06F36701BD"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE))))
@@ -1635,7 +1669,7 @@
 				    origin_x   	0
 				    origin_y   	0
 				    items      	(list diagram_item_list
-					(object InterObjView "$UNNAMED$11" @67
+					(object InterObjView "$UNNAMED$14" @67
 					    location   	(240, 240)
 					    font       	(object Font
 						size       	9
@@ -1679,7 +1713,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$12" @70
+					(object InterObjView "$UNNAMED$15" @70
 					    location   	(864, 224)
 					    font       	(object Font
 						size       	9
@@ -1758,7 +1792,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$13" @78
+					(object InterObjView "$UNNAMED$16" @78
 					    location   	(1424, 224)
 					    font       	(object Font
 						size       	9
@@ -1809,7 +1843,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$14" @82
+					(object InterObjView "$UNNAMED$17" @82
 					    location   	(2048, 224)
 					    font       	(object Font
 						size       	9
@@ -2227,12 +2261,12 @@
 			    logical_models 	(list unit_reference_list
 				(object Mechanism @103
 				    logical_models 	(list unit_reference_list
-					(object Object "$UNNAMED$15"
+					(object Object "$UNNAMED$18"
 					    quid       	"5EFD2BFD02C6"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2C0E0241"
-						    supplier   	"$UNNAMED$16"
+						    supplier   	"$UNNAMED$19"
 						    quidu      	"5EFD2C010329"
 						    messages   	(list Messages
 							(object Message "输入小类名称"
@@ -2249,12 +2283,12 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$16"
+					(object Object "$UNNAMED$19"
 					    quid       	"5EFD2C010329"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2C1B012A"
-						    supplier   	"$UNNAMED$16"
+						    supplier   	"$UNNAMED$19"
 						    quidu      	"5EFD2C010329"
 						    messages   	(list Messages
 							(object Message "检测数据"
@@ -2268,7 +2302,7 @@
 							    creation   	FALSE)))
 						(object Link
 						    quid       	"5EFD2C28032A"
-						    supplier   	"$UNNAMED$17"
+						    supplier   	"$UNNAMED$20"
 						    quidu      	"5EFD2C040138"
 						    messages   	(list Messages
 							(object Message "接收数据"
@@ -2303,12 +2337,12 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$17"
+					(object Object "$UNNAMED$20"
 					    quid       	"5EFD2C040138"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2C3C0168"
-						    supplier   	"$UNNAMED$18"
+						    supplier   	"$UNNAMED$21"
 						    quidu      	"5EFD2C090357"
 						    messages   	(list Messages
 							(object Message "存储数据"
@@ -2325,10 +2359,10 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$18"
+					(object Object "$UNNAMED$21"
 					    quid       	"5EFD2C090357"
 					    class      	"Logical View::Analysis Model::内容管理::分类信息"
-					    quidu      	"5EFC388303DA"
+					    quidu      	"5F06F36701BD"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE))))
@@ -2343,7 +2377,7 @@
 				    origin_x   	0
 				    origin_y   	0
 				    items      	(list diagram_item_list
-					(object InterObjView "$UNNAMED$15" @104
+					(object InterObjView "$UNNAMED$18" @104
 					    location   	(256, 225)
 					    font       	(object Font
 						size       	9
@@ -2368,7 +2402,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2BFD02C6"
 					    width      	300
-					    height     	939
+					    height     	936
 					    icon_height 	0
 					    icon_width 	0
 					    icon_y_offset 	0
@@ -2380,7 +2414,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$16" @106
+					(object InterObjView "$UNNAMED$19" @106
 					    location   	(848, 224)
 					    font       	(object Font
 						size       	9
@@ -2405,7 +2439,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2C010329"
 					    width      	229
-					    height     	940
+					    height     	937
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -2445,7 +2479,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$17" @112
+					(object InterObjView "$UNNAMED$20" @112
 					    location   	(1392, 224)
 					    font       	(object Font
 						size       	9
@@ -2470,7 +2504,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2C040138"
 					    width      	157
-					    height     	940
+					    height     	937
 					    icon_height 	164
 					    icon_width 	157
 					    icon_y_offset 	0
@@ -2496,7 +2530,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$18" @116
+					(object InterObjView "$UNNAMED$21" @116
 					    location   	(1920, 224)
 					    font       	(object Font
 						size       	9
@@ -2521,7 +2555,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2C090357"
 					    width      	154
-					    height     	940
+					    height     	937
 					    icon_height 	153
 					    icon_width 	154
 					    icon_y_offset 	0
@@ -2775,12 +2809,12 @@
 					    ordinal    	5)
 					(object Destruction_Marker @130
 					    Parent_View 	@106
-					    location   	(848, 1164)
+					    location   	(848, 1161)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @131
 					    Parent_View 	@112
-					    location   	(1392, 1164)
+					    location   	(1392, 1161)
 					    line_color 	3342489
 					    fill_color 	13434879))))))
 		    logical_presentations 	(list unit_reference_list
@@ -2879,12 +2913,12 @@
 			    logical_models 	(list unit_reference_list
 				(object Mechanism @135
 				    logical_models 	(list unit_reference_list
-					(object Object "$UNNAMED$19"
+					(object Object "$UNNAMED$22"
 					    quid       	"5EFC8B8C021B"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFC8E310253"
-						    supplier   	"$UNNAMED$19"
+						    supplier   	"$UNNAMED$22"
 						    quidu      	"5EFC8B8C021B"
 						    messages   	(list Messages
 							(object Message "检测数据"
@@ -2899,7 +2933,7 @@
 							    creation   	FALSE)))
 						(object Link
 						    quid       	"5EFC8E6802AF"
-						    supplier   	"$UNNAMED$20"
+						    supplier   	"$UNNAMED$23"
 						    quidu      	"5EFC8B8F014F"
 						    messages   	(list Messages
 							(object Message "接收数据"
@@ -2936,12 +2970,12 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$20"
+					(object Object "$UNNAMED$23"
 					    quid       	"5EFC8B8F014F"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFC8E9800EA"
-						    supplier   	"$UNNAMED$21"
+						    supplier   	"$UNNAMED$24"
 						    quidu      	"5EFC8C210369"
 						    messages   	(list Messages
 							(object Message "存储数据"
@@ -2959,19 +2993,19 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$21"
+					(object Object "$UNNAMED$24"
 					    quid       	"5EFC8C210369"
 					    class      	"Logical View::Analysis Model::内容管理::分类信息"
-					    quidu      	"5EFC388303DA"
+					    quidu      	"5F06F36701BD"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$22"
+					(object Object "$UNNAMED$25"
 					    quid       	"5EFC8C250377"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFC8DEF008E"
-						    supplier   	"$UNNAMED$19"
+						    supplier   	"$UNNAMED$22"
 						    quidu      	"5EFC8B8C021B"
 						    messages   	(list Messages
 							(object Message "输入大类名称"
@@ -2999,7 +3033,7 @@
 				    origin_x   	0
 				    origin_y   	0
 				    items      	(list diagram_item_list
-					(object InterObjView "$UNNAMED$22" @136
+					(object InterObjView "$UNNAMED$25" @136
 					    location   	(272, 225)
 					    font       	(object Font
 						size       	9
@@ -3036,7 +3070,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$19" @138
+					(object InterObjView "$UNNAMED$22" @138
 					    location   	(912, 256)
 					    font       	(object Font
 						size       	9
@@ -3101,7 +3135,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$20" @144
+					(object InterObjView "$UNNAMED$23" @144
 					    location   	(1552, 256)
 					    font       	(object Font
 						size       	9
@@ -3152,8 +3186,8 @@
 						height     	92
 						y_coord    	2
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$21" @148
-					    location   	(2096, 256)
+					(object InterObjView "$UNNAMED$24" @148
+					    location   	(2096, 224)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3165,7 +3199,7 @@
 						default_color 	TRUE)
 					    label      	(object ItemLabel
 						Parent_View 	@148
-						location   	(2096, 280)
+						location   	(2096, 248)
 						anchor_loc 	1
 						nlines     	2
 						max_width  	462
@@ -3177,7 +3211,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFC8C210369"
 					    width      	154
-					    height     	1008
+					    height     	1040
 					    icon_height 	153
 					    icon_width 	154
 					    icon_y_offset 	0
@@ -3535,12 +3569,12 @@
 			    logical_models 	(list unit_reference_list
 				(object Mechanism @167
 				    logical_models 	(list unit_reference_list
-					(object Object "$UNNAMED$23"
+					(object Object "$UNNAMED$26"
 					    quid       	"5EFD2CB80282"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2CC60257"
-						    supplier   	"$UNNAMED$24"
+						    supplier   	"$UNNAMED$27"
 						    quidu      	"5EFD2CBB0273"
 						    messages   	(list Messages
 							(object Message "输入内容信息"
@@ -3557,12 +3591,12 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$24"
+					(object Object "$UNNAMED$27"
 					    quid       	"5EFD2CBB0273"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2CFA0358"
-						    supplier   	"$UNNAMED$24"
+						    supplier   	"$UNNAMED$27"
 						    quidu      	"5EFD2CBB0273"
 						    messages   	(list Messages
 							(object Message "检测数据"
@@ -3576,7 +3610,7 @@
 							    creation   	FALSE)))
 						(object Link
 						    quid       	"5EFD2D1A00E1"
-						    supplier   	"$UNNAMED$25"
+						    supplier   	"$UNNAMED$28"
 						    quidu      	"5EFD2CBD026C"
 						    messages   	(list Messages
 							(object Message "接收数据"
@@ -3611,12 +3645,12 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$25"
+					(object Object "$UNNAMED$28"
 					    quid       	"5EFD2CBD026C"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2D2E0202"
-						    supplier   	"$UNNAMED$26"
+						    supplier   	"$UNNAMED$29"
 						    quidu      	"5EFD2CC10199"
 						    messages   	(list Messages
 							(object Message "查询信息"
@@ -3633,10 +3667,10 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$26"
+					(object Object "$UNNAMED$29"
 					    quid       	"5EFD2CC10199"
-					    class      	"Logical View::Analysis Model::内容管理::分类信息"
-					    quidu      	"5EFC388303DA"
+					    class      	"Logical View::Analysis Model::内容管理::内容信息"
+					    quidu      	"5F06F47300EB"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE))))
@@ -3651,7 +3685,7 @@
 				    origin_x   	0
 				    origin_y   	0
 				    items      	(list diagram_item_list
-					(object InterObjView "$UNNAMED$23" @168
+					(object InterObjView "$UNNAMED$26" @168
 					    location   	(256, 225)
 					    font       	(object Font
 						size       	9
@@ -3676,7 +3710,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2CB80282"
 					    width      	300
-					    height     	923
+					    height     	920
 					    icon_height 	0
 					    icon_width 	0
 					    icon_y_offset 	0
@@ -3688,7 +3722,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$24" @170
+					(object InterObjView "$UNNAMED$27" @170
 					    location   	(992, 224)
 					    font       	(object Font
 						size       	9
@@ -3713,7 +3747,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2CBB0273"
 					    width      	229
-					    height     	924
+					    height     	921
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -3753,7 +3787,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$25" @176
+					(object InterObjView "$UNNAMED$28" @176
 					    location   	(1520, 224)
 					    font       	(object Font
 						size       	9
@@ -3778,7 +3812,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2CBD026C"
 					    width      	157
-					    height     	924
+					    height     	921
 					    icon_height 	164
 					    icon_width 	157
 					    icon_y_offset 	0
@@ -3804,7 +3838,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$26" @180
+					(object InterObjView "$UNNAMED$29" @180
 					    location   	(2096, 224)
 					    font       	(object Font
 						size       	9
@@ -3829,7 +3863,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2CC10199"
 					    width      	154
-					    height     	924
+					    height     	921
 					    icon_height 	153
 					    icon_width 	154
 					    icon_y_offset 	0
@@ -4083,12 +4117,12 @@
 					    ordinal    	5)
 					(object Destruction_Marker @194
 					    Parent_View 	@170
-					    location   	(992, 1148)
+					    location   	(992, 1145)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @195
 					    Parent_View 	@176
-					    location   	(1520, 1148)
+					    location   	(1520, 1145)
 					    line_color 	3342489
 					    fill_color 	13434879))))))
 		    logical_presentations 	(list unit_reference_list
@@ -4182,12 +4216,12 @@
 			    logical_models 	(list unit_reference_list
 				(object Mechanism @199
 				    logical_models 	(list unit_reference_list
-					(object Object "$UNNAMED$27"
+					(object Object "$UNNAMED$30"
 					    quid       	"5EFD2D82008C"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2DAD037E"
-						    supplier   	"$UNNAMED$28"
+						    supplier   	"$UNNAMED$31"
 						    quidu      	"5EFD2DA302E5"
 						    messages   	(list Messages
 							(object Message "选择要删除的内容，点击删除"
@@ -4213,12 +4247,12 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$28"
+					(object Object "$UNNAMED$31"
 					    quid       	"5EFD2DA302E5"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2E310058"
-						    supplier   	"$UNNAMED$29"
+						    supplier   	"$UNNAMED$32"
 						    quidu      	"5EFD2DA6004F"
 						    messages   	(list Messages
 							(object Message "接收删除条件"
@@ -4250,7 +4284,7 @@
 							    creation   	FALSE)))
 						(object Link
 						    quid       	"5EFDA4010212"
-						    supplier   	"$UNNAMED$28"
+						    supplier   	"$UNNAMED$31"
 						    quidu      	"5EFD2DA302E5"
 						    messages   	(list Messages
 							(object Message "提示是否确认删除"
@@ -4267,12 +4301,12 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$29"
+					(object Object "$UNNAMED$32"
 					    quid       	"5EFD2DA6004F"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2E4802C4"
-						    supplier   	"$UNNAMED$30"
+						    supplier   	"$UNNAMED$33"
 						    quidu      	"5EFD2DA900F1"
 						    messages   	(list Messages
 							(object Message "删除内容信息"
@@ -4289,10 +4323,10 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$30"
+					(object Object "$UNNAMED$33"
 					    quid       	"5EFD2DA900F1"
-					    class      	"Logical View::Analysis Model::内容管理::分类信息"
-					    quidu      	"5EFC388303DA"
+					    class      	"Logical View::Analysis Model::内容管理::内容信息"
+					    quidu      	"5F06F47300EB"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE))))
@@ -4307,7 +4341,7 @@
 				    origin_x   	0
 				    origin_y   	0
 				    items      	(list diagram_item_list
-					(object InterObjView "$UNNAMED$27" @200
+					(object InterObjView "$UNNAMED$30" @200
 					    location   	(288, 225)
 					    font       	(object Font
 						size       	9
@@ -4332,7 +4366,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2D82008C"
 					    width      	300
-					    height     	1179
+					    height     	1181
 					    icon_height 	0
 					    icon_width 	0
 					    icon_y_offset 	0
@@ -4351,7 +4385,7 @@
 						height     	92
 						y_coord    	2
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$28" @203
+					(object InterObjView "$UNNAMED$31" @203
 					    location   	(896, 224)
 					    font       	(object Font
 						size       	9
@@ -4430,7 +4464,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$29" @211
+					(object InterObjView "$UNNAMED$32" @211
 					    location   	(1504, 224)
 					    font       	(object Font
 						size       	9
@@ -4455,7 +4489,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2DA6004F"
 					    width      	157
-					    height     	1180
+					    height     	1182
 					    icon_height 	164
 					    icon_width 	157
 					    icon_y_offset 	0
@@ -4481,7 +4515,7 @@
 						height     	96
 						y_coord    	6
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$30" @215
+					(object InterObjView "$UNNAMED$33" @215
 					    location   	(2064, 224)
 					    font       	(object Font
 						size       	9
@@ -4506,7 +4540,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2DA900F1"
 					    width      	154
-					    height     	1180
+					    height     	1182
 					    icon_height 	153
 					    icon_width 	154
 					    icon_y_offset 	0
@@ -4725,7 +4759,7 @@
 					    fill_color 	13434879)
 					(object Destruction_Marker @228
 					    Parent_View 	@211
-					    location   	(1504, 1404)
+					    location   	(1504, 1406)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object InterMessView "点击确认按钮" @229
@@ -4899,12 +4933,12 @@
 			    logical_models 	(list unit_reference_list
 				(object Mechanism @236
 				    logical_models 	(list unit_reference_list
-					(object Object "$UNNAMED$31"
+					(object Object "$UNNAMED$34"
 					    quid       	"5EFD2F060060"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2F1403AA"
-						    supplier   	"$UNNAMED$32"
+						    supplier   	"$UNNAMED$35"
 						    quidu      	"5EFD2F09014D"
 						    messages   	(list Messages
 							(object Message "输入修改的内容信息"
@@ -4921,12 +4955,12 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$32"
+					(object Object "$UNNAMED$35"
 					    quid       	"5EFD2F09014D"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2F4803B3"
-						    supplier   	"$UNNAMED$32"
+						    supplier   	"$UNNAMED$35"
 						    quidu      	"5EFD2F09014D"
 						    messages   	(list Messages
 							(object Message "检测数据"
@@ -4940,7 +4974,7 @@
 							    creation   	FALSE)))
 						(object Link
 						    quid       	"5EFD2F600179"
-						    supplier   	"$UNNAMED$33"
+						    supplier   	"$UNNAMED$36"
 						    quidu      	"5EFD2F0C0301"
 						    messages   	(list Messages
 							(object Message "接收修改数据"
@@ -4975,12 +5009,12 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$33"
+					(object Object "$UNNAMED$36"
 					    quid       	"5EFD2F0C0301"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2F8D037C"
-						    supplier   	"$UNNAMED$34"
+						    supplier   	"$UNNAMED$37"
 						    quidu      	"5EFD2F100075"
 						    messages   	(list Messages
 							(object Message "更新存储数据"
@@ -4997,10 +5031,10 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$34"
+					(object Object "$UNNAMED$37"
 					    quid       	"5EFD2F100075"
-					    class      	"Logical View::Analysis Model::内容管理::分类信息"
-					    quidu      	"5EFC388303DA"
+					    class      	"Logical View::Analysis Model::内容管理::内容信息"
+					    quidu      	"5F06F47300EB"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE))))
@@ -5015,7 +5049,7 @@
 				    origin_x   	0
 				    origin_y   	0
 				    items      	(list diagram_item_list
-					(object InterObjView "$UNNAMED$31" @237
+					(object InterObjView "$UNNAMED$34" @237
 					    location   	(256, 225)
 					    font       	(object Font
 						size       	9
@@ -5040,7 +5074,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2F060060"
 					    width      	300
-					    height     	891
+					    height     	888
 					    icon_height 	0
 					    icon_width 	0
 					    icon_y_offset 	0
@@ -5052,7 +5086,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$32" @239
+					(object InterObjView "$UNNAMED$35" @239
 					    location   	(848, 224)
 					    font       	(object Font
 						size       	9
@@ -5077,7 +5111,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2F09014D"
 					    width      	229
-					    height     	892
+					    height     	889
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -5117,7 +5151,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$33" @245
+					(object InterObjView "$UNNAMED$36" @245
 					    location   	(1504, 224)
 					    font       	(object Font
 						size       	9
@@ -5142,7 +5176,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2F0C0301"
 					    width      	157
-					    height     	892
+					    height     	889
 					    icon_height 	164
 					    icon_width 	157
 					    icon_y_offset 	0
@@ -5168,7 +5202,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$34" @249
+					(object InterObjView "$UNNAMED$37" @249
 					    location   	(2000, 224)
 					    font       	(object Font
 						size       	9
@@ -5193,7 +5227,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2F100075"
 					    width      	154
-					    height     	892
+					    height     	889
 					    icon_height 	153
 					    icon_width 	154
 					    icon_y_offset 	0
@@ -5447,12 +5481,12 @@
 					    ordinal    	5)
 					(object Destruction_Marker @263
 					    Parent_View 	@239
-					    location   	(848, 1116)
+					    location   	(848, 1113)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @264
 					    Parent_View 	@245
-					    location   	(1504, 1116)
+					    location   	(1504, 1113)
 					    line_color 	3342489
 					    fill_color 	13434879))))))
 		    logical_presentations 	(list unit_reference_list
@@ -5546,12 +5580,12 @@
 			    logical_models 	(list unit_reference_list
 				(object Mechanism @268
 				    logical_models 	(list unit_reference_list
-					(object Object "$UNNAMED$35"
+					(object Object "$UNNAMED$38"
 					    quid       	"5EFD2FCE021A"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2FDA00C2"
-						    supplier   	"$UNNAMED$36"
+						    supplier   	"$UNNAMED$39"
 						    quidu      	"5EFD2FD10128"
 						    messages   	(list Messages
 							(object Message "输入增加的内容信息"
@@ -5568,12 +5602,12 @@
 					    persistence 	"Transient"
 					    creationObj 	TRUE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$36"
+					(object Object "$UNNAMED$39"
 					    quid       	"5EFD2FD10128"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD2FE80219"
-						    supplier   	"$UNNAMED$36"
+						    supplier   	"$UNNAMED$39"
 						    quidu      	"5EFD2FD10128"
 						    messages   	(list Messages
 							(object Message "检测数据"
@@ -5587,7 +5621,7 @@
 							    creation   	FALSE)))
 						(object Link
 						    quid       	"5EFD2FF200A2"
-						    supplier   	"$UNNAMED$37"
+						    supplier   	"$UNNAMED$40"
 						    quidu      	"5EFD2FD301DB"
 						    messages   	(list Messages
 							(object Message "接收输入数据"
@@ -5622,12 +5656,12 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$37"
+					(object Object "$UNNAMED$40"
 					    quid       	"5EFD2FD301DB"
 					    collaborators 	(list link_list
 						(object Link
 						    quid       	"5EFD300E0165"
-						    supplier   	"$UNNAMED$38"
+						    supplier   	"$UNNAMED$41"
 						    quidu      	"5EFD2FD603C2"
 						    messages   	(list Messages
 							(object Message "存储数据"
@@ -5644,10 +5678,10 @@
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
-					(object Object "$UNNAMED$38"
+					(object Object "$UNNAMED$41"
 					    quid       	"5EFD2FD603C2"
-					    class      	"Logical View::Analysis Model::内容管理::分类信息"
-					    quidu      	"5EFC388303DA"
+					    class      	"Logical View::Analysis Model::内容管理::内容信息"
+					    quidu      	"5F06F47300EB"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE))))
@@ -5662,7 +5696,7 @@
 				    origin_x   	0
 				    origin_y   	0
 				    items      	(list diagram_item_list
-					(object InterObjView "$UNNAMED$35" @269
+					(object InterObjView "$UNNAMED$38" @269
 					    location   	(176, 272)
 					    font       	(object Font
 						size       	9
@@ -5687,7 +5721,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2FCE021A"
 					    width      	300
-					    height     	908
+					    height     	905
 					    icon_height 	0
 					    icon_width 	0
 					    icon_y_offset 	0
@@ -5699,7 +5733,7 @@
 						height     	122
 						y_coord    	32
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$36" @271
+					(object InterObjView "$UNNAMED$39" @271
 					    location   	(752, 224)
 					    font       	(object Font
 						size       	9
@@ -5724,7 +5758,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2FD10128"
 					    width      	229
-					    height     	956
+					    height     	953
 					    icon_height 	153
 					    icon_width 	229
 					    icon_y_offset 	0
@@ -5764,7 +5798,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$37" @277
+					(object InterObjView "$UNNAMED$40" @277
 					    location   	(1376, 224)
 					    font       	(object Font
 						size       	9
@@ -5789,7 +5823,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2FD301DB"
 					    width      	157
-					    height     	940
+					    height     	937
 					    icon_height 	164
 					    icon_width 	157
 					    icon_y_offset 	0
@@ -5815,7 +5849,7 @@
 						height     	90
 						y_coord    	0
 						Nested     	FALSE))
-					(object InterObjView "$UNNAMED$38" @281
+					(object InterObjView "$UNNAMED$41" @281
 					    location   	(1888, 224)
 					    font       	(object Font
 						size       	9
@@ -5840,7 +5874,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2FD603C2"
 					    width      	154
-					    height     	956
+					    height     	953
 					    icon_height 	153
 					    icon_width 	154
 					    icon_y_offset 	0
@@ -6094,12 +6128,12 @@
 					    ordinal    	5)
 					(object Destruction_Marker @295
 					    Parent_View 	@271
-					    location   	(752, 1180)
+					    location   	(752, 1177)
 					    line_color 	3342489
 					    fill_color 	13434879)
 					(object Destruction_Marker @296
 					    Parent_View 	@277
-					    location   	(1376, 1164)
+					    location   	(1376, 1161)
 					    line_color 	3342489
 					    fill_color 	13434879))))))
 		    logical_presentations 	(list unit_reference_list
@@ -6202,12 +6236,12 @@
 				    logical_models 	(list unit_reference_list
 					(object Mechanism @300
 					    logical_models 	(list unit_reference_list
-						(object Object "$UNNAMED$39"
+						(object Object "$UNNAMED$42"
 						    quid       	"5EFD31CC02BD"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD31DC0392"
-							    supplier   	"$UNNAMED$40"
+							    supplier   	"$UNNAMED$43"
 							    quidu      	"5EFD31D1025C"
 							    messages   	(list Messages
 								(object Message "输入用户名称或id"
@@ -6224,12 +6258,12 @@
 						    persistence 	"Transient"
 						    creationObj 	TRUE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$40"
+						(object Object "$UNNAMED$43"
 						    quid       	"5EFD31D1025C"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD32330069"
-							    supplier   	"$UNNAMED$41"
+							    supplier   	"$UNNAMED$44"
 							    quidu      	"5EFD31D3029C"
 							    messages   	(list Messages
 								(object Message "接收数据"
@@ -6261,7 +6295,7 @@
 								    creation   	FALSE)))
 							(object Link
 							    quid       	"5EFD323603A8"
-							    supplier   	"$UNNAMED$40"
+							    supplier   	"$UNNAMED$43"
 							    quidu      	"5EFD31D1025C"
 							    messages   	(list Messages
 								(object Message "检测数据"
@@ -6278,12 +6312,12 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$41"
+						(object Object "$UNNAMED$44"
 						    quid       	"5EFD31D3029C"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD32550119"
-							    supplier   	"$UNNAMED$42"
+							    supplier   	"$UNNAMED$45"
 							    quidu      	"5EFD31D703AD"
 							    messages   	(list Messages
 								(object Message "查询信息"
@@ -6300,7 +6334,7 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$42"
+						(object Object "$UNNAMED$45"
 						    quid       	"5EFD31D703AD"
 						    class      	"Logical View::Analysis Model::内容管理::频道信息"
 						    quidu      	"5EFC38DC0329"
@@ -6318,7 +6352,7 @@
 					    origin_x   	0
 					    origin_y   	0
 					    items      	(list diagram_item_list
-						(object InterObjView "$UNNAMED$39" @301
+						(object InterObjView "$UNNAMED$42" @301
 						    location   	(240, 272)
 						    font       	(object Font
 							size       	9
@@ -6343,7 +6377,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD31CC02BD"
 						    width      	300
-						    height     	892
+						    height     	889
 						    icon_height 	0
 						    icon_width 	0
 						    icon_y_offset 	0
@@ -6355,7 +6389,7 @@
 							height     	138
 							y_coord    	48
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$40" @303
+						(object InterObjView "$UNNAMED$43" @303
 						    location   	(832, 224)
 						    font       	(object Font
 							size       	9
@@ -6380,7 +6414,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD31D1025C"
 						    width      	229
-						    height     	940
+						    height     	937
 						    icon_height 	153
 						    icon_width 	229
 						    icon_y_offset 	0
@@ -6420,7 +6454,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$41" @309
+						(object InterObjView "$UNNAMED$44" @309
 						    location   	(1392, 224)
 						    font       	(object Font
 							size       	9
@@ -6445,7 +6479,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD31D3029C"
 						    width      	157
-						    height     	924
+						    height     	921
 						    icon_height 	164
 						    icon_width 	157
 						    icon_y_offset 	0
@@ -6471,7 +6505,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$42" @313
+						(object InterObjView "$UNNAMED$45" @313
 						    location   	(1920, 224)
 						    font       	(object Font
 							size       	9
@@ -6496,7 +6530,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD31D703AD"
 						    width      	154
-						    height     	940
+						    height     	937
 						    icon_height 	153
 						    icon_width 	154
 						    icon_y_offset 	0
@@ -6750,12 +6784,12 @@
 						    ordinal    	5)
 						(object Destruction_Marker @327
 						    Parent_View 	@303
-						    location   	(832, 1164)
+						    location   	(832, 1161)
 						    line_color 	3342489
 						    fill_color 	13434879)
 						(object Destruction_Marker @328
 						    Parent_View 	@309
-						    location   	(1392, 1148)
+						    location   	(1392, 1145)
 						    line_color 	3342489
 						    fill_color 	13434879))))))
 			    logical_presentations 	(list unit_reference_list
@@ -6849,12 +6883,12 @@
 				    logical_models 	(list unit_reference_list
 					(object Mechanism @332
 					    logical_models 	(list unit_reference_list
-						(object Object "$UNNAMED$43"
+						(object Object "$UNNAMED$46"
 						    quid       	"5EFD3300019B"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD331A02F0"
-							    supplier   	"$UNNAMED$44"
+							    supplier   	"$UNNAMED$47"
 							    quidu      	"5EFD330203D8"
 							    messages   	(list Messages
 								(object Message "输入用户名或id"
@@ -6889,12 +6923,12 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$44"
+						(object Object "$UNNAMED$47"
 						    quid       	"5EFD330203D8"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD33670369"
-							    supplier   	"$UNNAMED$44"
+							    supplier   	"$UNNAMED$47"
 							    quidu      	"5EFD330203D8"
 							    messages   	(list Messages
 								(object Message "检测数据"
@@ -6920,12 +6954,12 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$45"
+						(object Object "$UNNAMED$48"
 						    quid       	"5EFD3305023F"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD3377012B"
-							    supplier   	"$UNNAMED$44"
+							    supplier   	"$UNNAMED$47"
 							    quidu      	"5EFD330203D8"
 							    messages   	(list Messages
 								(object Message "接收查询条件"
@@ -6975,7 +7009,7 @@
 								    creation   	FALSE)))
 							(object Link
 							    quid       	"5EFD338B0331"
-							    supplier   	"$UNNAMED$46"
+							    supplier   	"$UNNAMED$49"
 							    quidu      	"5EFD330901FC"
 							    messages   	(list Messages
 								(object Message "查询信息"
@@ -7001,7 +7035,7 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$46"
+						(object Object "$UNNAMED$49"
 						    quid       	"5EFD330901FC"
 						    class      	"Logical View::Analysis Model::内容管理::频道信息"
 						    quidu      	"5EFC38DC0329"
@@ -7019,7 +7053,7 @@
 					    origin_x   	0
 					    origin_y   	0
 					    items      	(list diagram_item_list
-						(object InterObjView "$UNNAMED$43" @333
+						(object InterObjView "$UNNAMED$46" @333
 						    location   	(288, 225)
 						    font       	(object Font
 							size       	9
@@ -7044,7 +7078,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD3300019B"
 						    width      	300
-						    height     	1755
+						    height     	1752
 						    icon_height 	0
 						    icon_width 	0
 						    icon_y_offset 	0
@@ -7070,7 +7104,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$44" @337
+						(object InterObjView "$UNNAMED$47" @337
 						    location   	(896, 224)
 						    font       	(object Font
 							size       	9
@@ -7095,7 +7129,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD330203D8"
 						    width      	229
-						    height     	1756
+						    height     	1753
 						    icon_height 	153
 						    icon_width 	229
 						    icon_y_offset 	0
@@ -7177,7 +7211,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$45" @349
+						(object InterObjView "$UNNAMED$48" @349
 						    location   	(1568, 224)
 						    font       	(object Font
 							size       	9
@@ -7249,7 +7283,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$46" @356
+						(object InterObjView "$UNNAMED$49" @356
 						    location   	(2176, 224)
 						    font       	(object Font
 							size       	9
@@ -7274,7 +7308,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD330901FC"
 						    width      	154
-						    height     	1756
+						    height     	1753
 						    icon_height 	153
 						    icon_width 	154
 						    icon_y_offset 	0
@@ -7740,7 +7774,7 @@
 						    ordinal    	11)
 						(object Destruction_Marker @382
 						    Parent_View 	@337
-						    location   	(896, 1980)
+						    location   	(896, 1977)
 						    line_color 	3342489
 						    fill_color 	13434879)
 						(object SelfMessView "提示是否确认删除" @383
@@ -7874,12 +7908,12 @@
 				    logical_models 	(list unit_reference_list
 					(object Mechanism @388
 					    logical_models 	(list unit_reference_list
-						(object Object "$UNNAMED$47"
+						(object Object "$UNNAMED$50"
 						    quid       	"5EFD34EF03C9"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD35090287"
-							    supplier   	"$UNNAMED$48"
+							    supplier   	"$UNNAMED$51"
 							    quidu      	"5EFD34F4030F"
 							    messages   	(list Messages
 								(object Message "输入用户名或id"
@@ -7905,12 +7939,12 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$48"
+						(object Object "$UNNAMED$51"
 						    quid       	"5EFD34F4030F"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD362F03E6"
-							    supplier   	"$UNNAMED$48"
+							    supplier   	"$UNNAMED$51"
 							    quidu      	"5EFD34F4030F"
 							    messages   	(list Messages
 								(object Message "检测数据"
@@ -7924,7 +7958,7 @@
 								    creation   	FALSE)))
 							(object Link
 							    quid       	"5EFD363C024E"
-							    supplier   	"$UNNAMED$49"
+							    supplier   	"$UNNAMED$52"
 							    quidu      	"5EFD34FC0363"
 							    messages   	(list Messages
 								(object Message "接收查询条件"
@@ -7986,12 +8020,12 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$49"
+						(object Object "$UNNAMED$52"
 						    quid       	"5EFD34FC0363"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD364C0006"
-							    supplier   	"$UNNAMED$50"
+							    supplier   	"$UNNAMED$53"
 							    quidu      	"5EFD35010013"
 							    messages   	(list Messages
 								(object Message "查询信息"
@@ -8017,10 +8051,10 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$50"
+						(object Object "$UNNAMED$53"
 						    quid       	"5EFD35010013"
-						    class      	"Logical View::Analysis Model::内容管理::分类信息"
-						    quidu      	"5EFC388303DA"
+						    class      	"Logical View::Analysis Model::内容管理::频道信息"
+						    quidu      	"5EFC38DC0329"
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE))))
@@ -8035,7 +8069,7 @@
 					    origin_x   	0
 					    origin_y   	0
 					    items      	(list diagram_item_list
-						(object InterObjView "$UNNAMED$47" @389
+						(object InterObjView "$UNNAMED$50" @389
 						    location   	(288, 225)
 						    font       	(object Font
 							size       	9
@@ -8079,7 +8113,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$48" @392
+						(object InterObjView "$UNNAMED$51" @392
 						    location   	(912, 240)
 						    font       	(object Font
 							size       	9
@@ -8172,7 +8206,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$49" @402
+						(object InterObjView "$UNNAMED$52" @402
 						    location   	(1440, 224)
 						    font       	(object Font
 							size       	9
@@ -8197,7 +8231,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD34FC0363"
 						    width      	157
-						    height     	1532
+						    height     	1529
 						    icon_height 	164
 						    icon_width 	157
 						    icon_y_offset 	0
@@ -8244,7 +8278,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$50" @409
+						(object InterObjView "$UNNAMED$53" @409
 						    location   	(1952, 224)
 						    font       	(object Font
 							size       	9
@@ -8735,7 +8769,7 @@
 						    fill_color 	13434879)
 						(object Destruction_Marker @435
 						    Parent_View 	@402
-						    location   	(1440, 1756)
+						    location   	(1440, 1753)
 						    line_color 	3342489
 						    fill_color 	13434879))))))
 			    logical_presentations 	(list unit_reference_list
@@ -8834,12 +8868,12 @@
 				    logical_models 	(list unit_reference_list
 					(object Mechanism @439
 					    logical_models 	(list unit_reference_list
-						(object Object "$UNNAMED$51"
+						(object Object "$UNNAMED$54"
 						    quid       	"5EFD36EC0334"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD3BAE0129"
-							    supplier   	"$UNNAMED$52"
+							    supplier   	"$UNNAMED$55"
 							    quidu      	"5EFD36EE03E3"
 							    messages   	(list Messages
 								(object Message "输入用户名或id"
@@ -8856,12 +8890,12 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$52"
+						(object Object "$UNNAMED$55"
 						    quid       	"5EFD36EE03E3"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD3BC40194"
-							    supplier   	"$UNNAMED$52"
+							    supplier   	"$UNNAMED$55"
 							    quidu      	"5EFD36EE03E3"
 							    messages   	(list Messages
 								(object Message "检测数据"
@@ -8875,7 +8909,7 @@
 								    creation   	FALSE)))
 							(object Link
 							    quid       	"5EFD3BCE0018"
-							    supplier   	"$UNNAMED$53"
+							    supplier   	"$UNNAMED$56"
 							    quidu      	"5EFD36F603D1"
 							    messages   	(list Messages
 								(object Message "接收查询条件"
@@ -8910,12 +8944,12 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$53"
+						(object Object "$UNNAMED$56"
 						    quid       	"5EFD36F603D1"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD3BE0023D"
-							    supplier   	"$UNNAMED$54"
+							    supplier   	"$UNNAMED$57"
 							    quidu      	"5EFD36FB00C7"
 							    messages   	(list Messages
 								(object Message "查询信息"
@@ -8932,7 +8966,7 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$54"
+						(object Object "$UNNAMED$57"
 						    quid       	"5EFD36FB00C7"
 						    class      	"Logical View::Analysis Model::内容管理::频道信息"
 						    quidu      	"5EFC38DC0329"
@@ -8950,7 +8984,7 @@
 					    origin_x   	0
 					    origin_y   	0
 					    items      	(list diagram_item_list
-						(object InterObjView "$UNNAMED$51" @440
+						(object InterObjView "$UNNAMED$54" @440
 						    location   	(240, 225)
 						    font       	(object Font
 							size       	9
@@ -8975,7 +9009,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD36EC0334"
 						    width      	300
-						    height     	955
+						    height     	952
 						    icon_height 	0
 						    icon_width 	0
 						    icon_y_offset 	0
@@ -8987,7 +9021,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$52" @442
+						(object InterObjView "$UNNAMED$55" @442
 						    location   	(768, 224)
 						    font       	(object Font
 							size       	9
@@ -9012,7 +9046,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD36EE03E3"
 						    width      	229
-						    height     	956
+						    height     	953
 						    icon_height 	153
 						    icon_width 	229
 						    icon_y_offset 	0
@@ -9052,7 +9086,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$53" @448
+						(object InterObjView "$UNNAMED$56" @448
 						    location   	(1360, 224)
 						    font       	(object Font
 							size       	9
@@ -9077,7 +9111,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD36F603D1"
 						    width      	157
-						    height     	940
+						    height     	937
 						    icon_height 	164
 						    icon_width 	157
 						    icon_y_offset 	0
@@ -9103,7 +9137,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$54" @452
+						(object InterObjView "$UNNAMED$57" @452
 						    location   	(2000, 224)
 						    font       	(object Font
 							size       	9
@@ -9128,7 +9162,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD36FB00C7"
 						    width      	154
-						    height     	956
+						    height     	953
 						    icon_height 	153
 						    icon_width 	154
 						    icon_y_offset 	0
@@ -9382,12 +9416,12 @@
 						    ordinal    	5)
 						(object Destruction_Marker @466
 						    Parent_View 	@442
-						    location   	(768, 1180)
+						    location   	(768, 1177)
 						    line_color 	3342489
 						    fill_color 	13434879)
 						(object Destruction_Marker @467
 						    Parent_View 	@448
-						    location   	(1360, 1164)
+						    location   	(1360, 1161)
 						    line_color 	3342489
 						    fill_color 	13434879))))))
 			    logical_presentations 	(list unit_reference_list
@@ -9481,12 +9515,12 @@
 				    logical_models 	(list unit_reference_list
 					(object Mechanism @471
 					    logical_models 	(list unit_reference_list
-						(object Object "$UNNAMED$55"
+						(object Object "$UNNAMED$58"
 						    quid       	"5EFD3C300107"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD3C49027D"
-							    supplier   	"$UNNAMED$56"
+							    supplier   	"$UNNAMED$59"
 							    quidu      	"5EFD3C3203DD"
 							    messages   	(list Messages
 								(object Message "输入用户名或id"
@@ -9521,12 +9555,12 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$56"
+						(object Object "$UNNAMED$59"
 						    quid       	"5EFD3C3203DD"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD3C5401B3"
-							    supplier   	"$UNNAMED$56"
+							    supplier   	"$UNNAMED$59"
 							    quidu      	"5EFD3C3203DD"
 							    messages   	(list Messages
 								(object Message "检测数据"
@@ -9549,7 +9583,7 @@
 								    creation   	FALSE)))
 							(object Link
 							    quid       	"5EFD3C9B01A5"
-							    supplier   	"$UNNAMED$57"
+							    supplier   	"$UNNAMED$60"
 							    quidu      	"5EFD3C3500BA"
 							    messages   	(list Messages
 								(object Message "接收查询条件"
@@ -9602,12 +9636,12 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$57"
+						(object Object "$UNNAMED$60"
 						    quid       	"5EFD3C3500BA"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD3CB5009F"
-							    supplier   	"$UNNAMED$58"
+							    supplier   	"$UNNAMED$61"
 							    quidu      	"5EFD3C38001E"
 							    messages   	(list Messages
 								(object Message "查询信息"
@@ -9633,7 +9667,7 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$58"
+						(object Object "$UNNAMED$61"
 						    quid       	"5EFD3C38001E"
 						    class      	"Logical View::Analysis Model::内容管理::频道信息"
 						    quidu      	"5EFC38DC0329"
@@ -9651,7 +9685,7 @@
 					    origin_x   	0
 					    origin_y   	0
 					    items      	(list diagram_item_list
-						(object InterObjView "$UNNAMED$55" @472
+						(object InterObjView "$UNNAMED$58" @472
 						    location   	(176, 225)
 						    font       	(object Font
 							size       	9
@@ -9676,7 +9710,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD3C300107"
 						    width      	300
-						    height     	1707
+						    height     	1704
 						    icon_height 	0
 						    icon_width 	0
 						    icon_y_offset 	0
@@ -9702,7 +9736,7 @@
 							height     	92
 							y_coord    	2
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$56" @476
+						(object InterObjView "$UNNAMED$59" @476
 						    location   	(736, 224)
 						    font       	(object Font
 							size       	9
@@ -9809,7 +9843,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$57" @488
+						(object InterObjView "$UNNAMED$60" @488
 						    location   	(1344, 224)
 						    font       	(object Font
 							size       	9
@@ -9834,7 +9868,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD3C3500BA"
 						    width      	157
-						    height     	1708
+						    height     	1705
 						    icon_height 	164
 						    icon_width 	157
 						    icon_y_offset 	0
@@ -9881,7 +9915,7 @@
 							height     	92
 							y_coord    	2
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$58" @495
+						(object InterObjView "$UNNAMED$61" @495
 						    location   	(1920, 224)
 						    font       	(object Font
 							size       	9
@@ -9906,7 +9940,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD3C38001E"
 						    width      	154
-						    height     	1708
+						    height     	1705
 						    icon_height 	153
 						    icon_width 	154
 						    icon_y_offset 	0
@@ -10372,7 +10406,7 @@
 						    fill_color 	13434879)
 						(object Destruction_Marker @521
 						    Parent_View 	@488
-						    location   	(1344, 1932)
+						    location   	(1344, 1929)
 						    line_color 	3342489
 						    fill_color 	13434879)
 						(object SelfMessView "提示是否确认删除" @522
@@ -10506,12 +10540,12 @@
 				    logical_models 	(list unit_reference_list
 					(object Mechanism @527
 					    logical_models 	(list unit_reference_list
-						(object Object "$UNNAMED$59"
+						(object Object "$UNNAMED$62"
 						    quid       	"5EFD3E82034F"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD3EA102C6"
-							    supplier   	"$UNNAMED$60"
+							    supplier   	"$UNNAMED$63"
 							    quidu      	"5EFD3E88007D"
 							    messages   	(list Messages
 								(object Message "输入用户名或id"
@@ -10537,12 +10571,12 @@
 						    persistence 	"Transient"
 						    creationObj 	TRUE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$60"
+						(object Object "$UNNAMED$63"
 						    quid       	"5EFD3E88007D"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD3EB30374"
-							    supplier   	"$UNNAMED$60"
+							    supplier   	"$UNNAMED$63"
 							    quidu      	"5EFD3E88007D"
 							    messages   	(list Messages
 								(object Message "检测数据"
@@ -10556,7 +10590,7 @@
 								    creation   	FALSE)))
 							(object Link
 							    quid       	"5EFD3EC703D3"
-							    supplier   	"$UNNAMED$61"
+							    supplier   	"$UNNAMED$64"
 							    quidu      	"5EFD3E8B0096"
 							    messages   	(list Messages
 								(object Message "接收查询条件"
@@ -10618,12 +10652,12 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$61"
+						(object Object "$UNNAMED$64"
 						    quid       	"5EFD3E8B0096"
 						    collaborators 	(list link_list
 							(object Link
 							    quid       	"5EFD3EED0125"
-							    supplier   	"$UNNAMED$62"
+							    supplier   	"$UNNAMED$65"
 							    quidu      	"5EFD3E8E01F2"
 							    messages   	(list Messages
 								(object Message "查询信息"
@@ -10649,7 +10683,7 @@
 						    persistence 	"Transient"
 						    creationObj 	FALSE
 						    multi      	FALSE)
-						(object Object "$UNNAMED$62"
+						(object Object "$UNNAMED$65"
 						    quid       	"5EFD3E8E01F2"
 						    class      	"Logical View::Analysis Model::内容管理::频道信息"
 						    quidu      	"5EFC38DC0329"
@@ -10667,7 +10701,7 @@
 					    origin_x   	0
 					    origin_y   	0
 					    items      	(list diagram_item_list
-						(object InterObjView "$UNNAMED$59" @528
+						(object InterObjView "$UNNAMED$62" @528
 						    location   	(256, 240)
 						    font       	(object Font
 							size       	9
@@ -10711,7 +10745,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$60" @531
+						(object InterObjView "$UNNAMED$63" @531
 						    location   	(848, 240)
 						    font       	(object Font
 							size       	9
@@ -10804,7 +10838,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$61" @541
+						(object InterObjView "$UNNAMED$64" @541
 						    location   	(1408, 224)
 						    font       	(object Font
 							size       	9
@@ -10829,7 +10863,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD3E8B0096"
 						    width      	157
-						    height     	1548
+						    height     	1545
 						    icon_height 	164
 						    icon_width 	157
 						    icon_y_offset 	0
@@ -10876,7 +10910,7 @@
 							height     	90
 							y_coord    	0
 							Nested     	FALSE))
-						(object InterObjView "$UNNAMED$62" @548
+						(object InterObjView "$UNNAMED$65" @548
 						    location   	(2064, 224)
 						    font       	(object Font
 							size       	9
@@ -11367,7 +11401,7 @@
 						    fill_color 	13434879)
 						(object Destruction_Marker @574
 						    Parent_View 	@541
-						    location   	(1408, 1772)
+						    location   	(1408, 1769)
 						    line_color 	3342489
 						    fill_color 	13434879))))))
 			    logical_presentations 	(list unit_reference_list
@@ -11478,33 +11512,15 @@
 		    line_color 	3342489
 		    fill_color 	13434879
 		    quidu      	"5EFC38690202"
-		    compartment 	(object Compartment
-			Parent_View 	@578
-			location   	(296, 64)
-			font       	(object Font
-			    size       	9
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			icon_style 	"Icon"
-			fill_color 	16777215
-			anchor     	2
-			nlines     	23
-			max_width  	366
-			justify    	1)
 		    width      	386
 		    height     	1162
 		    annotation 	8
 		    autoResize 	TRUE)
-		(object ClassView "Class" "Logical View::Analysis Model::内容管理::频道信息" @579
+		(object ClassView "Class" "Logical View::Analysis Model::内容管理::分类信息" @579
 		    ShowCompartmentStereotypes 	TRUE
 		    IncludeAttribute 	TRUE
 		    IncludeOperation 	TRUE
-		    location   	(1248, 1088)
+		    location   	(2144, 320)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -11516,7 +11532,67 @@
 			default_color 	TRUE)
 		    label      	(object ItemLabel
 			Parent_View 	@579
-			location   	(1248, 1244)
+			location   	(2144, 476)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	427
+			justify    	0
+			label      	"分类信息")
+		    icon       	"entity"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5F06F36701BD"
+		    height     	154
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::Analysis Model::内容管理::内容信息" @580
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(672, 1312)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@580
+			location   	(672, 1468)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	430
+			justify    	0
+			label      	"内容信息")
+		    icon       	"entity"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5F06F47300EB"
+		    height     	154
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::Analysis Model::内容管理::频道信息" @581
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1312, 848)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@581
+			location   	(1312, 1004)
 			anchor_loc 	1
 			nlines     	2
 			max_width  	430
@@ -11527,75 +11603,11 @@
 		    line_color 	3342489
 		    fill_color 	13434879
 		    quidu      	"5EFC38DC0329"
-		    compartment 	(object Compartment
-			Parent_View 	@579
-			location   	(1024, 1283)
-			font       	(object Font
-			    size       	9
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			icon_style 	"Icon"
-			anchor     	2
-			nlines     	4
-			max_width  	425
-			justify    	0)
 		    height     	154
 		    annotation 	8
 		    autoResize 	TRUE)
-		(object ClassView "Class" "Logical View::Analysis Model::内容管理::分类信息" @580
-		    ShowCompartmentStereotypes 	TRUE
-		    IncludeAttribute 	TRUE
-		    IncludeOperation 	TRUE
-		    location   	(1344, 224)
-		    font       	(object Font
-			size       	9
-			face       	"Arial"
-			bold       	FALSE
-			italics    	FALSE
-			underline  	FALSE
-			strike     	FALSE
-			color      	0
-			default_color 	TRUE)
-		    label      	(object ItemLabel
-			Parent_View 	@580
-			location   	(1344, 380)
-			anchor_loc 	1
-			nlines     	2
-			max_width  	439
-			justify    	0
-			label      	"分类信息")
-		    icon       	"entity"
-		    icon_style 	"Icon"
-		    line_color 	3342489
-		    fill_color 	13434879
-		    quidu      	"5EFC388303DA"
-		    compartment 	(object Compartment
-			Parent_View 	@580
-			location   	(1141, 419)
-			font       	(object Font
-			    size       	9
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			icon_style 	"Icon"
-			anchor     	2
-			nlines     	5
-			max_width  	381
-			justify    	0)
-		    height     	154
-		    annotation 	8
-		    autoResize 	TRUE)
-		(object AssociationViewNew "$UNNAMED$0" @581
-		    location   	(1268, 878)
+		(object AssociationViewNew "$UNNAMED$0" @582
+		    location   	(1726, 580)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -11607,11 +11619,11 @@
 			default_color 	TRUE)
 		    stereotype 	TRUE
 		    line_color 	3342489
-		    quidu      	"5EFC69E50064"
+		    quidu      	"5F06F5550281"
 		    roleview_list 	(list RoleViews
-			(object RoleView "$UNNAMED$1" @582
-			    Parent_View 	@581
-			    location   	(-76, 654)
+			(object RoleView "$UNNAMED$1" @583
+			    Parent_View 	@582
+			    location   	(-418, 260)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -11621,40 +11633,18 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    label      	(object SegLabel @583
-				Parent_View 	@582
-				location   	(1216, 979)
-				font       	(object Font
-				    size       	9
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				hidden     	TRUE
-				anchor     	1
-				anchor_loc 	1
-				nlines     	1
-				max_width  	60
-				justify    	0
-				label      	""
-				pctDist    	0.800000
-				height     	42
-				orientation 	1)
 			    stereotype 	TRUE
 			    line_color 	3342489
-			    quidu      	"5EFC69E502F5"
-			    client     	@581
-			    supplier   	@579
+			    quidu      	"5F06F5560130"
+			    client     	@582
+			    supplier   	@581
 			    vertices   	(list Points
-				(1268, 878)
-				(1253, 1012))
+				(1726, 580)
+				(1386, 796))
 			    line_style 	0
 			    label      	(object SegLabel @584
-				Parent_View 	@582
-				location   	(1309, 1003)
+				Parent_View 	@583
+				location   	(1449, 821)
 				font       	(object Font
 				    size       	9
 				    face       	"Arial"
@@ -11674,8 +11664,8 @@
 				height     	54
 				orientation 	0))
 			(object RoleView "$UNNAMED$2" @585
-			    Parent_View 	@581
-			    location   	(-76, 654)
+			    Parent_View 	@582
+			    location   	(-418, 260)
 			    font       	(object Font
 				size       	9
 				face       	"Arial"
@@ -11687,16 +11677,115 @@
 				default_color 	TRUE)
 			    stereotype 	TRUE
 			    line_color 	3342489
-			    quidu      	"5EFC69E502F7"
-			    client     	@581
-			    supplier   	@580
+			    quidu      	"5F06F5560135"
+			    client     	@582
+			    supplier   	@579
 			    vertices   	(list Points
-				(1268, 878)
-				(1320, 403))
+				(1726, 580)
+				(2067, 363))
 			    line_style 	0
 			    label      	(object SegLabel @586
 				Parent_View 	@585
-				location   	(1335, 767)
+				location   	(2061, 431)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))))
+		(object AssociationViewNew "$UNNAMED$3" @587
+		    location   	(990, 1077)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5F06F55801FA"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$4" @588
+			    Parent_View 	@587
+			    location   	(-322, 229)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5F06F5590079"
+			    client     	@587
+			    supplier   	@580
+			    vertices   	(list Points
+				(990, 1077)
+				(746, 1253))
+			    line_style 	0
+			    label      	(object SegLabel @589
+				Parent_View 	@588
+				location   	(802, 1282)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))
+			(object RoleView "$UNNAMED$5" @590
+			    Parent_View 	@587
+			    location   	(-322, 229)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5F06F559007D"
+			    client     	@587
+			    supplier   	@581
+			    vertices   	(list Points
+				(990, 1077)
+				(1236, 900))
+			    line_style 	0
+			    label      	(object SegLabel @591
+				Parent_View 	@590
+				location   	(1242, 960)
 				font       	(object Font
 				    size       	9
 				    face       	"Arial"
